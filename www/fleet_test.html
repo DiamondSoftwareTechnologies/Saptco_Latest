@@ -1,0 +1,74 @@
+﻿<!-- Dynamic navbar for iOS theme -->
+{{#if @global.ios}}
+<div class="navbar bg-black" style="width:100% ; height:60px">
+    <div class="navbar-inner on-center" style="background-color:#FAF8EB !important">
+        <div class="left sliding">
+            <a href="#" class="back">
+                <i class="icon icon-back"></i>
+            </a>
+        </div>
+        <div class="center sliding color-s-orange">Fleet test</div>
+        <div class="right">
+            <img src="img/mainlogo.png" alt="SAPTCO" />
+        </div>
+    </div>
+</div>
+{{/if}}
+
+<div class="page" data-page="fleet_test">
+    <!-- Fixed navbar for Material theme -->
+    {{#if @global.android}}
+    <div class="navbar bg-black">
+        <div class="navbar-inner bg-black">
+            <div class="left">
+                <a href="#" class="back icon-only">
+                    <i class="icon icon-back"></i>
+                </a>
+            </div>
+            <div class="center  color-s-orange">Fleet test</div>
+        </div>
+    </div>
+    {{/if}}
+
+    <div class="page-content" style=" color: #B68E20">
+        <div class="photo-browser photo-browser-{{theme}}">
+            <div class="view navbar-fixed toolbar-fixed">
+                {{#unless material}}{{#if navbar}}
+                navbarTemplate
+                {{/if}}{{/unless}}
+                <div class="page no-toolbar {{#unless navbar}}no-navbar{{/unless}} toolbar-fixed navbar-fixed" data-page="photo-browser-slides">
+                    {{#if material}}{{#if navbar}}
+                    navbarTemplate
+                    {{/if}}{{/if}}
+                    {{#if toolbar}}
+                    toolbarTemplate
+                    {{/if}}
+                    <div class="photo-browser-captions photo-browser-captions-{{js " this.captionstheme || this.theme"}}">
+                        {{#each photos}}{{#if caption}}
+                        captionTemplate
+                        {{/if}}{{/each}}
+                    </div>
+                    <div class="photo-browser-swiper-container swiper-container">
+                        <div class="photo-browser-swiper-wrapper swiper-wrapper">
+                            {{#each photos}}
+                            {{
+#js_compare "this.html || ((typeof this === \'string\' || this instanceof String) && (this.indexOf(\'<\')>
+                                = 0 || this.indexOf(\'>\') >= 0))"
+                            }}
+                            objectTemplate
+                            {{else}}
+                            {{#if @root.lazyLoading}}
+                            photoLazyTemplate
+                            {{else}}
+                            photoTemplate
+                            {{/if}}
+                            {{/js_compare}}
+                            {{/each}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>     

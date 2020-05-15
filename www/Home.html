@@ -1,0 +1,96 @@
+﻿<!-- Dynamic navbar for iOS theme -->
+{{#if @global.ios}}
+<!--<div class="navbar">-->
+<!--<div class="navbar-inner" style="background-color:transparent !important">-->
+<!--<div class="left sliding">-->
+<!--<a href="#" class="">-->
+<!--<i class="icon "></i>-->
+<!--&nbsp;-->
+<!--</a>-->
+<!--</div>-->
+<!--<div class="center">-->
+<!--&lt;!&ndash;<img src="img/logo.png" alt="SAPTCO" style="width: 120px;">&ndash;&gt;-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+{{/if}}
+<div class="page no-swipeback" data-page="Home">
+    <!--Fixed navbar for Material theme-->
+    {{#if @global.android}}
+    <div class="navbar" style="background-color:transparent !important">
+        <div class="navbar-inner" style="background-color:transparent !important;display: none">
+            <div class="left">
+                <a href="#" class="back icon-only">
+                    <i class="icon icon-back"></i>
+                </a>
+            </div>
+            <div class="center">
+                <!--<img src="img/Saptco-logo.svg" alt="SAPTCO" style="width: 90px; ">-->
+            </div>
+        </div>
+    </div>
+    {{/if}}
+    <div class="page-content Home-bg">
+        <!--<div class="row" style="direction:ltr!important;">-->
+        <!--<img src="img/Saptco-logo.svg" style="width: 150px">-->
+        <!--</div>-->
+        <div id="SellerData" style="margin-right: 30px;margin-left: 30px;margin-top: 10px;margin-bottom: 10px;">
+            <div class="row">
+                <div class="col-50 txt-style" id="SellerUserName" style="font-weight: bold;"></div>
+                <div class="col-50 txt-style" id="SellerSdp" style="font-weight: bold;"></div>
+            </div>
+        </div>
+        <div  id="KioskData" style="margin-right: 30px;margin-left: 30px;margin-top: 10px;margin-bottom: 10px;">
+            <div class="row">
+                <div class="col-100 txt-style" id="KioskSelfService" style="font-weight: bold;text-align: center;"></div>
+            </div>
+        </div>
+        <div class="row" style="position: relative">
+            <div class="content-block top-block-home">SAPTCO
+            </div>
+
+            <div class="swiper-container mob-swiper HomeSwiper" style="margin: 11px 19px 0px 19px">
+                <!-- Slides wrapper -->
+                <div class="swiper-wrapper" id="banner">
+                    <!-- Slides -->
+                </div>
+                <!-- Pagination, if required -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div class="content-block HomeBlock" style="width:100%;!important;">
+
+
+            <div class="row" id="goToSchedual">
+                <div class="col-15">
+                    <img src="img/economic-logo.png" class="bus-img"/>
+                </div>
+                <div class="col-70 txt-style">{{bookTrip}}</div>
+                <div class="col-15 arrow"><img class="arrow" src="" height="20px;" style="margin-top: 10px"></div>
+            </div>
+            <hr style="width: 75%;margin: auto;border: none;background-color:#b68d24 ;height: 1px">
+            <div class="row" id="goToSchedual2">
+                <div class="col-15">
+                    <img src="img/vip-logo-new.png" class="bus-img"/>
+                </div>
+                <div class="col-70 txt-style">{{VIP}}</div>
+                <div class="col-15 arrow"><img class="arrow" src="" height="20px" style="margin-top: 10px"></div>
+            </div>
+            <hr style="width: 75%;margin: auto;border: none;background-color:#b68d24 ;height: 1px">
+            <div class="row" id="goToBusRent">
+                <div class="col-15">
+                    <img src="img/rentBus-logo.png" class="bus-img"/>
+                </div>
+                <div class="col-70 txt-style">{{bus}}</div>
+                <div class="col-15"><img class="arrow" src="" height="20px" style="margin-top: 10px"></div>
+            </div>
+            <!--<hr style="width: 75%;margin: auto;border: none;background-color:#b68d24 ;height: 1px">-->
+            <!--<div class="row" id="goToLimo">-->
+            <!--<div class="col-15">-->
+            <!--<img src="img/limo-logo-new.png" class="bus-img"/></div>-->
+            <!--<div class="col-70 txt-style">{{limo}}</div>-->
+            <!--<div class="col-15"><img class="arrow" src="" height="20px" style="margin-top: 10px"></div>-->
+            <!--</div>-->
+        </div>
+    </div>
+</div>

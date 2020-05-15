@@ -1,0 +1,75 @@
+﻿<!-- Dynamic navbar for iOS theme -->
+{{#if @global.ios}}
+<div class="navbar bg-black" style="width:100% ; height:60px">
+    <div class="navbar-inner on-center" style="background-color:#FFF5E2 !important">
+        <div class="left sliding">
+            <a href="schedulesandtickets.html" class="">
+                <i class="icon icon-back"></i>
+            </a>
+        </div>
+        <div class="center sliding color-s-orange" id="logoTitle2"
+             style="font-weight:700; font-size: 18px !important; font-stretch: condensed;margin-left:85px"></div>
+        <div class="right">
+
+        </div>
+    </div>
+</div>
+{{/if}}
+
+<div class="page" data-page="FirstSummry">
+    <!-- Fixed navbar for Material theme -->
+    {{#if @global.android}}
+    <div class="navbar bg-black" style="width:100% ; height:60px">
+        <div class="navbar-inner on-center" style="background-color:#FAF8EB !important">
+            <div class="left sliding">
+                <a href="#" class="back">
+                    <i class="icon icon-back"></i>
+                </a>
+            </div>
+            <div class="center sliding color-s-orange"
+                 style="font-weight:700; font-size: 18px !important; font-stretch: condensed;margin-left:95px">
+                {{lblTitle}}
+            </div>
+            <div class="right">
+                <img src="img/Bus.png" alt="SAPTCO" style="width: 42px;height:30px">
+            </div>
+        </div>
+    </div>
+    {{/if}}
+
+    <div class="page-content" style="background-color:#FAF8EB ; color: #B68E20">
+        <div class="row" style="direction: rtl!important;margin-top: 4%; margin-left: 1%">
+            <div class="row"
+                 style="font-weight:700; font-size: 18px !important; font-stretch: condensed;color:#b68e20; margin-right: 55%">
+                {{lblTitle}}
+            </div>
+            <div class="row" id="Rlogo2"></div>
+        </div>
+        <div class="title-color" id="Trip_Summary" data-role="content" style="margin-top: 17%">
+
+            <div class="list-block" style="font-weight: 300;  font-stretch: condensed;">
+                <ul id="list-OutgoingTrips" class="trips-list-block"
+                    style="background-color: transparent; font-weight: 300; font-stretch: condensed;"></ul>
+            </div>
+            <div class="list-block" style="font-weight: 300;  font-stretch: condensed;">
+                <ul id="list-Return" class="trips-list-block"
+                    style="background-color: transparent; font-weight: 300; font-stretch: condensed;"></ul>
+            </div>
+        </div>
+        <div class="btn-login-orange  border-rounding"
+             style="margin-top:35px ; margin-bottom: 40px;width:93%; margin-right:13px ;height:60px" id="btn-continue">
+            <div class="row ">
+                <div class="col-100 "
+                     style="font-weight: 300; font-size: 18px !important; font-stretch: condensed;color:white; margin-top:5px">
+                    {{btnContinue}}
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+
+
+

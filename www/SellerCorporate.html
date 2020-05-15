@@ -1,0 +1,96 @@
+<!-- Dynamic navbar for iOS theme -->
+{{#if @global.ios}}
+<div class="navbar bg-black" style="width:100% ; height:60px">
+    <div class="navbar-inner on-center">
+        <div class="left sliding">
+            <a href="#" class="back">
+                <i class="icon icon-back"></i>
+            </a>
+        </div>
+        <div class="center sliding color-s-orange"
+
+    </div>
+    <div class="right">
+
+    </div>
+</div>
+</div>
+{{/if}}
+
+<div class="page" data-page="SellerCorporate">
+    <!-- Fixed navbar for Material theme -->
+    {{#if @global.android}}
+    <div class="navbar bg-black">
+        <div class="navbar-inner bg-black">
+            <div class="left">
+                <a href="#" class="back icon-only">
+                    <i class="icon icon-back"></i>
+                </a>
+            </div>
+            <div class="center  color-s-orange">
+
+            </div>
+            <div class="right">
+
+            </div>
+        </div>
+    </div>
+    {{/if}}
+
+    <div class="page-content" style=" color: #B68E20">
+        <div class="row" style="margin-top:5%;direction:rtl !important;">
+            <div class="row"
+                 style="font-weight:700; font-size: 18px !important; font-stretch: condensed; margin-right:65%">
+                {{lblTittle}}
+            </div>
+            <div class="row"><img src="img/point-of-sale-terminal-pos.svg" alt="SAPTCO" style="width: 52px;height:33px"></div>
+        </div>
+
+        <div class="content-block" style="margin-top:14.5%">
+            <div class="content-container field-style" style="margin-top:10%">
+                <div class="row departure-action ">
+                    <div class="col-80">
+                        <div class="row">
+                            <div class="col-100 schedule-sub-title color-s-dark-orange"
+                                 style="font-weight: 300; font-size: 18px !important; font-stretch: condensed;margin-top:-5px;padding-left:3%;padding-right: 3%">
+                                {{lblSelectSDP}}
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-100 schedule-sub-Value " id="Locations_DepartureStationsName"
+                                 style="margin-top:-13px;padding-left:5%;padding-right: 5%">
+                                <div class="item-input validate" data-validation="ErrGender">
+                                    <a href="#" class="smart-select" data-open-in="picker" data-back-on-select="true"
+                                       data-back-text="{{DoneText}}">
+
+                                        <select name="SDP" id="SDP">
+                                        </select>
+                                        <div class="item-content">
+                                            <div class="item-inner">
+                                                <!-- Select label -->
+                                                <!-- Selected value, not required -->
+                                                <div class="item-after" id="SDPSelect"
+                                                     style=" font-weight:300; font-size:13px !important; font-stretch:condensed;">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="schedule-search-button  border-rounding" style="margin: auto!important; width: 90%">
+                <div class="row">
+                    <div class="col-100" id="selectSeller"
+                         style="font-weight: 300;font-size: 18px !important; font-stretch: condensed;color:white;">
+                        {{btnContinue}}
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

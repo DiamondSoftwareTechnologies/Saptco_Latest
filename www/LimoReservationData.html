@@ -1,0 +1,297 @@
+﻿<!-- Dynamic navbar for iOS theme -->
+{{#if @global.ios}}
+<div class="navbar">
+    <div class="navbar-inner on-center">
+        <div class="left sliding">
+            <a href="#" class="back">
+                <i class="icon icon-back"></i>
+            </a>
+        </div>
+        <div class="center sliding color-s-orange"
+             style="font-weight:700; font-size: 18px !important;color:#A58F32;margin-left:100px"></div>
+        <div class="right">
+        </div>
+    </div>
+</div>
+{{/if}}
+<div class="page" data-page="LimoReservationData">
+    <!-- Fixed navbar for Material theme -->
+    {{#if @global.android}}
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="left">
+                <a href="#" class="back icon-only">
+                    <i class="icon icon-back"></i>
+                </a>
+            </div>
+            <div class="center" style="background-color:#FAF8EB !important;">
+            </div>
+        </div>
+    </div>
+    {{/if}}
+    <div class="page-content ExternalStyle LimoFormStyle" style="color: #B68E20">
+
+        <div class="row" style="margin-top:6%;margin-left:1%;direction:rtl !important;">
+            <div class="row"
+                 style="font-weight:700; font-size: 18px !important; font-stretch: condensed; margin-right:45%">
+                {{lblTittle}}
+            </div>
+            <div class="row"><img src="img/Limo.png" alt="SAPTCO" style="width: 52px;height:33px"></div>
+        </div>
+        <br>
+        <div class="content-block"
+             style="padding-left: 3px;padding-right: 3px;padding-top: 3px;padding-bottom: 3px;margin-top:12%;margin-bottom: 10px; ">
+            <div class="">
+                <form id="LimoReservation" class="list-block LimoReservationulborder" onsubmit="return false;">
+                    <ul style="background-color:transparent !important; margin-bottom: -4%">
+                        <li>
+                            <div class="item-content no-padding div_click" style="padding-bottom: 4px !important;">
+                                <div class="item-inner "
+                                     style="border-radius: 10px;background-color:white;padding-bottom: 2px;">
+                                    <div class="item-input validate" data-validation="errServiceType"
+                                         style=" font-weight 300; font-size 13px !important; font-stretch condensed;">
+                                        <a href="#" class="smart-select" data-open-in="picker"
+                                           data-back-on-select="true" data-back-text="{{DoneText}}">
+                                            <select name="from" class="servicetype" id="serv_type"
+                                                    style=" background-color:black !important;font-weight 300; font-size 13px !important; font-stretch condensed;">
+                                                <option data-itemvalue="0" value="NA" selected="selected"
+                                                        style=" font-weight 300; font-size 18px !important; font-stretch condensed;">
+                                                    {{optSelect}}
+                                                </option>
+
+                                            </select>
+                                            <div class="item-content ">
+                                                <div class="item-inner" style="border:none;padding:0px !important">
+                                                    <div class="item-after">{{optSelect}}</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content no-padding div_click" style="padding-bottom: 4px !important;">
+
+
+                                <div class="item-inner "
+                                     style="border-radius: 10px;background-color:white;">
+
+                                    <!--<div class="item-title label select_click" style="font-weight:300; font-size:13px !important; font-stretch:condensed;white-space:normal;">{{Service_Period}}:</div>-->
+                                    <div class="item-input validate" data-validation="errServiceDuration"
+                                         style="font-weight:300; font-size:13px !important;font-stretch:condensed;">
+                                        <a href="#" class="smart-select" data-open-in="picker"
+                                           data-back-on-select="true" data-back-text="{{DoneText}}">
+                                            <select name="from" class="ServiceDuration" id="serv_time"
+                                                    style="font-weight:300; font-size:13px !important; font-stretch:condensed;">
+                                                <option data-itemvalue="0" value="NA" selected="selected"
+                                                        style="font-weight:300; font-size:18px !important; font-stretch:condensed;">
+                                                    {{Service_Period}}
+                                                </option>
+                                            </select>
+                                            <div class="item-content ">
+                                                <div class="item-inner" style="border:none;padding:0px !important">
+                                                    <div class="item-after">{{One_way}}</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content no-padding div_click" style="padding-bottom: 4px !important;">
+
+                                <div class="item-inner "
+                                     style="border-radius: 10px;background-color:white;">
+
+                                    <!--<div class="item-title label select_click" style="font-weight:300; font-size:13px !important; font-stretch:condensed;white-space:normal;">{{Car_Type}}:</div>-->
+                                    <div class="item-input validate" data-validation="errCartype"
+                                         style="font-weight:300; font-size:13px !important;font-stretch:condensed;white-space:normal">
+                                        <a href="#" class="smart-select" data-open-in="picker"
+                                           data-back-on-select="true" data-back-text="{{DoneText}}">
+                                            <select name="from" class="cars" id="car_type"
+                                                    style="font-weight:300; font-size:13px !important; font-stretch:condensed;">
+                                                <option data-itemvalue="0" value="NA" selected="selected"
+                                                        style="font-weight:300; font-size:18px !important; font-stretch:condensed;white-space:normal;">
+                                                    {{Car_Type}}
+                                                </option>
+                                            </select>
+                                            <div class="item-content ">
+                                                <div class="item-inner" style="border:none;padding:0px !important">
+                                                    <div class="item-after">{{Mercedes}}</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content no-padding div_click" style="padding-bottom: 4px !important;">
+
+                                <div class="item-inner "
+                                     style="border-radius: 10px;background-color:white;">
+
+                                    <!--<div class="item-title label " style="font-weight:300; font-size:13px !important; font-stretch:condensed;white-space:normal;">{{Service_Date}}</div>-->
+                                    <div class="item-input validate" data-validation="ErrRequestDateTime">
+                                        <input type="text" name="cusname" placeholder="{{selectDate}}" readonly
+                                               id="calendar-date-depart"
+                                               style="font-weight:300; font-stretch:condensed; margin-top:-7px ">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content no-padding div_click" style="padding-bottom: 4px !important;">
+                                <div class="item-inner "
+                                     style="border-radius: 10px;background-color:white;">
+
+                                    <!--<div class="item-title label " style="font-weight:300; font-size:13px !important; font-stretch:condensed;white-space:normal;">{{Service_Time}}:</div>-->
+                                    <div class="item-input validate" data-validation="Errtriptime">
+                                        <input class="RequestDateTime" type="text" placeholder="{{lblDepartureDate}}"
+                                               readonly id="picker-date"
+                                               style="font-weight:300; font-stretch:condensed; margin-top:-7px">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content no-padding div_click" style="padding-bottom: 4px !important;">
+
+
+                                <div class="item-inner "
+                                     style="border-radius: 10px;background-color:white;">
+
+
+                                    <!--<div class="item-title label select_click" style="font-weight:300; font-size:13px !important; font-stretch:condensed;white-space:normal;">{{City}}:</div>-->
+
+                                    <div class="item-input validate" data-validation="errCityName"
+                                         style="font-weight:300; font-size:13px !important; font-stretch:condensed;">
+                                        <a href="#" class="smart-select" data-open-in="picker"
+                                           data-back-on-select="true" data-back-text="{{DoneText}}">
+                                            <select name="from" class="city" id="cities"
+                                                    style="font-weight:300; font-size:13px !important; font-stretch:condensed;">
+                                                <option data-itemvalue="0" value="NA" selected="selected"
+                                                        style="font-weight:300; font-size:18px !important; font-stretch:condensed;">
+                                                    {{City}}
+                                                </option>
+                                            </select>
+                                            <div class="item-content ">
+                                                <div class="item-inner" style="border:none;padding:0px !important">
+                                                    <div class="item-after"></div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li style="display:none">
+                            <div class="item-content no-padding div_click" style="padding-bottom: 4px">
+
+                                <div class="item-inner "
+                                     style="border-radius: 10px;background-color:white;">
+
+                                    <div class="item-title label "
+                                         style="font-weight:300; font-size:13px !important; font-stretch:condensed;">
+                                        {{DepartFrom}}:
+                                    </div>
+                                    <!--
+
+                                                                        <div class="item-input validate" data-validation="ErrDepartFrom">
+
+                                                                            <input type="text" name="Name" id="DepartFrom" style=" font-weight: 300; font-size: 13px !important; font-stretch: condensed;">
+
+                                                                        </div>
+
+                                    -->
+                                </div>
+                            </div>
+                        </li>
+                        <li style="display:none">
+                            <div class="item-content no-padding div_click" style="padding-bottom:4px !important;">
+
+                                <div class="item-inner "
+                                     style="border-radius: 10px;background-color:white;">
+
+                                    <div class="item-title label "
+                                         style="font-weight:300; font-size:13px !important; font-stretch:condensed;">
+                                        {{lblTo}}:
+                                    </div>
+                                    <!--
+                                     <div class="item-input validate" data-validation="ErrDepartto">
+                                   <input type="text" name="Name" id="Departto" style=" font-weight: 300; font-size: 13px !important; font-stretch: condensed;">
+
+                                      </div>
+                                    -->
+                                </div>
+                            </div>
+                        </li>
+                        <li style="display:none">
+                            <div class="item-content no-padding div_click" style="padding-bottom:4px!important;">
+
+                                <div class="item-inner "
+                                     style="border-radius: 10px;background-color:white;">
+
+                                    <div class="item-title label "
+                                         style="font-weight:300; font-size:13px !important; font-stretch:condensed;">
+                                        {{Pickup_Location}}:
+                                    </div>
+                                    <!--
+                                         <div class="item-input validate" data-validation="ErrPickup_Location">
+                                           <input type="text" name="Name" id="Pickup_Location"  readonly style=" font-weight: 300; font-size :13px !important; font-stretch: condensed;">
+                                      </div>
+                                    -->
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content no-padding div_click" style="padding-bottom: 4px!important;">
+
+                                <div class="item-inner "
+                                     style="border-radius: 10px;background-color:white;">
+
+                                    <!--<div class="item-title label select_click" style="font-weight:300;font-size:13px !important;font-stretch:condensed;white-space normal;">{{Payment_Method}}:</div>-->
+                                    <div class="item-input validate" data-validation="errPayMethod"
+                                         style="font-weight:300; font-size:13px !important; font-stretch:condensed;">
+                                        <a href="#" class="smart-select" data-open-in="picker"
+                                           data-back-on-select="true" data-back-text="{{DoneText}}">
+                                            <select name="form1" class="payment" id="pay_method"
+                                                    style="font-weight:300; font-size:13px !important; font-stretch:condensed;">
+                                                <option data-itemvalue="0" value="NA" selected="selected"
+                                                        style="font-weight:300; font-size:18px !important; font-stretch:condensed;">
+                                                    {{LimoReservationData}}
+                                                </option>
+                                            </select>
+                                            <div class="item-content ">
+                                                <div class="item-inner" style="border:none;padding:0px !important">
+                                                    <div class="item-after"></div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </li>
+
+                    </ul>
+                </form>
+            </div>
+            <a href="LimoPassengerInfo.html">
+                <div class="schedule-search-button center border-rounding"
+                     style="margin:auto !important;border-radius:10px!important;margin-top:10% !important; margin-bottom:10% ;text-align:center !important; width:85%;left:27px ;height:60px">
+
+                    <div class="center "
+                         style="font-weight: 300; font-size: 18px !important; font-stretch: condensed;"
+                         id="btnSaveData">
+                        {{Continue}}
+                    </div>
+
+                </div>
+            </a>
+
+        </div>
+    </div>
+</div>

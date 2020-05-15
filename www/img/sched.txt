@@ -1,0 +1,194 @@
+        <div class="content-block" style="margin-top:9%">
+            <div class="row" style="margin-right:58%">
+                <img src="img/logo.png" style="width: 150px;">
+            </div>
+            <div class="row" style="color:white;text-align:left;font-size:18px;margin-right:3%;margin-top:7%">
+                Book A trip
+            </div>
+            <div class="row col-100" style="margin-top:10%;margin-right:3%">
+                <label class="switch col-15">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                </label>
+                <div class="col-85" style="color:white">search for vip trips</div>
+            </div>
+            <div class="content-container field-style" style="margin-top:10%">
+                <div class="row departure-action ">
+                    <div class="col-80">
+                        <div class="row">
+                            <div class="col-100 schedule-sub-title color-s-dark-orange"
+                                 style="font-weight: 300; font-size: 16px !important; font-stretch: condensed;margin-top:-5px;margin-right:3px">
+                                {{lbldepartureFrom}}
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-100 schedule-sub-Value " id="Locations_DepartureStationsName" style="margin-top:-13px;margin-right:3px">
+                                Riyadeh vip office (Al Hayat office )
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-container field-style">
+                <div class="row arrival-action ">
+                    <div class="col-80">
+                        <div class="row">
+                            <div class="col-100 schedule-sub-title color-s-dark-orange"
+                                 style="font-weight: 300; font-size: 16px !important; font-stretch: condensed;margin-top:-5px;margin-right:3px">
+                                {{lblArrivalTo}}
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-100 schedule-sub-Value" id="Locations_ArrivleStationsName" style="margin-top:-13px;margin-right:3px">
+                                Riyadeh vip office (Al Hayat office )
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row col-100" style="margin-top:10%;height:10%;color:white;font-size:10px;margin-right:3%">
+                <div class="col-50 row">
+                    <input type="radio" name="OneWay" checked="checked"  style="height:20px;width:20px;margin-top:-2%" />
+                    <label style="margin-left:38%"><b>{{lblOneWay}}</b></label>
+                </div>
+                <div class="col-50 row">
+                    <input type="radio" name="Roundtrip" value="male" style="height:20px;width:20px;margin-top:-2%" />
+                    <label style="margin-left:30%"><b>{{lblRoundtrip}}</b></label>
+                </div>
+            </div>
+            <div class="content-container field-style" style="margin-top:10%">
+                <div class="row col-100">
+                    <div class="row col-40 " id="divDepartDate">
+                        <div class="col-100 schedule-sub-title color-s-dark-orange dates-labels schedule-date-titles"
+                             style="font-weight: 300; font-size: 14px !important; font-stretch: condensed;   line-height: 36px;">
+                            Travilling dates
+                        </div>
+                    </div>
+                </div>
+                <div class="row col-100" style="margin:-5%">
+                    <div class="row col-50">
+                        <div class="col-100 schedule-sub-Value schedule-date-titles">
+                            <div class="item-input">
+                                <input type="text" placeholder="{{lblDepartureDate}}" readonly
+                                       id="calendar-date-depart" class="schedual-calendar"
+                                       style="font-weight: 300;  font-stretch: condensed; margin-top:-7px   ">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row col-50">
+                        <div class="col-100 schedule-sub-Value schedule-date-titles">
+                            <div class="item-input">
+                                <input type="text" placeholder="{{lblReturnDate}}" readonly
+                                       id="calendar-date-arrive" class="schedual-calendar"
+                                       style="font-weight: 300;  font-stretch: condensed; margin-top:-7px   ">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-container field-style">
+                <a href="#" data-picker=".picker-passengers-count" class="open-picker">
+                    <div class="row schedual-section">
+                        <div class="col-80">
+                            <div class="row">
+                                <div class="col-100 schedule-sub-title color-s-dark-orange"
+                                     style="font-weight: 300; font-size: 18px !important; font-stretch: condensed;">
+                                    {{lblPassengersLabel}}
+                                </div>
+                            </div>
+                            <div class="row" style="margin-top:-7%">
+                                <div class="col-100  schedule-sub-Value" id="lblPassengerCountSummary"
+                                     style="font-weight: 300;  font-stretch: condensed;">
+                                    {{lblPassengers}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-100 schedule-search-button  border-rounding div-height ">
+                <div class="row ">
+                    <div class="col-100 "
+                         style="font-weight: 300; font-size: 18px !important; font-stretch: condensed;color:white;">
+                        {{btnSearch}}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*******************************************************************************
+
+
+
+
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 10px;
+  height: 18px;
+
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #c2c2a3;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  top:1.5px;
+  left: -1px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #6b6b47 ;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px grey;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}

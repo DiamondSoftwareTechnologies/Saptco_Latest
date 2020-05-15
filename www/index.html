@@ -1,0 +1,462 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Your app title -->
+    <title>SAPTCO</title>
+    <!-- Path to Framework7 iOS CSS theme styles-->
+    <link rel="stylesheet" href="css/framework7.ios.min.css">
+    <link rel="stylesheet" href="css/framework7.ios.rtl.min.css">
+<!--    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
+    <!-- Path to Framework7 iOS related color styles -->
+    <link rel="stylesheet" href="css/framework7.ios.colors.min.css">
+    <link rel="stylesheet" href="css/framework7.3dpanels.min.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/my-app.css">
+    <link rel="stylesheet" href="css/manaf.css">
+    <link rel="stylesheet" href="css/mohammad.css">
+    <link rel="stylesheet" href="css/ExternalServices.css">
+    <link rel="stylesheet" href="css/limo.css">
+    <link rel="stylesheet" href="css/Bus.css">
+</head>
+<body>
+<div class="statusbar-overlay" id="StatusBar" style="background-color: #FFF5E1 !important;"></div>
+<div class="panel-overlay"></div>
+<div class="panel panel-left panel-reveal bg-white" id="main-panel">
+    <div class="content-block center-text">
+        <p><img src="img/Saptco-logo.svg" alt="Alternate Text" style="width:60%"/><br/>
+        <p id="deviceProperties"></p></p>
+        <div class="list-block saptco-panel">
+            <ul>
+                <li>
+                    <a href="login.html" class="close-panel" id="loginb">
+                        <div class="item-content">
+                            <div class="item-media">
+                                <i class="icon icon-form-SigninOut"></i>
+                            </div>
+                            <div class="item-inner">
+                                <div class="item-title label"
+                                     style="font-weight: 300; font-size: 16px !important; font-stretch: condensed;">
+                                    <span id="loginp"></span></div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="login.html" class="close-panel" id="logoutb" style="display:none;">
+                        <div class="item-content">
+                            <div class="item-media">
+                                <i class="icon icon-form-SigninOut"></i>
+                            </div>
+                            <div class="item-inner">
+                                <div class="item-title label"
+                                     style=" font-weight 300; font-size 16px !important; font-stretch condensed;"><span
+                                        id="logoutp"></span></div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="profile.html" class="close-panel profile sign" id="myprofile" style="display:none;">
+                        <div class=" item-content">
+                            <div class="item-media">
+                                <i class="icon icon-form-mypfofile"></i>
+                            </div>
+                            <div class="item-inner">
+                                <div class="item-title label" id="pnl-lbl-Profile"
+                                     style=" font-weight 300; font-size 16px !important; font-stretch condensed;">My
+                                    Profile
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="signup.html" class="close-panel profile sign" id="mysignup">
+
+                        <div class="item-content">
+                            <div class="item-media">
+                                <i class="icon icon-form-mypfofile"></i>
+                            </div>
+                            <div class="item-inner">
+                                <div class="item-title label" id="pnl-lbl-signup"
+                                     style=" font-weight 300; font-size 16px !important; font-stretch condensed;">My
+                                    Profile
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                </li>
+                <!--<li>-->
+                <!--<a href="offers1.html" class="close-panel">-->
+                <!--<div class="item-content">-->
+                <!--<div class="item-media">-->
+                <!--<i class="icon icon-form-offers"></i>-->
+                <!--</div>-->
+                <!--<div class="item-inner">-->
+                <!--<div class="item-title label" id="pnl-lbl-Offers"-->
+                <!--style=" font-weight 300; font-size 16px !important; font-stretch condensed;">Offers-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--</a>-->
+                <!--</li>-->
+                <li>
+                    <a href="our_fleet.html" class="close-panel">
+                        <div class="item-content">
+                            <div class="item-media">
+                                <i class="icon icon-form-fleet"></i>
+                            </div>
+                            <div class="item-inner">
+                                <div class="item-title label" id="pnl-lbl-OurFleet"
+                                     style=" font-weight 300; font-size 16px !important; font-stretch condensed;">Our
+                                    Fleet
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="menu_favorite.html" class="close-panel">
+                        <div class="item-content">
+                            <div class="item-media">
+                                <i class="icon icon-form-favlist"></i>
+                            </div>
+                            <div class="item-inner">
+                                <div class="item-title label" id="pnl-lbl-Favorite"
+                                     style=" font-weight 300; font-size 16px !important; font-stretch condensed;">
+                                    Favorite List
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="privacyandpolicy.html" class="close-panel">
+                        <div class="item-content">
+                            <div class="item-media">
+                                <i class="icon icon-form-privacyandpolicy"></i>
+                            </div>
+                            <div class="item-inner">
+                                <div class="item-title label" id="pnl-lbl-Privacy"
+                                     style=" font-weight 300; font-size 16px !important; font-stretch condensed;">
+                                    Privacy and Policy
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="condtionandterms.html" class="close-panel">
+                        <div class="item-content">
+                            <div class="item-media">
+                                <i class="icon icon-form-termsofuse"></i>
+                            </div>
+                            <div class="item-inner">
+                                <div class="item-title label" id="pnl-lbl-Terms"
+                                     style=" font-weight 300; font-size 16px !important; font-stretch condensed;">Term
+                                    of Use
+                                </div>
+
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="setting.html" class="close-panel">
+                        <div class="item-content">
+                            <div class="item-media">
+                                <i class="icon icon-form-langsettings"></i>
+                            </div>
+                            <div class="item-inner">
+                                <div class="item-title label" id="pnl-lbl-Settings"
+                                     style=" font-weight 300; font-size 16px !important; font-stretch condensed;">
+                                    Settings
+                                </div>
+
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="aboutus.html" class="close-panel">
+                        <div class="item-content">
+                            <div class="item-media">
+                                <i class="icon icon-form-aboutus"></i>
+                            </div>
+                            <div class="item-inner">
+                                <div class="item-title label" id="pnl-lbl-About"
+                                     style=" font-weight 300; font-size 16px !important; font-stretch condensed;">About
+                                    us
+                                </div>
+
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="close-panel" id="Tell-friend"
+                       onclick="window.plugins.socialsharing.share(GetResourceText('shareMessage'), 'SAPTCO', null, GetShareLink())">
+                        <div class="item-content">
+                            <div class="item-media">
+                                <i class="icon icon-form-Share"></i>
+                            </div>
+                            <div class="item-inner">
+                                <div class="item-title label" id="pnl-lbl-share"
+                                     style=" font-weight 300; font-size 16px !important; font-stretch condensed;">Tell a
+                                    friend
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="corporate.html" class="close-panel">
+                        <div class="item-content">
+                            <div class="item-media">
+                                <i class="icon icon-form-kiosk"></i>
+                            </div>
+                            <div class="item-inner">
+                                <div class="item-title label" id="pnl-lbl-Kiosk"
+                                     style=" font-weight 300; font-size 16px !important; font-stretch condensed;">
+                                    Corporate
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- Views -->
+<div class="views">
+    <!-- Your main view, should have "view-main" class -->
+    <div class="view view-main">
+        <!-- Top Navbar-->
+        <div class="navbar" style="background-color: transparent !important;">
+            <div class="navbar-inner ">
+                <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
+                <div class="left">
+                    <!--<a href="#" class="link icon-only">
+                        <i class="icon icon-back"></i>
+                    </a>-->
+                </div>
+                <div class="right">
+                </div>
+            </div>
+        </div>
+        <div class="pages navbar-through toolbar-through">
+            <div data-page="index" class="page"></div>
+        </div>
+        <div class="toolbar tabbar tabbar-labels footer" id="bottom-toolbar"
+             style="position:fixed !important; width: 95%; right: 10px;left: 10px;bottom:15px !important; display:none ; background-color:#8b6a19 !important;border-radius: 20px">
+            <div class="toolbar-inner">
+                <a href="#" data-panel="left" class=" tab-link open-panel">
+                    <i class="icon panel-show-icon"></i>
+                    <span class="tabbar-label color-white" id="menu-item-More"
+                          style="font-weight: 300;  font-stretch: condensed;">More</span>
+                </a>
+                <a href="mybooking.html" class="tab-link mybooking">
+                    <i class="icon mybook-icon" id="mybooking">
+                    </i>
+                    <span class="tabbar-label color-white" id="menu-item-Booking"
+                          style="font-weight: 300;  font-stretch: condensed;">My Booking</span>
+                </a>
+                <a href="#" class="tab-link contact-us-tab">
+                    <i class="icon demo-icon" id="Contact"></i>
+                    <span class="tabbar-label color-white" id="menu-item-contact"
+                          style="font-weight: 300;  font-stretch: condensed;">Contact us</span>
+                </a>
+                <a href="#tab1" class="tab-link home-tab">
+                    <i class="icon home-icon" id="home"></i>
+                    <span class="tabbar-label color-white" id="menu-item-Home"
+                          style="font-weight: 300;  font-stretch: condensed;">home</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="popup popup-dist loc-search-popup" style="z-index:5000 !important ;position:absolute;
+            top: 0% !important;
+            bottom:0% !important;
+            height:100%;
+            padding-bottom:10px!important">
+    <div class="content-block">
+        <div class="title">Search Location</div>
+        <input id="pac-input2" class="controls" type="text" placeholder="Search Box" style="width:100%">
+        <a href="#" class="close-popup">
+            <div class="btnDone">
+                Done
+            </div>
+        </a>
+    </div>
+</div>
+<div class="picker-modal picker-passengers-count">
+    <div class="toolbar">
+        <div class="toolbar-inner passenger-picker-toolbar">
+            <div class="left color-s-orange"><a href="#" class="close-picker color-s-orange" id="btnPassengerCancel">Cancel</a>
+            </div>
+            <div class="right"><a href="#" class="close-picker color-s-orange" id="btnSavePassCount">Done</a></div>
+        </div>
+    </div>
+    <div class="picker-modal-inner">
+        <div class="row no-gutter pass-pick-row">
+            <div class="col-20 pass-pick-control center-text bg-color-s-light-orange color-white" id="btnSubAdult">-
+            </div>
+            <div class="col-60  pass-pick-text center-text bg-white color-s-orange">
+                <div class="row no-gutter ">
+                    <div class="col-100" id="lblAdultCount">
+                        Adults
+                    </div>
+                </div>
+                <div class="row no-gutter pass-pick-sub-text">
+                    <div class="col-100" id="lblAdultDescription">
+                        More than 12 years
+                    </div>
+                </div>
+            </div>
+            <div class="col-20 pass-pick-control center-text bg-color-s-light-orange color-white" id="btnAddAdult">+
+            </div>
+        </div>
+        <div class="row no-gutter pass-pick-row">
+            <div class="col-20 pass-pick-control center-text bg-color-s-light-orange  color-white" id="btnSubChild">-
+            </div>
+            <div class="col-60  pass-pick-text center-text bg-white color-s-orange">
+                <div class="row no-gutter ">
+                    <div class="col-100" id="lblChildCount">
+                        Children
+                    </div>
+                </div>
+                <div class="row no-gutter pass-pick-sub-text">
+                    <div class="col-100" id="lblChildDescription">
+                        2 to 12 years
+                    </div>
+                </div>
+            </div>
+            <div class="col-20 pass-pick-control center-text bg-color-s-light-orange color-white" id="btnAddChild">+
+            </div>
+        </div>
+        <div class="row no-gutter pass-pick-row">
+            <div class="col-20 pass-pick-control center-text bg-color-s-light-orange color-white" id="btnSubInfants">-
+            </div>
+            <div class="col-60  pass-pick-text center-text bg-white color-s-orange">
+                <div class="row no-gutter ">
+                    <div class="col-100" id="lblInfantsCount">
+                        Infants
+                    </div>
+                </div>
+                <div class="row no-gutter pass-pick-sub-text">
+                    <div class="col-100" id="lblInfantsDescription">
+                        Less than 2 years
+                    </div>
+                </div>
+            </div>
+            <div class="col-20 pass-pick-control center-text bg-color-s-light-orange color-white" id="btnAddInfants">
+                +
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="picker-modal picker-passengers-count-Event">
+    <div class="toolbar" style="">
+        <div class="toolbar-inner passenger-picker-toolbar">
+            <div class="left"><a href="#" class="close-picker"
+                                 style="color: white" id="btnPassengerCancelEvent">Cancel</a>
+            </div>
+            <div class="right"><a href="#" class="close-picker" style="color: white"
+                                  id="btnSavePassCountEvent">Done</a>
+            </div>
+        </div>
+    </div>
+    <div class="picker-modal-inner">
+        <div class="row no-gutter pass-pick-row" style="height: 100%">
+            <div class="col-20 pass-pick-control-Event center-text bg-color-s-light-orange color-white"
+                 id="MinusBtnEvent">-
+            </div>
+            <div class="col-60  pass-pick-text center-text bg-white color-s-orange"
+                 style="height: 100%; padding-top: 16%">
+                <div class="row no-gutter ">
+                    <div class="col-100" id="lblAdultCountEvent">
+                        Passengers
+                    </div>
+                </div>
+                <div class="row no-gutter pass-pick-sub-text">
+                    <div class="col-100" id="PassengersCountEvent" style="font-size: 15px">
+                        1
+                    </div>
+                </div>
+            </div>
+            <div class="col-20 pass-pick-control-Event center-text bg-color-s-light-orange color-white"
+                 id="PlusBtnEvent">+
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- Path to Framework7 Library JS-->
+<script type="text/javascript" src="js/framework7.min.js"></script>
+<script type="text/javascript" src="js/framework7.3dpanels.min.js"></script>
+<!--<script src="https://maps.google.com.sa/maps/api/js?key=AIzaSyDSHomJ8LmiGZ7MgMYuVbGtshpCJlzZsXY&v=3.exp&libraries=places"-->
+<!--async defer></script>-->
+<!--Path to your app js-->
+<script type="text/javascript" src="scripts/LocalDataManager.js"></script>
+<script type="text/javascript" src="scripts/xml2json.js"></script>
+<script type="text/javascript" src="scripts/my-app.js"></script>
+<script type="text/javascript" src="scripts/Common.js"></script>
+<script type="text/javascript" src="scripts/helper1.js"></script>
+<script type="text/javascript" src="scripts/helper2.js"></script>
+<script type="text/javascript" src="scripts/CollectFormsData.js"></script>
+<script type="text/javascript" src="scripts/Validation.js"></script>
+<script type="text/javascript" src="scripts/ExternalServicesValidation.js"></script>
+<script type="text/javascript" src="scripts/jspdf.debug.js"></script>
+<script type="text/javascript" src="scripts/JSLINQ.js"></script>
+<script type="text/javascript" src="scripts/MapHandler.js"></script>
+<script type="text/javascript" src="scripts/LimoForm.js"></script>
+<script type="text/javascript" src="scripts/CargoForm.js"></script>
+<script type="text/javascript" src="scripts/CandC.js"></script>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript">
+    app.initialize();
+    window.addEventListener('native.showkeyboard', keyboardShowHandler);
+
+    function keyboardShowHandler(e) {
+        $$(".footer").hide();
+    }
+
+    window.addEventListener('native.keyboardhide', keyboardHideHandler);
+
+    function keyboardHideHandler(e) {
+        $$(".footer").show();
+    }
+</script>
+<div class="popup popup-SearchLocation">
+    <div class="content-block">
+        <input id="autocomplete" placeholder="Search" type="text" class="searchPopupInput"/>
+        <div class="searchPopupBtnContainer">
+            <div class="row">
+                <div class="col-50">
+                    <a href="#" class="close-popup">
+                        <div class="btnDone searchPopupBtn" id="btnPopupSearch">
+                            Go To Location
+                        </div>
+                    </a>
+                </div>
+                <div class="col-50">
+                    <a href="#" class="close-popup">
+                        <div class="searchPopupBtn">
+                            cancel
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>              

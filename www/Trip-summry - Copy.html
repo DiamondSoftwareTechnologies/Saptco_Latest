@@ -1,0 +1,191 @@
+﻿<!-- Dynamic navbar for iOS theme -->
+{{#if @global.ios}}
+<div class="navbar bg-black">
+    <div class="navbar-inner bg-black">
+        <div class="left sliding">
+            <a href="#" class="back">
+                <i class="icon icon-back"></i>
+            </a>
+        </div>
+        <div class="center sliding color-s-orange">{{lblTitle}}</div>
+        <div class="right">
+            <img src="img/Saptco-logo.svg" alt="SAPTCO" style=" width: 90px; ">
+        </div>
+    </div>
+</div>
+{{/if}}
+
+<div class="page" data-page="tripsummry">
+    <!-- Fixed navbar for Material theme -->
+    {{#if @global.android}}
+    <div class="navbar bg-black">
+        <div class="navbar-inner bg-black">
+            <div class="left">
+                <a href="#" class="back icon-only">
+                    <i class="icon icon-back"></i>
+                </a>
+            </div>
+            <div class="center  color-s-orange">{{lblTitle}}</div>
+            <div class="right">
+                <img src="img/Saptco-logo.svg" alt="SAPTCO" style=" width: 90px; ">
+            </div>
+        </div>
+    </div>
+    {{/if}}
+
+    <div class="page-content">
+        <div id="Trip_Summary" data-role="content">
+
+
+            <div class="DepartureContainerDiv container-box-shaddow content-container" id="GoingDataContainer">
+                <div class="row no-gutter">
+                    <div class="col-100 selected-tab" id="lblGoingTic">
+                        {{lblGoingTic}}
+                    </div>
+                </div>
+                <div class="summary-section row">
+                    <div class="col-100">
+                        <div class="row no-gutter">
+                            <div class="col-100"><h5 id="lblFrom" class="trip-summary-labels1">{{lblFrom}}</h5></div>
+                        </div>
+                        <div class="row no-gutter">
+                            <div class="col-100 "><h4 id="DepartureStation_Name" class="trip-summary-labels2 ">---</h4></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="summary-section row">
+                    <div class="col-100">
+                        <div class="row">
+                            <div class="col-100">
+                                <h5 id="lblTo trip-summary-labels1" class="trip-summary-labels1">{{lblTo}}</h5>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-100">
+                                <h4 id="ArrivalStation_Name" class="trip-summary-labels2">---</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-100 center-text">
+                        <img src="img/goingbus.png" alt="Trip" class="trip-go-img trip-summary-bus-img" />
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="col-33 center-text font-size-14 trip-summary-labels2" id="Summary_DepartureTime">  --- </div>
+                    <div class="col-33 center-text font-size-14 trip-summary-labels1" id="sub_Duration"> --- </div>
+                    <div class="col-33 center-text font-size-14  trip-summary-labels2" id="Summary_ArrivalTime"> --- </div>
+
+                </div>
+                <div class="row">
+
+                    <div class="col-33 center-text  font-size-14 trip-summary-labels1" id="sub_DepartureDate"> --- </div>
+                    <div class="col-33 center-text">  </div>
+                    <div class="col-33 center-text  font-size-14 trip-summary-labels1" id="Summary_ArrivalDate"> --- </div>
+
+                </div>
+            </div>
+
+            <div id="divReturnTicketContainer">
+
+
+                <div class="DepartureContainerDiv container-box-shaddow content-container">
+                    <div class="row no-gutter">
+                        <div class="col-100 selected-tab" id="lblReturnTi">{{lblReturnTi}}</div>
+                    </div>
+                    <div class="summary-section row">
+                        <div class="col-100">
+                            <div class="row no-gutter">
+                                <div class="col-100"><h5 id="lblFrom" class="trip-summary-labels1">{{lblFrom1}}</h5></div>
+                            </div>
+                            <div class="row no-gutter">
+                                <div class="col-100 "><h4 id="DepartureStation_Name" class="trip-summary-labels2 ">---</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="summary-section row">
+                        <div class="col-100">
+                            <div class="row">
+                                <div class="col-100">
+                                    <h5 id="lblTo trip-summary-labels1" class="trip-summary-labels1">{{lblTo1}}</h5>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-100">
+                                    <h4 id="ArrivalStation_Name" class="trip-summary-labels2">---</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-100 center-text">
+                            <img src="img/goingbus.png" alt="Trip" class="trip-go-img trip-summary-bus-img" />
+                        </div>
+                    </div>
+                    <div class="row">
+
+                        <div class="col-33 center-text font-size-14 trip-summary-labels2" id="Summary_DepartureTime">  --- </div>
+                        <div class="col-33 center-text font-size-14 trip-summary-labels1" id="sub_Duration"> --- </div>
+                        <div class="col-33 center-text font-size-14  trip-summary-labels2" id="Summary_ArrivalTime"> --- </div>
+
+                    </div>
+                    <div class="row">
+
+                        <div class="col-33 center-text  font-size-14 trip-summary-labels1" id="sub_DepartureDate"> --- </div>
+                        <div class="col-33 center-text">  </div>
+                        <div class="col-33 center-text  font-size-14 trip-summary-labels1" id="Summary_ArrivalDate"> --- </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class=" passenger-list-container" style="margin-bottom:50px">
+                <div class="container-box-shaddow content-container">
+                    <div class="row no-gutter">
+                        <div class="col-100 selected-tab" id="lblPassenger">{{lblPassenger}}</div>
+                    </div>
+                    <div class="">
+                        <div class="list-block virtual-list" id="PassengersList">
+                            <!-- keep it empty -->
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="summary-price-container">
+        <label class="label-checkbox item-content" style="margin-bottom:44px">
+            <!-- Checked by default -->
+            <input type="checkbox" name="my-checkbox" value="Books" id="cboAgree">
+            <div class="item-media div-add-to-fav">
+                <i class="icon icon-form-checkbox pass-info-checkbox"></i>
+
+                <a href="condtionandterms.html">{{lblagree}}</a>
+            </div>
+        </label>
+
+        <div class="row summary-btn bg-color-s-dark-orange2" id="btnGoToPayemnt">
+            <div class="col-60">
+                <div class="row">
+                    <div class="col-100 summary-btn-row1">{{lblprice}}</div>
+                </div>
+                <div class="row">
+                    <div class="col-20 summary-btn-row1" id="summaryTotalPrice" style="padding-left: 10px;padding-right: 10px;"> </div>
+                    <div class="col-60 summary-btn-row1" style="font-weight: bold; font-size: 35px; color: #222222; ">{{SAR}}</div>
+
+                </div>
+            </div>
+            <div class="col-30 summary-btn-img" style=" margin-left:25px ; margin-right:25px">
+                <img src="img/totalarrow.png">
+            </div>
+        </div>
+    </div>
+
+</div> 

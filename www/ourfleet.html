@@ -1,0 +1,62 @@
+﻿<!-- Dynamic navbar for iOS theme -->
+{{#if @global.ios}}
+<div class="navbar bg-black" style="width:100% ; height:60px">
+    <div class="navbar-inner on-center" style="background-color:#FAF8EB !important">
+        <div class="left sliding">
+            <a href="#" class="back link-force-back">
+                <i class="icon icon-back"></i>
+            </a>
+        </div>
+        <div class="center sliding color-s-orange">Schedules and Tickets</div>
+    </div>
+</div>
+{{/if}}
+
+<div class="page" data-page="ourfleet">
+    <!-- Fixed navbar for Material theme -->
+    {{#if @global.android}}
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="left">
+                <a href="#" class="back icon-only">
+                    <i class="icon icon-back"></i>
+                </a>
+            </div>
+            <div class="center  color-s-orange">About</div>
+        </div>
+    </div>
+    {{/if}}
+
+    <div class="page-content" style=" color: #B68E20">
+        <div class="row"  style="direction: rtl!important;margin-top: 6%;margin-left: 1%">
+            <div class="row"
+                 style="font-weight:700; font-size: 18px !important; font-stretch: condensed;color:#b68e20; margin-right: 50%">
+                {{lblTitle}}
+            </div>
+            <div class="row"><img src="img/Saptco-logo.svg" alt="SAPTCO" style="width: 90px"></div>
+        </div>
+        <div class="container-box-shaddow content-container about-us-padding page">
+            <div class="Div100">
+                <img src="img/res.png" alt="Smiley face" width=100%;>
+            </div>
+            <div class="Div100">
+                <h3 style="font-family: Arial, Helvetica, sans-serif; color: #a7912c; padding: 5px !important"
+                    onclick=mainView.router.load('Offers2nd.html') id="firstlbl">
+                    Transport
+                    service from Airport
+                </h3>
+            </div>
+            <div class="Div100">
+                <label style="font-family: Arial, Helvetica, sans-serif; padding: 5px !important"
+                       id="seconlbl">
+                    luxury car service with driver in
+                    professional
+                </label>
+            </div>
+            <div class="Div100">
+                <img src="img/image_42.png" alt="Smiley face" width=100%;>
+            </div>
+        </div>
+
+    </div>
+</div>

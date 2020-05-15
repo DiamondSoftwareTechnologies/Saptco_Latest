@@ -1,0 +1,71 @@
+{
+  "_from": "git+https://github.com/apache/cordova-plugin-screen-orientation.git",
+  "_id": "cordova-plugin-screen-orientation@3.0.2-dev",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/cordova-plugin-screen-orientation",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "git+https://github.com/apache/cordova-plugin-screen-orientation.git",
+    "rawSpec": "git+https://github.com/apache/cordova-plugin-screen-orientation.git",
+    "saveSpec": "git+https://github.com/apache/cordova-plugin-screen-orientation.git",
+    "fetchSpec": "https://github.com/apache/cordova-plugin-screen-orientation.git",
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git+https://github.com/apache/cordova-plugin-screen-orientation.git#de7f6fee4b6f8fe5f25e11de5334c701b45c935e",
+  "_spec": "git+https://github.com/apache/cordova-plugin-screen-orientation.git",
+  "_where": "/Users/Dimond/Desktop/SAPTCO-FILES/saptcopp/SAPITCO_Latest",
+  "author": {
+    "name": "Apache Software Foundation"
+  },
+  "bugs": {
+    "url": "https://issues.apache.org/jira/browse/CB"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-screen-orientation",
+    "platforms": [
+      "android",
+      "ios",
+      "windows"
+    ]
+  },
+  "deprecated": false,
+  "description": "Cordova Screen Orientation plugin",
+  "devDependencies": {
+    "jshint": "^2.9.4"
+  },
+  "engines": {
+    "cordovaDependencies": {
+      "4.0.0": {
+        "cordova": ">100"
+      }
+    }
+  },
+  "homepage": "https://github.com/apache/cordova-plugin-screen-orientation#readme",
+  "keywords": [
+    "cordova",
+    "device",
+    "ecosystem:cordova",
+    "screen",
+    "orientation",
+    "portrait",
+    "landscape"
+  ],
+  "license": "Apache-2.0",
+  "name": "cordova-plugin-screen-orientation",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apache/cordova-plugin-screen-orientation.git"
+  },
+  "scripts": {
+    "jshint": "node node_modules/jshint/bin/jshint www && node node_modules/jshint/bin/jshint src && node node_modules/jshint/bin/jshint demo/www",
+    "test": "npm run jshint"
+  },
+  "version": "3.0.2-dev"
+}

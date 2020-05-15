@@ -1,0 +1,148 @@
+﻿<!-- Dynamic navbar for iOS theme -->
+{{#if @global.ios}}
+<div class="navbar bg-black" style="width:100% ; height:60px">
+    <div class="navbar-inner on-center" style="background-color:#FFF5E1 !important">
+        <div class="left sliding">
+            <a href="#" class="back link-force-back">
+                <i class="icon icon-back"></i>
+            </a>
+        </div>
+        <div class="center sliding color-s-orange"
+             style="font-weight:300; font-size:20px !important; font-stretch:condensed;">
+        </div>
+        <div class="right">
+            <!--<img src="img/Saptco-logo.svg" alt="SAPTCO" style="width:90px">-->
+        </div>
+
+    </div>
+</div>
+{{/if}}
+<div class="page" data-page="profile">
+    <!-- Fixed navbar for Material theme -->
+    {{#if @global.android}}
+    <div class="navbar bg-black">
+        <div class="navbar-inner bg-black">
+            <div class="left">
+                <a href="#" class="back icon-only">
+                    <i class="icon icon-back"></i>
+                </a>
+            </div>
+            <!--<div class="center  color-s-orange" style=" font-weight 300; font-size 20px !important; font-stretch condensed;">{{lblTittle}}</div>-->
+            <div class="right">
+                <!--<img src="img/profile-icons.svg" alt="SAPTCO" style=" width 90px; ">-->
+            </div>
+
+        </div>
+    </div>
+    {{/if}}
+
+    <div class="page-content" style=" color: #B68E20">
+        <div class="row" style="margin-top:4.5%;direction:rtl !important;">
+            <div class="row"
+                 style="font-weight:700; font-size: 18px !important; font-stretch: condensed; margin-right:45%">
+                {{lblTittle}}
+            </div>
+            <div class="row"><img src="img/profile-icons.svg" alt="SAPTCO" style="width: 52px;height:33px"></div>
+        </div>
+        <!-- Text inputs -->
+        <div class="content-container" style="background-color:transparent !important;margin-top: 15%;">
+
+            <!--<div class="col-100 selected-tab" style=" font-weight 300; font-size 20px !important; font-stretch condensed;">{{lblPersonalInfo}}</div>-->
+            <form id="my-form" class="list-block LimoReservationulborder"
+                  style="background-color:transparent !important;">
+
+                <ul class="signupform-style" style="background-color:transparent !important;">
+
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"><i class="icon icon-form-name"></i></div>
+                            <div class="item-inner">
+
+                                <div class="item-input">
+                                    <input type="text" name="FullName" placeholder="Your name" readonly>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"><i class="icon icon-form-tel"></i></div>
+                            <div class="item-inner">
+
+                                <div class="item-input">
+                                    <input type="number" name="MobileNumber" placeholder="Your phone number" readonly>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"><i class="icon icon-form-email"></i></div>
+                            <div class="item-inner">
+
+                                <div class="item-input">
+                                    <input type="email" name="Email" placeholder="E-mail" readonly>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"><i class="icon icon-form-gender"></i></div>
+                            <div class="item-inner">
+
+                                <div class="item-input">
+
+                                    <input type="text" name="Gender" placeholder="gender" readonly>
+
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"><i class="icon icon-form-calendar"></i></div>
+                            <div class="item-inner">
+
+                                <div class="item-input">
+                                    <input type="text" placeholder="Your birth date" name="BirthDate" readonly
+                                           id="calendar-default">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"><i class="icon icon-form-url"></i></div>
+                            <div class="item-inner">
+
+                                <div class="item-input">
+
+                                    <input type="text" name="IDType" placeholder="idtype" readonly>
+
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"><i class="icon icon-form-url"></i></div>
+                            <div class="item-inner">
+
+                                <div class="item-input">
+                                    <input type="number" name="IDNumber" placeholder="Your name" readonly>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </form>
+            <div class="Button-shaddow btn-login-orange form-from-json" id="signup"
+                 style=" font-weight:300; font-size:20px !important; font-stretch:condensed;">
+                {{Logout}}
+            </div>
+
+        </div>
+    </div>
+
+</div>

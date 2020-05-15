@@ -1,0 +1,221 @@
+﻿<!-- Dynamic navbar for iOS theme -->
+{{#if @global.ios}}
+
+<div class="navbar bg-black">
+    <div class="navbar-inner bg-black">
+        <div class="left sliding">
+            <a href="#" class="back">
+                <i class="icon icon-back"></i>
+            </a>
+        </div>
+        <div class="center sliding color-s-orange" style=" font-weight: 300; font-size: 18px !important; font-stretch: condensed;">Cargo Information</div>
+        <div class="right">
+            <img src="img/Saptco-logo.svg" alt="SAPTCO" style="width:90px">
+        </div>
+    </div>
+</div>
+ 
+{{/if}}
+
+<div class="page" data-page="CargoReservationData">
+    <!-- Fixed navbar for Material theme -->
+    {{#if @global.android}}
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="left">
+                <a href="#" class="back icon-only">
+                    <i class="icon icon-back"></i>
+                </a>
+            </div>
+            <div class="center  color-s-orange">
+                Reservation Info
+
+            </div>
+        </div>
+    </div>
+    {{/if}}
+
+    <div class="page-content">
+
+
+        <div class=" container-box-shaddow content-container no-padding " style="padding-bottom:10px !important  ">
+            <div class="row no-gutter">
+                <div class="col-100 selected-tab " style="font-weight: 300; font-size :18px !important; font-stretch: condensed;">{{ReservationInformation}}</div>
+            </div>
+            <form id="PassengerDetalies" class="list-block ">
+                <ul>
+                    <li>
+                        <!-- Additional "smart-select" class -->
+                        <a href="#" class="item-link smart-select" data-open-in="picker">
+                            <!-- select -->
+                            <select name="from">
+                                <option data-itemvalue="0" value="c1" selected="selected" style=" font-weight :300; font-size :18px !important; font-stretch :condensed;"> Khobar</option>
+                                <option data-itemvalue="1" value="c2" style=" font-weight :300; font-size :18px !important; font-stretch :condensed;">Ryiad</option>
+                                <option data-itemvalue="2" value="c3" style=" font-weight :300; font-size :18px !important; font-stretch :condensed;">Dmam</option>
+                                <option data-itemvalue="2" value="c3" style=" font-weight :300; font-size :18px !important; font-stretch :condensed;">Jedah</option>
+                                <option data-itemvalue="2" value="c3" style=" font-weight :300; font-size :18px !important; font-stretch :condensed;">mkkah</option>
+                                <option data-itemvalue="2" value="c3" style=" font-weight :300; font-size :18px !important; font-stretch :condensed;">Madenah</option>
+                                ...
+                            </select>
+                            <div class="item-content">
+                                <div class="item-inner" style="background:none ; padding-left:14px   ">
+                                    <!-- Select label -->
+                                    <div class="item-title" style=" font-weight :300; font-size :13px !important; font-stretch :condensed;">{{Fromcity}}</div>
+                                    <!-- Selected value, not required -->
+                                    <div class="item-after" style="width:62%"> </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <!-- Additional "smart-select" class -->
+                        <a href="#" class="item-link smart-select" data-open-in="picker">
+                            <!-- select -->
+                            <select name="from">
+                                <option data-itemvalue="0" value="c1" selected="selected" style=" font-weight :300; font-size :18px !important; font-stretch :condensed;"> Khobar</option>
+                                <option data-itemvalue="1" value="c2" style=" font-weight :300; font-size :18px !important; font-stretch :condensed;">Ryiad</option>
+                                <option data-itemvalue="2" value="c3" style=" font-weight :300; font-size :18px !important; font-stretch :condensed;">Dmam</option>
+                                <option data-itemvalue="2" value="c3" style=" font-weight :300; font-size :18px !important; font-stretch :condensed;">Jedah</option>
+                                <option data-itemvalue="2" value="c3" style=" font-weight :300; font-size :18px !important; font-stretch :condensed;">mkkah</option>
+                                <option data-itemvalue="2" value="c3" style=" font-weight :300; font-size :18px !important; font-stretch :condensed;">Madenah</option>
+                                ...
+                            </select>
+                            <div class="item-content">
+                                <div class="item-inner" style="background:none ; padding-left:14px">
+                                    <!-- Select label -->
+                                    <div class="item-title" style=" font-weight :300; font-size :13px !important; font-stretch :condensed;">{{Tocity}}</div>
+                                    <!-- Selected value, not required -->
+                                    <div class="item-after" style="width:62%"> </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <div class="item-content div_click">
+
+                            <div class="item-inner">
+                                <div class="item-title label " style=" font-weight :300; font-size :13px !important; font-stretch :condensed;">Direction</div>
+                                <div class="item-input validate" data-validation="Errnamemustbefilled">
+                                    <input type="text" name="cusname" placeholder="One Way" id="passengerName">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- Additional "smart-select" class -->
+                        <a href="#" class="item-link smart-select" data-open-in="picker">
+                            <!-- select -->
+                            <select name="from">
+                                <option data-itemvalue="0" value="c1" selected="selected" style=" font-weight :300; font-size :18px !important; font-stretch :condensed;">Single</option>
+                                <option data-itemvalue="1" value="c2" style=" font-weight :300; font-size :18px !important; font-stretch :condensed;">single</option>
+                                <option data-itemvalue="2" value="c3" style=" font-weight :300; font-size :18px !important; font-stretch :condensed;">double couben</option>
+                                <option data-itemvalue="3" value="c4" style=" font-weight :300; font-size :18px !important; font-stretch :condensed;">full Shib</option>
+                                ...
+                            </select>
+                            <div class="item-content">
+                                <div class="item-inner" style="background:none ; padding-left:14px   ">
+                                    <!-- Select label -->
+                                    <div class="item-title" style=" font-weight :300; font-size :13px !important; font-stretch :condensed;">{{VehicleType}}</div>
+                                    <!-- Selected value, not required -->
+                                    <div class="item-after" style="width:62%">Single</div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <div class="item-content div_click">
+
+                            <div class="item-inner">
+                                <div class="item-title label " style=" font-weight :300; font-size :13px !important; font-stretch :condensed;">Date</div>
+                                <div class="item-input validate" data-validation="Errnamemustbefilled">
+                                    <input type="text" name="cusname" placeholder="Date" readonly id="calendar-date-depart">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content div_click">
+
+                            <div class="item-inner">
+                                <div class="item-title label " style=" font-weight :300; font-size :13px !important; font-stretch :condensed;">Vehicle No.</div>
+                                <div class="item-input validate" data-validation="Errnamemustbefilled">
+                                    <input type="text" name="cusname" placeholder="Name" id="Number">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content div_click">
+                            <div class="item-inner">
+                                <div class="item-title label " style=" font-weight :300; font-size :13px !important; font-stretch :condensed;">Vehicle Type</div>
+                                <div class="item-input validate" data-validation="Errnamemustbefilled">
+                                    <input type="text" name="cusname" placeholder="Type" id="passengerName">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content div_click">
+
+                            <div class="item-inner">
+                                <div class="item-title label " style=" font-weight :300; font-size :13px !important; font-stretch :condensed;">{{Typeofitems}}</div>
+                                <div class="item-input validate" data-validation="Errnamemustbefilled">
+                                    <input type="text" name="cusname" placeholder="Name" id="passengerName">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content div_click">
+
+                            <div class="item-inner">
+                                <div class="item-title label " style=" font-weight :300; font-size :13px !important; font-stretch :condensed;">Carry Location</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content div_click">
+
+                            <div class="item-inner">
+                                <div class="item-input validate" data-validation="Errnamemustbefilled">
+                                    <input type="text" name="cusname" placeholder="Carry Location" id="passengerName">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content div_click">
+
+                            <div class="item-inner">
+                                <div class="item-title label " style=" font-weight :300; font-size :13px !important; font-stretch :condensed;">Drop Location</div>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content div_click">
+
+                            <div class="item-inner">
+                                <div class="item-input validate" data-validation="Errnamemustbefilled">
+                                    <input type="text" name="cusname" placeholder="Drop Location" id="passengerName">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+
+            </form>
+
+            <a href="LimoPassengerInfo.html">
+                <div class="Button-shaddow btn-login-orange" id="btnSavePassenger" style="font-weight:300; font-size: 13px !important; font-stretch: condensed; margin-bottom:10px !important">Continue</div>
+            </a>
+        </div>
+
+
+    </div>
+
+</div>

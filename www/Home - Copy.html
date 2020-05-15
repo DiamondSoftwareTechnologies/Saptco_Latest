@@ -1,0 +1,67 @@
+﻿<!-- Dynamic navbar for iOS theme -->
+{{#if @global.ios}}
+<div class="navbar bg-black">
+    <div class="navbar-inner bg-black">
+        <div class="left sliding">
+            <a href="#" class="">
+                <i class="icon "></i>
+                &nbsp;
+            </a>
+        </div>
+        <div class="center sliding color-s-orange" style=" font-weight :300; font-size: 16px !important; font-stretch :condensed;">{{lblTitle}}</div>
+        <div class="right">
+            <img src="img/Saptco-logo.svg" alt="SAPTCO" style=" width: 90px; ">
+        </div>
+    </div>
+</div>
+{{/if}}
+
+<div class="page no-swipeback" data-page="Home">
+    <!-- Fixed navbar for Material theme -->
+    {{#if @global.android}}
+    <div class="navbar bg-black">
+        <div class="navbar-inner bg-black">
+            <div class="left">
+                <a href="#" class="back icon-only">
+                    <i class="icon icon-back"></i>
+                </a>
+            </div>
+            <div class="center  color-s-orange">{{lblTitle}}</div>
+            <div class="right">
+                <img src="img/Saptco-logo.svg" alt="SAPTCO" style=" width: 90px; ">
+            </div>
+        </div>
+    </div>
+    {{/if}} 
+
+    <div class="page-content">
+
+        <div class="row ">
+            <div class="col-100 tablet-50">
+                <div class="mainTitle bold-title-big" style=" font-weight: 300; font-size: 20px !important; font-stretch: condensed;">{{titleone}}</div>
+            </div>
+        </div>
+        <div class="content-block-title bold-big titleDesc" style=" font-weight: 300; font-size: 18px !important; font-stretch: condensed;">{{titleTwo}}</div>
+        <div class="content-block">
+            <div class="row  no-gutter">
+                <div class="col-50" id="goToSchedual">
+                    <img src="{{btnBuyTicket}}" alt="Buy a Ticket" class="width-90" style="margin:10px;   margin-top:10px ;" />
+                </div>
+                <div class="col-50" id="goToLimo">
+                    <img src="{{btnLimoReq}}" alt="Alternate Text" class="width-90" style="margin:10px;   margin-top:10px ;"
+                         onclick="window.open('https://www.saptco.com.sa/Limo/Limo-Reservation.aspx{{languageRes}}', '_blank');" />
+                </div>
+            </div>
+            <div class="row  no-gutter">
+                <div class="col-50" id="goToCargo"> 
+                    <img src="{{btnCargoReq}}" alt="Alternate Text" class="width-90" style="margin:10px;   margin-top:10px ;"
+                         onclick="window.open('https://www.saptco.com.sa/cargo/CargoRequest.aspx{{languageRes}}', '_blank');" /> 
+                </div>
+                <div class="col-50" id="goToBusRent">
+                    <img src="{{btnBusCharter}}" alt="Alternate Text" class="width-90" style="margin:10px;   margin-top:10px ;"
+                         onclick="window.open('https://www.saptco.com.sa/Buses/Contracts-and-Charter/reservation-ticket.aspx{{languageRes}}','_blank');" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>     

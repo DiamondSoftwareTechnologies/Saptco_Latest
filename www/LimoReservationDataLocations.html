@@ -1,0 +1,129 @@
+<!-- Dynamic navbar for iOS theme -->
+{{#if @global.ios}}
+<div class="navbar bg-black" style="width:100% ; height:60px">
+    <div class="navbar-inner on-center">
+        <div class="left sliding">
+            <a href="#" class="back">
+                <i class="icon icon-back"></i>
+            </a>
+        </div>
+        <div class="center sliding color-s-orange" style="font-weight:300; font-size:18px !important; font-stretch:condensed;color:#A58F32;margin-left:100px"></div>
+        <div class="right">
+            <!--<img src="img/Limo-1.png" alt="SAPTCO" style="width: 42px;height:30px">-->
+        </div>
+    </div>
+</div>
+{{/if}}
+<div class="page " data-page="LimoReservationDataLocations">
+    <div class="page-content ExternalStyle LimoFormStyle" style="color: #B68E20">
+        <div class="row"style="margin-top:6%;margin-left:1%;margin-left:1%;direction:rtl !important;">
+            <div class="row" style="font-weight:700; font-size: 18px !important; font-stretch: condensed; margin-right: 45%">{{lblTittle}}</div>
+            <div class="row"><img src="img/Limo.png" alt="SAPTCO" style="width: 52px;height:33px"></div>
+        </div>
+        <div class="content-block" style="margin-top: 18%;margin-bottom:10% !important;
+                 padding-left:3px;
+                 padding-right:3px;
+                 padding-top :13%;
+                 padding-bottom :3px;
+                 margin-top :10px;margin-bottom: 10px;
+                 margin-bottom: 0px;padding-left: 0px; padding-right: 0px;">
+            <div class="">
+                <div class="row no-gutter">
+                    <div class="col-100 selected-tab title-color " style="background-color:#FFF5E1 !important;font-weight:300; font-size:18px !important; font-stretch:condensed;">{{Reservation_Information}}</div>
+                </div>
+                <form id="LimoReservation" class="list-block " onsubmit="return false;" style="background-color:#FFF5E1 !important;">
+                    <ul>
+                        <li style="background-color:#FFF5E1 !important;">
+                            <div class="row">
+                                <div class="item-title-color label col-100" style="font-weight:300; font-size:13px !important; font-stretch:condensed;">{{DepartFrom}}:</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-50">
+                                    <div id="DepartFrom_icon" class="location-click">
+                                        <img src="img/drop_pin.png" style="width:20px">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-100">
+                                    <div class="item-input validate" data-validation="ErrDepartFrom">
+                                        <input class="LocationClass" type="text" readonly="readonly" name="Name" id="DepartFrom" style="font-weight:300; font-size:13px !important; font-stretch:condensed;">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li style="background-color:#FFF5E1 !important;">
+
+                        </li>
+                        <li style="display:none">
+                            <div id="googleMap" class="EmptyMapDivStyle" style="overflow:scroll ; height: 131px;  border-top:2px solid #71695C; border-bottom:2px solid #71695C">
+                            </div>
+                        </li>
+
+                        <!--<li>
+
+                            <label class="label-checkbox item-content" id="lblCheckBoxSameLoc">
+                                <input id="same_locations" type="checkbox" name="my-checkbox" value="same_locations" checked="none">
+                                <div class="item-media">
+                                    <i class="icon icon-form-checkbox"></i>
+                                </div>
+                                <div class="item-inner">
+                                    <div class="item-title">{{ToSamePickupLoc}}</div>
+                                </div>
+                            </label>
+
+                        </li>-->
+                        <li style="background-color:#FFF5E1 !important;">
+                            <div class="row">
+                                <div class="item-title-color label col-100" style="font-weight:300; font-size:13px !important; font-stretch:condensed;">{{lblTo}}:</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-50">
+                                    <div id="Departto_icon" class="location-click">
+                                        <img src="img/drop_pin.png" style="width:20px">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-100">
+                                    <div class="item-input validate" data-validation="ErrDepartto">
+                                        <input type="text" class="LocationClass" readonly="readonly" name="Name" id="Departto" style="font-weight:300; font-size:13px !important; font-stretch:condensed;">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </li>
+
+                        <li style="display:none">
+                            <div id="googleMap2" class="EmptyMapDivStyle" style="overflow:scroll ; height: 131px; border-top:2px solid #71695C; border-bottom:2px solid #71695C">
+                            </div>
+                        </li>
+                    </ul>
+                </form>
+                <form style="padding-top:4%" class="list-block" onsubmit="return false;">
+                    <ul>
+                        <li style="background-color:#FFF5E1 !important;">
+                            <div class="item-content div_click" style="height: 86px;!important">
+                                <div class="item-inner">
+                                    <div class="item-title label " style="font-weight:300; font-size:13px !important; font-stretch:condensed;">{{Pickup_Location}}:</div>
+                                    <div class="item-input validate" data-validation="ErrPickup_Location">
+                                        <input type="text" name="Name" id="Pickup_Location" style="font-weight:300; font-size:13px !important; font-stretch:condensed;">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+            <a href="#">
+                <div class="schedule-search-button border-rounding" id="btnSaveDataLocations" style="margin:auto !important;margin-top:5% !important;margin-bottom: 5% !important; width:85%;margin-top:5% ;text-align:center !important;left:27px ;height:60px">
+
+                    <div class="center " style="font-weight: 300; font-size: 18px !important; font-stretch: condensed;" id="btnSaveData">
+
+                        {{Continue}}</div>
+                </div>
+
+            </a>
+        </div>
+    </div>
+</div>

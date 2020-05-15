@@ -1,0 +1,125 @@
+﻿<!-- Dynamic navbar for iOS theme -->
+{{#if @global.ios}}
+<div class="navbar bg-black">
+    <div class="navbar-inner bg-black">
+        <div class="left sliding">
+            <a href="#" class="back">
+                <i class="icon icon-back"></i>
+            </a>
+        </div>
+        <div class="center sliding color-s-orange" style="font-weight: 300; font-size: 18px !important; font-stretch: condensed;">{{lblRequestCargo}}</div>
+        <div class="right">
+            <img src="img/Saptco-logo.svg" alt="SAPTCO" style="width:90px">
+        </div>
+    </div>
+</div>
+
+
+{{/if}}
+
+<div class="page" data-page="CargoReservationRequest">
+    <!-- Fixed navbar for Material theme -->
+    {{#if @global.android}}
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="left">
+                <a href="#" class="back icon-only">
+                    <i class="icon icon-back"></i>
+                </a>
+            </div>
+            <div class="center  color-s-orange">
+                Cargo
+            </div>
+        </div>
+    </div>
+    {{/if}}
+
+    <div class="page-content">
+
+        <!-- Tabs, tabs wrapper -->
+
+
+        <div class="container-box-shaddow content-container   no-padding" style="padding-bottom:10px !important; ">
+            <div class="row no-gutter">
+                <div class="col-100 selected-tab " style=" font-weight: 300; font-size: 18px !important; font-stretch: condensed;">{{CustomerInfo}}</div>
+            </div>
+            <form id="PassengerDetalies" class="list-block ">
+                <ul>
+                    <li>
+                        <div class="item-content div_click">
+                            <div class="item-media"><i class="icon icon-form-name"></i></div>
+                            <div class="item-inner">
+                                <div class="item-title label " style=" font-weight :300; font-size :13px !important; font-stretch :condensed;">{{Name}}</div>
+                                <div class="item-input validate" data-validation="Errnamemustbefilled">
+                                    <input type="text" name="cusname" placeholder="{{Name}}" id="passengerName">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content ">
+                            <div class="item-media"><i class="icon icon-form-tel"></i></div>
+                            <div class="item-inner" style="direction: ltr;">
+                                <div class="item-title label">
+                                    <input style="width: 70px; border-style: none;border-bottom: solid #8E8E93 1px;" readonly id="txtCountryCode" value="966" />
+                                </div>
+                                <div class="item-input validate" data-validation="WrongPhoneNumber">
+                                    <input type="tel" name="MobileNumber" placeholder="{{PhoneNumber}}" style="width:90%" id="txtPhoneNUmber">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content div_click">
+                            <div class="item-media"><i class="icon icon-form-email"></i></div>
+                            <div class="item-inner">
+                                <div class="item-title label " style=" font-weight :300; font-size :13px !important; font-stretch :condensed;">Email</div>
+                                <div class="item-input validate" data-validation="WrongEmailAddress">
+                                    <input type="email" name="EmailAddress" placeholder="{{EmailAddress}}" style="width:90%" id="txtEmailAddress">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media  select_click">
+                                <i class="icon icon-form-url"></i>
+                            </div>
+                            <div class="item-inner ">
+                                <div class="item-title label  select_click" style=" font-weight :300; font-size :13px !important; font-stretch :condensed;">{{Typeofservice}}</div>
+                                <div class="item-input validate" data-validation="ErrGender">
+
+                                    <a href="#" class="smart-select" data-open-in="picker" data-back-on-select="true" data-back-text="{{DoneText}}">
+                                        <select name="Gender" id="selectGender">
+                                            <option data-itemvalue="0" value="NA" selected="selected">{{service1}}</option>
+                                            <option data-itemvalue="1" value="Male">{{service2}}</option>
+                                            <option data-itemvalue="2" value="Female">{{service3}}</option>
+                                        </select>
+                                        <div class="item-content">
+                                            <div class="item-inner" style="padding:0px !important">
+                                                <!-- Select label -->
+                                                <!-- Selected value, not required -->
+                                                <div class="item-after" id="txtGenderText">{{optSelect}}</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+
+                    </li>
+                </ul>
+            </form>
+            <a href="CargoReservationRequest.html">
+                <div class="Button-shaddow btn-login-orange" id="btnGoToCargoDetails" style="font-weight:300;font-size:13px !important;font-stretch: condensed; margin-bottom:10px !important">{{Continue}}</div>
+            </a>
+        </div>
+
+
+
+    </div>
+</div>

@@ -1,0 +1,62 @@
+﻿<!-- Dynamic navbar for iOS theme -->
+<div class="navbar navbar2" style="width:100% ; height:60px">
+    <div class="navbar-inner on-center navbar2" style="background-color:#FFF5E1 !important">
+        <div class="left sliding">
+            <a href="#" class="back">
+                <i class="icon icon-back"></i>
+            </a>
+        </div>
+        <div class="center sliding color-s-orange" id="logoTitle8"
+             style="font-weight:700; font-size: 18px !important; font-stretch: condensed;color:#0E6AAC;margin-left:118px">
+            <!--{{lblTitle}}-->
+        </div>
+        <!--<div class="right" id="Rlogo8">-->
+
+        <!--</div>-->
+    </div>
+</div>
+<div class="page" data-page="favorite_list">
+    <!-- Search bar overlay-->
+    <div class="searchbar-overlay"></div>
+    <!-- Fixed navbar for Material theme -->
+    <div class="navbar navbar2" style="background-color: transparent!important;">
+        <div class="navbar-inner navbar2" style="background-color: transparent!important;">
+            <div class="left">
+                <a href="#" class="back icon-only">
+                    <i class="icon icon-back"></i>
+                </a>
+            </div>
+            <!--<div class="center sliding color-s-orange" style="font-weight:300; font-size :20px !important; font-stretch:condensed;">{{lblTitle}}</div>-->
+            <div class="right">
+                <!--<img src="img/Saptco-logo.svg" alt="SAPTCO" style="width:90px;">-->
+            </div>
+        </div>
+    </div>
+    <div class="row" style="margin-top:0%;direction:rtl !important;">
+        <div class="row" style="font-weight:700; font-size: 18px !important; font-stretch: condensed; margin-right:30%">
+            {{lblTittle}}
+        </div>
+    </div>
+    <form class="searchbar  bg-s-orange">
+        <div class="searchbar-input">
+            <input type="search" placeholder="Search">
+            <a href="#" class="searchbar-clear"></a>
+        </div>
+        <a href="#" class="searchbar-cancel">Cancel</a>
+    </form>
+
+    <div class="page-content" style="background-color:#FAF8EB; color: #B68E20">
+        <div class="content-block searchbar-not-found">
+            Nothing found
+        </div>
+        <div class="list-block list-block-search searchbar-found  virtual-list fav-list "
+             style="font-weight:300;font-size:20px !important; font-stretch:condensed;">
+            <ul style="margin-top: 25%">
+
+            </ul>
+        </div>
+    </div>
+</div>
+<script>
+    $$('.navbar2').removeClass('navbar-hidden');
+</script>

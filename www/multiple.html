@@ -1,0 +1,118 @@
+﻿<!-- Dynamic navbar for iOS theme -->
+{{#if @global.ios}}
+<div class="navbar bg-black" style="width:100% ; height:60px">
+    <div class="navbar-inner on-center" style="background-color:#FAF8EB !important">
+        <div class="left sliding">
+            <a href="#" class="back">
+                <i class="icon icon-back"></i>
+            </a>
+        </div>
+        <div class="center sliding color-s-orange" style="font-weight: 300; font-size: 18px !important; font-stretch: condensed;">{{title}}</div>
+        <div class="right">
+            <img src="img/Saptco-logo.svg" alt="SAPTCO" style="width: 90px; ">
+        </div>
+    </div>
+</div>
+{{/if}}
+
+<div class="page" data-page="multiple">
+    <!-- Fixed navbar for Material theme -->
+    {{#if @global.android}}
+    <div class="navbar bg-black">
+        <div class="navbar-inner bg-black">
+            <div class="left">
+                <a href="#" class="back icon-only">
+                    <i class="icon icon-back"></i>
+                </a>
+            </div>
+            <div class="center  color-s-orange" style="font-weight: 300; font-size: 18px !important; font-stretch: condensed;">{{title}}</div>
+            <div class="right">
+                <img src="img/Saptco-logo.svg" alt="SAPTCO" style="width: 90px; ">
+            </div>
+        </div>
+    </div>
+    {{/if}}
+
+    <div class="page-content">
+        <div id="adsContainer" style="width:100% ; display:none" class="AdsContainer">
+            <div class="swiper-container swiper-slow ads-Swiper">
+                <div class="swiper-pagination"></div>
+                <div class="swiper-wrapper" id="AdsSwiperItems">
+                </div>
+            </div>
+        </div>
+        <!-- Page content goes here -->
+        <div class="content-container no-bottom-margins" style="z-index:1000 !important">
+            <div class="row no-gutter center">
+                <div class="col-100 selected-tab" style="font-weight: 300; font-size: 18px !important; font-stretch: condensed;">{{multiDist}}</div>
+            </div>
+        </div>
+        <div class="content-block container-box-shaddow content-container no-top-margins no-padding">
+            <div class="row no-gutter">
+                <div class="col-100 schedual-section" style="height:38px !important">
+
+                    <div class="row VipSelect">
+                        <div class="col-40 schedule-sub-title color-s-dark-orange" style="font-weight: 300; font-size: 18px !important; font-stretch: condensed;">
+                            <span style="margin-left:5px ; margin-right:5px">     {{lblVipType}}</span>
+                        </div>
+                        <div class="col-60 schedule-sub-Value" id="TripType">
+                            <div class="list-block tripTypeListBlock">
+                                <ul style="background-color:transparent !important">
+                                    <li>
+                                        <a style="color:black!important " href="#" class="smart-select" data-open-in="picker" data-back-on-select="true" data-back-text="{{DoneText}}">
+                                            <select style="padding:0px !important ; text-align:center !important " id="selectTripTypeMulti">
+                                                <option selected="selected" value="0">{{all}}</option>
+                                                <option value="1">{{reg}}</option>
+                                                <option value="2">{{vip}}</option>
+                                            </select>
+                                            <div class="item-content">
+                                                <div class="item-inner" style="padding-left:0px !important ; padding-right:0px !important;">
+                                                    <!-- Select label -->
+                                                    <!-- Selected value, not required -->
+                                                    <div id="selectedTextValueMulti" class="item-after" style="color:black !important;padding-bottom:25px!important ; margin-top:-8px !important">{{all}}</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <br />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="multiDistDiv">
+
+            </div>
+            <div class="col-100 schedual-section">
+                <a href="#" data-picker=".picker-passengers-count" class="open-picker">
+                    <div class="row">
+                        <div class="col-20">
+                            <img src="img/passengers_icon.svg" alt="bus" class="img-icons  {{classArabic}}" />
+                        </div>
+                        <div class="col-80">
+                            <div class="row">
+                                <div class="col-100 schedule-sub-title color-s-dark-orange" style="font-weight: 300; font-size: 18px !important; font-stretch: condensed;">
+                                    {{lblPassengersLabel}}
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-100  schedule-sub-Value" id="lblPassengerCountSummaryMulti" style="font-weight: 300;  font-stretch: condensed;">
+                                    {{lblPassengers}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-100 schedule-search-button-Multi Button-shaddow">
+                <div class="row">
+                    <div class="col-100" style="font-weight: 300; font-size: 18px !important; font-stretch: condensed;">
+                        {{btnSearch}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

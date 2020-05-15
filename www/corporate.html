@@ -1,0 +1,66 @@
+<!-- Dynamic navbar for iOS theme -->
+{{#if @global.ios}}
+<div class="navbar bg-black" style="width:100% ; height:60px">
+    <div class="navbar-inner on-center" style="background-color:#FFF5E1 !important">
+        <div class="left sliding">
+            <a href="#" class="back link-force-back">
+                <i class="icon icon-back"></i>
+            </a>
+        </div>
+        <!--<div class="center sliding color-s-orange">{{lblTitle}}</div>-->
+        <div class="right">
+            <!--<img src="img/Saptco-logo.svg" alt="SAPTCO" style="width:90px">-->
+        </div>
+    </div>
+</div>
+{{/if}}
+
+<div class="page" data-page="corporate">
+    <!-- Fixed navbar for Material theme -->
+    {{#if @global.android}}
+    <div class="navbar bg-black">
+        <div class="navbar-inner bg-black">
+            <div class="left">
+                <a href="#" class="back icon-only">
+                    <i class="icon icon-back"></i>
+                </a>
+            </div>
+            <!--<div class="center  color-s-orange">{{lblTitle}}</div>-->
+            <div class="right">
+                <!--<img src="img/Saptco-logo.svg" alt="SAPTCO" style=" width 90px; ">-->
+            </div>
+        </div>
+    </div>
+    {{/if}}
+    <div class="page-content" style="color: #B68E20">
+        <div style="color: transparent; height: 130px">.</div>
+        <div class="" data-role="content">
+            <!--            <div class="Div100" style="text-align: center;">-->
+            <!--                <h3 style="font-weight:300; font-size:16px !important; font-stretch:condensed;color:white; margin-top: 20%"-->
+            <!--                    id="selpayment">-->
+            <!--                    {{selpayment}}-->
+            <!--                </h3>-->
+            <!--            </div>-->
+            <div class="DataContainerDivSmallKiosk" id="GoToKiosk">
+                <br>
+                <img src="img/kiosk.svg" style="width: 100%;height: 150px;">
+                <div style="text-align: center;font-size: 23px">{{kiosk}}</div>
+            </div>
+            <br>
+            <div class="DataContainerDivSmallKiosk" id="GoToSeller">
+                <br>
+                <a href="LoginSellerCorporate.html" style="color: #ad8e3c;">
+<!--                <a href="#" style="color: #ad8e3c;">-->
+                    <img src="img/point-of-sale-terminal-pos.svg" style="width: 100%;height: 150px;">
+                    <div style="text-align: center;font-size: 23px">{{seller}}</div>
+                </a>
+            </div>
+            <!--            <a href="" id="btnGotoVisaLink">-->
+            <!--                <div class="DataContainerDivSmall" id="btnGotoVisa">-->
+            <!--                    <img src="img/cridtecard.png" style="width: 100%;">-->
+            <!--                </div>-->
+            <!--            </a>-->
+        </div>
+
+    </div>
+</div>

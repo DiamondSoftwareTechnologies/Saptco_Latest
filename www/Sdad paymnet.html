@@ -1,0 +1,137 @@
+﻿<!-- Dynamic navbar for iOS theme -->
+{{#if @global.ios}}
+<div class="navbar bg-black" style="width:100% ; height:60px">
+    <div class="navbar-inner on-center" style="background-color:#FAF8EB !important">
+        <div class="left sliding">
+            <a href="#" class="back">
+                <i class="icon icon-back"></i>
+            </a>
+        </div>
+        <div class="center sliding color-s-orange">Schedules and Tickets</div>
+    </div>
+</div>
+{{/if}}
+
+<div class="page" data-page="about">
+    <!-- Fixed navbar for Material theme -->
+    {{#if @global.android}}
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="left">
+                <a href="#" class="back icon-only">
+                    <i class="icon icon-back"></i>
+                </a>
+            </div>
+            <div class="center  color-s-orange">About</div>
+        </div>
+    </div>
+    {{/if}}
+
+    <div class="page-content" style=" color: #B68E20">
+        <div class="ContainerDivScroll" data-role="content">
+
+            <div class="Div100" style="text-align: center;">
+                <h4 style="margin-left: 2%; margin-right: 2%; font-weight: 600"
+                    id="lblThankYou">
+                    Thank you for Boking with Saudi Public
+                    Transport Company(SAPTCO)
+                </h4>
+            </div>
+
+            <div class="Div100">
+                <h5 style="font-weight: normal; margin-left: 2%; margin-right: 2%"
+                    id="lblPart1">
+                    your reservation is not confirmed yet,please
+                    complete the payment with SADAD before expiration time below
+                    otherwise your reservation will be cancelled automatically .
+                </h5>
+
+                <h5 style="font-weight: normal; margin-left: 2%; margin-right: 2%"
+                    id="lblPart2">
+                    you can complete the payment with SADAD using
+                    your online bank account or your bank ATM machine,please choose the
+                    Saudi public.
+                </h5>
+            </div>
+            <div class="Div100" style="text-align: center;">
+                <img alt="" src="SADADLogo.png" width="25%">
+            </div>
+            <div class="DataContainerDiv sadad-container">
+                <div class="DivRowBottomBorder">
+                    <div class="row">
+                        <div class="Div50">
+                            <h4 id="lblBill">Bill Bumber</h4>
+                        </div>
+
+                        <div class="Div50 GrayText">
+                            <h4 class="FloatEnd" id="Results_BillNumber">---</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="DivRowBottomBorder">
+                    <div class="row">
+
+                        <div class="Div50">
+                            <h4 id="lblLastPayemntDue">Last payment due</h4>
+                        </div>
+
+                        <div class="Div50 GrayText">
+                            <h4 class="FloatEnd" id="Results_BillExpiration">---</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="DivRowBottomBorder">
+                    <div class="row">
+
+                        <div class="Div50">
+                            <h4 id="lblTotalAmount">Total Amount</h4>
+                        </div>
+
+                        <div class="Div50 GrayText">
+                            <h4 class="FloatEnd" id="Results_Amount">---</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="DivRowBottomBorder">
+                    <div class="row">
+
+                        <div class="Div75">
+                            <h4 id="lblSaudiTrans">Saudi transportation Company code</h4>
+                        </div>
+
+                        <div class="Div25 GrayText">
+                            <h4 class="FloatEnd" id="Results_BillerNumber">---</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Div100 titleMargin" style="display: none">
+                <h4>Please send me information on</h4>
+            </div>
+            <div class="DataContainerDiv" style="display: none">
+                <div class="DivRowBottomBorder">
+                    <div class="Div100 GrayText">
+                        <h4>Enter your email</h4>
+                    </div>
+                </div>
+                <div class="DivRowBottomBorder">
+                    <div class="Div50">
+                        <h4>Country</h4>
+                    </div>
+
+                    <div class="Div50 GrayText">
+                        <h4 class="FloatEnd">Saudi Arabia</h4>
+                    </div>
+                </div>
+                <div class="DivRowBottomBorder">
+                    <div class="Div100 GrayText">
+                        <h4>Enter your Phone number</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="custom-black-button color-s-orange" style="margin-bottom: 60px">
+                <h3 id="btnSearch">Main Menu</h3>
+            </div>
+        </div>
+    </div>
+</div>     

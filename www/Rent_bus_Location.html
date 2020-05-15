@@ -1,0 +1,129 @@
+<!-- Dynamic navbar for iOS theme -->
+{{#if @global.ios}}
+<div class="navbar" style="width:100% ; height:60px">
+    <div class="navbar-inner on-center"">
+        <div class="left sliding">
+            <a href="#" class="back">
+                <i class="icon icon-back"></i>
+            </a>
+        </div>
+        <div class="center sliding color-s-orange">
+             <!--style="font-weight: 700; font-size:18px !important; font-stretch:condensed;color:#0E6AAC;margin-left:85px">-->
+            <!--{{lblTittle}}-->
+        </div>
+        <div class="right">
+            <!--<img src="img/CnC.PNG" alt="SAPTCO" style="width: 52px;height:33px">-->
+        </div>
+    </div>
+</div>
+{{/if}}
+<div class="page " data-page="Rent_bus_Location">
+    <div class="page-content RentBusPageContent ExternalStyle" style=" color: #B68E20">
+        <div class="row" style="margin-top: 6%;direction: rtl!important;">
+            <div class="row"
+                 style="font-weight:700; font-size: 18px !important; font-stretch: condensed;color:#b68e20; margin-right: 50%">
+                {{lblTittle}}
+            </div>
+            <div class="row"><img src="img/rentBus-logo.png" alt="SAPTCO" style="width: 60px;height:40px;margin-top: -5px;"></div>
+        </div>
+        <div class="content-block" style="margin-top:15%;margin-bottom:10px;border-radius: 10px">
+            <div>
+                <div class="row no-gutter">
+                    <div class="col-100 selected-tab title-color"
+                         style="font-weight:300; font-size:18px !important; font-stretch:condensed;background-color:#FFF5E2">
+                        {{Reservation_Information}}
+                    </div>
+                </div>
+                <form id="LimoReservation" class="list-block"onsubmit="return false;">
+                    <ul>
+                        <li>
+                            <div class="row" style="background-color:#FFF5E2">
+                                <div class="col-100">
+                                    <div class="item-title-color label"
+                                         style="font-weight:300; font-size:13px!important; margin-top: 2% ;font-stretch:condensed;">
+                                        {{DepartFrom}}:
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" style="background-color: #FFF5E2">
+                                <div class="col-50">
+                                    <div id="DepartFrom_icon" class="location-click Rent-Bus-Background" style="margin: 5%;">
+                                        <img src="img/drop_pin.png" style="width:15%">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-100">
+                                    <div class="item-input validate" data-validation="ErrDirectionFrom">
+                                        <input type="text" readonly="readonly" name="Name" id="DepartFrom"
+                                               style="font-weight:300; font-size:13px !important; font-stretch:condensed;background-color:#FFF5E2">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div id="googleMap" class="EmptyMapDivStyle"
+                                 style="overflow:scroll ; height: 131px;  border-top:2px solid #71695C; border-bottom:2px solid #71695C">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row" style="background-color:#FFF5E2">
+                                <div class="col-100">
+                                    <div class="item-title-color label "
+                                         style="font-weight:300; font-size:13px !important; margin-top: 2%; font-stretch:condensed;">
+                                        {{lblTo}}:
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" style="background-color: #FFF5E2;">
+                                <div class="col-50">
+                                    <div id="Departto_icon" class="location-click Rent-Bus-Background" style="margin: 5%;">
+                                        <img src="img/drop_pin.png" style="width:15%">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-100">
+                                    <div class="item-input validate" data-validation="ErrDirectionTo">
+                                        <input readonly="readonly" type="text" name="Name" id="Departto"
+                                               style="font-weight:300; font-size:13px !important; font-stretch:condensed;background-color:#FFF5E2">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div id="googleMap2" class="EmptyMapDivStyle"
+                                 style="overflow:scroll ; height: 131px;  border-top:2px solid #71695C; border-bottom:2px solid #71695C">
+                            </div>
+                        </li>
+                    </ul>
+                </form>
+
+                <form style="padding-top:4% ; display:none" class="list-block" onsubmit="return false;">
+                    <ul>
+                        <li>
+                            <div class="item-content div_click" style="height: 86px !important">
+                                <div class="item-inner">
+                                    <div class="item-title label"
+                                         style="font-weight:300; font-size:13px !important; font-stretch:condensed;">
+                                        {{Pickup_Location}}:
+                                    </div>
+                                    <div class="item-input validate" data-validation="ErrServiceLocation">
+                                        <input type="text" name="Name" id="Pickup_Location"
+                                               style="font-weight:300; font-size:13px !important; font-stretch:condensed;">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+            <a href="#">
+                <div class="btn-login-orange Rent-Bus-Background" id="btnSaveDataLocations"
+                     style="font-weight:300; font-size:13px !important; margin-bottom: 2% ; font-stretch:condensed;">{{Continue}}
+                </div>
+            </a>
+            <br>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,143 @@
+﻿<!-- Dynamic navbar for iOS theme -->
+{{#if @global.ios}}
+<div class="navbar bg-black" style="width:100% ; height:60px">
+    <div class="navbar-inner on-center" style="background-color:#FFF5E1 !important">
+        <div class="left sliding">
+            <a href="#" class="back">
+                <i class="icon icon-back"></i>
+            </a>
+        </div>
+        <div class="center sliding color-s-orange" id="logoTitle1"
+             style="font-weight:700; font-size: 18px !important; font-stretch: condensed;margin-left:98px">
+            <!--{{lblHeaderTitle}}-->
+        </div>
+        <div class="right">
+
+        </div>
+    </div>
+</div>
+{{/if}}
+
+<div class="page" data-page="trips">
+    <!-- Fixed navbar for Material theme -->
+    {{#if @global.android}}
+    <div class="navbar bg-black">
+        <div class="navbar-inner bg-black">
+            <div class="left">
+                <a href="#" class="back icon-only">
+                    <i class="icon icon-back"></i>
+                </a>
+            </div>
+            <div class="center  color-s-orange"
+                 style="font-weight:300; font-size:16px !important; font-stretch:condensed;">
+            </div>
+            <div class="right">
+                <img src="img/Saptco-logo.svg" alt="SAPTCO" style="width:90px">
+            </div>
+        </div>
+    </div>
+    {{/if}}
+
+    <div class="page-content" style="background-color:#FAF8EB;">
+        <!-- Page content goes here -->
+        <div class="row" style="direction: rtl!important;margin-top: 4%;!important;margin-left: 2%">
+            <div class="row"
+                 style="font-weight:700; font-size: 18px !important; font-stretch: condensed;color:#b68e20; margin-right: 55%">
+                {{lblHeaderTitle}}
+            </div>
+            <div class="row" id="Rlogo1">
+
+            </div>
+        </div>
+        <div class="row" style="text-align:left;font-size:18px;margin-right:3%; margin-top:-20%;margin-left: 3%">
+            {{SearchTrips}}
+        </div>
+        <div class="row no-gutter " id="tripsdiv" style="margin-top:36%;">
+            <div class="col-50"
+                 style="font-weight: 300; line-height:45px !important; height:45px; text-align:center; font-size: 20px !important; font-stretch: condensed;color:black;background-color:whitesmoke;">
+                <a style="color:black!important" href="#" class="smart-select" data-open-in="picker"
+                   data-back-on-select="true" data-back-text="{{DoneText}}">
+                    <select style="padding:0px !important ; text-align:center !important;" id="selectFilterType">
+                        <option selected value="No">{{filter}}</option>
+                        <option value="directTripsOnly">{{DirectTripsOnly}}</option>
+                        <option value="day">{{Day}}</option>
+                        <option value="night">{{Night}}</option>
+                        <option value="directDay">{{directDay}}</option>
+                        <option value="directNight">{{directNight}}</option>
+                    </select>
+                    <div class="item-content">
+                        <div class="item-inner" style="padding-left:0px !important ; padding-right:0px !important;">
+                            <!-- Select label -->
+                            <!-- Selected value, not required -->
+                            <div id="selectedTextValue" class="item-after"
+                                 style="padding-bottom:25px!important ; margin:auto !important">
+                                {{all}}
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-50"
+                 style="font-weight: 300; line-height:45px !important; height:45px; text-align:center; font-size: 20px !important; font-stretch: condensed;color:black;background-color:whitesmoke;">
+                <a style="color:black!important " href="#" class="smart-select" data-open-in="picker"
+                   data-back-on-select="true" data-back-text="{{DoneText}}">
+
+                    <select style="padding:0px !important ; text-align:center !important;" id="selectSortType">
+                        <option selected value="sort">{{sortBy}}</option>
+                        <option value="lowerPrice">{{LowerPrice}}</option>
+                        <option value="tripDuration">{{TripDuration}}</option>
+                    </select>
+                    <div class="item-content">
+                        <div class="item-inner" style="padding-left:0px !important ; padding-right:0px !important;">
+                            <!-- Select label -->
+                            <!-- Selected value, not required -->
+                            <div id="selectedTextValue" class="item-after"
+                                 style="padding-bottom:25px!important ; margin:auto !important">
+                                {{all}}
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+        <div class="row no-gutter " style="height: auto!important">
+            <div class="col-100" style="width: 100%">
+                <div class="DatesTabs2" style="background-color:white;width: 100%">
+                    <div class="col clicktab " data-index="0">
+                        <div class="row col-100" style="height: 45px;">
+                            <h2 id="day0" style="">---</h2>
+                        </div>
+                        <div class="row col-100">
+                            <h5 id="0_DateTab" style="">---</h5>
+                        </div>
+                    </div>
+                    <div class="col clicktab midDiv" data-index="1">
+                        <div class="row col-100" style="height: 45px;  ">
+                            <h2 id="day1" style="">---</h2>
+                        </div>
+                        <div class="row col-100">
+                            <h5 id="1_DateTab" style="">---</h5>
+                        </div>
+                    </div>
+                    <div class="col clicktab " data-index="2">
+                        <div class="row col-100" style="height: 45px;">
+                            <h2 id="day2" style="">---</h2>
+                        </div>
+                        <div class="row col-100">
+                            <h5 id="2_DateTab" style="">---</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="list-block"
+             style="font-weight: 300;  font-stretch: condensed;overflow-y:scroll !important; background-color: #D6D6D6 !important;">
+            <ul id="list-trips-container" class="trips-list-block"
+                style="background-color: #D6D6D6 !important; padding-top:1% !important;font-weight: 300; font-stretch: condensed;"></ul>
+        </div>
+        <div class="row">
+            <div class="col-100">&nbsp;</div>
+        </div>
+    </div>
+</div>

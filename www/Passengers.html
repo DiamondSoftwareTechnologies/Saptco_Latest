@@ -1,0 +1,77 @@
+﻿<!-- Dynamic navbar for iOS theme -->
+{{#if @global.ios}}
+<div class="navbar bg-black" style="width:100% ; height:60px">
+    <div class="navbar-inner on-center" style="background-color:#FFF5E1 !important">
+        <div class="left sliding">
+            <a href="#" class="back">
+                <i class="icon icon-back"></i>
+            </a>
+        </div>
+        <div class="center sliding color-s-orange" id="logoTitle4" style="font-weight:700; font-size: 18px !important; font-stretch: condensed;color:#0E6AAC;margin-left:85px"></div>
+        <div class="right">
+
+        </div>
+    </div>
+</div>
+{{/if}}
+
+<div class="page" data-page="Passengers">
+    <!-- Fixed navbar for Material theme -->
+    {{#if @global.android}}
+    <div class="navbar bg-black">
+        <div class="navbar-inner bg-black">
+            <div class="left">
+                <a href="#" class="back icon-only">
+                    <i class="icon icon-back"></i>
+                </a>
+            </div>
+            <div class="center color-s-orange" style=" font-weight 300; font-size 20px !important; font-stretch condensed;">{{lbltitle}}</div>
+            <div class="right">
+                <!--<img src="img/Saptco-logo.svg" alt="SAPTCO" style=" width 90px; ">-->
+            </div>
+        </div>
+    </div>
+    {{/if}}
+
+    <div class="page-content" style=" color: #B68E20">
+        <div class="row"  style="direction: rtl!important;margin-top: 4%">
+            <div class="row"
+                 style="font-weight:700; font-size: 18px !important; font-stretch: condensed;color:#b68e20; margin-right: 55%">
+                {{lbltitle}}
+            </div>
+            <div class="row" id="Rlogo4"></div>
+        </div>
+        <div class="container-box-shaddow content-container" style="background-color: #FFF5E1!important;margin-top: 19%" data-role="content" id="passenges">
+
+            <div class="row no-gutter">
+                <div class="col-100 selected-tab" id="lblPassenger" style=" font-weight 300; font-size 20px !important; font-stretch condensed;">{{lblPassenger}}</div>
+            </div>
+
+            <div class="row passenger-div-separator">
+                <div class="col-50" style=" font-weight 300; font-size 16px !important; font-stretch condensed;">{{lblName}}</div>
+
+                <div class="col-50" id='TxtPassengerName'></div>
+            </div>
+            <div class="row passenger-div-separator">
+                <div class="col-50" style=" font-weight 300; font-size 16px !important; font-stretch condensed;">{{lblpassType}}</div>
+                <div class="col-50" id="txtPassengerType"></div>
+            </div>
+            <div class="row passenger-div-separator">
+                <div class="col-50" style=" font-weight 300; font-size 16px !important; font-stretch condensed;">{{lblnatio}}</div>
+                <div class="col-50" id="txtNationalityName"></div>
+            </div>
+            <div class="row passenger-div-separator" style="display : none">
+                <div class="col-50" style=" font-weight 300; font-size 16px !important; font-stretch condensed;">{{lblGender}}</div>
+                <div class="col-50" id="txtGender"></div>
+            </div>
+            <div class="row passenger-div-separator">
+                <div class="col-50" style=" font-weight 300; font-size 16px !important; font-stretch condensed;">{{lblBirth}}</div>
+                <div class="col-50" id="txtDateOfBirth"></div>
+            </div>
+        </div>
+        <div class="list-block" style="font-weight: 300;  font-stretch: condensed;">
+            <ul id="list-Tickets-container" class="trips-list-block" style="background-color: transparent; font-weight: 300; font-stretch: condensed;"></ul>
+        </div>
+        <div class="btn-login-orange" id="PassContinue" style="font-weight:300; font-size:16px !important; font-stretch:condensed;">{{btnContinue}}</div>
+    </div>
+</div>     

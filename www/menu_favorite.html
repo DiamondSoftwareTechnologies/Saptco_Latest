@@ -1,0 +1,110 @@
+﻿<!-- Dynamic navbar for iOS theme -->
+{{#if @global.ios}}
+<div class="navbar bg-black" style="width:100% ; height:60px">
+    <div class="navbar-inner on-center" style="background-color:#FFF5E1 !important">
+        <div class="left sliding">
+            <a href="#" class="back">
+                <i class="icon icon-back"></i>
+            </a>
+        </div>
+        <!--<div class="center sliding color-s-orange" style="font-weight:300; font-size:20px !important; font-stretch:condensed;">{{lblTitle}}</div>-->
+        <div class="right">
+            <!--<img src="img/Saptco-logo.svg" alt="SAPTCO" style="width:90px">-->
+        </div>
+    </div>
+</div>
+{{/if}}
+
+<div class="page" data-page="menu_favorite">
+    <!-- Search bar overlay-->
+    <div class="searchbar-overlay"></div>
+    <!-- Fixed navbar for Material theme -->
+    {{#if @global.android}}
+    <div class="navbar bg-black">
+        <div class="navbar-inner bg-black">
+            <div class="left">
+                <a href="#" class="back icon-only">
+                    <i class="icon icon-back"></i>
+                </a>
+            </div>
+            <!--<div class="center sliding color-s-orange" style=" font-weight 300; font-size 20px !important; font-stretch condensed;">{{lblTitle}}</div>-->
+            <div class="right">
+                <!--<img src="img/Saptco-logo.svg" alt="SAPTCO" style=" width 90px; ">-->
+            </div>
+        </div>
+    </div>
+
+    {{/if}}
+
+
+    <div class="page-content" style=" color: #B68E20">
+        <div class="row" style="margin-top:7%;direction:rtl !important;">
+            <div class="row"
+                 style="font-weight:700; font-size: 18px !important; font-stretch: condensed; margin-right:50%">
+                {{lblTitle}}
+            </div>
+            <div class="row"><img src="img/fav-icons.svg" alt="SAPTCO" style="width: 52px;height:33px"></div>
+        </div>
+        <div class="container-box-shaddow content-container"
+             style="opacity: 0.91;margin-top:14% ;border-radius:10px !important;background-color:transparent !important;">
+            <!--<div class="row no-gutter">-->
+            <!--<div class="col-100 selected-tab" id="LblTittleFavorite"> {{lblTitle}}</div>-->
+            <!--</div>-->
+            <div class="list-block LimoReservationulborder">
+                <ul style="background-color:transparent !important;">
+                    <li>
+                        <div class="DivRowBottomBorder GrayText"
+                             style="border-bottom-style:none;background-color:transparent">
+                            <div class="item-content"
+                                 style="border-radius:10px !important;background-color:white !important;">
+                                <div class="item-inner">
+                                    <a href="#" class="smart-select" data-open-in="picker" data-back-on-select="true"
+                                       data-back-text="{{DoneText}}" style="width:100%">
+                                        <select class="SelectTypeLBL" name="passType" id="selectIdType"
+                                                style="width : 100%;">
+                                            <option data-itemvalue="0" value="NA" selected="selected"
+                                                    style=" font-weight 300; font-size 20px !important; font-stretch condensed;">
+                                                {{lblselect}}
+                                            </option>
+                                            <option data-itemvalue="1" value="adult"
+                                                    style=" font-weight 300; font-size 20px !important; font-stretch condensed;">
+                                                {{lbladult}}
+                                            </option>
+                                            <option data-itemvalue="2" value="child"
+                                                    style=" font-weight 300; font-size 20px !important; font-stretch condensed;">
+                                                {{lblchild}}
+                                            </option>
+                                            <option data-itemvalue="3" value="infant"
+                                                    style=" font-weight 300; font-size 20px !important; font-stretch condensed;">
+                                                {{lblinfa}}
+                                            </option>
+
+                                        </select>
+                                        <div class="item-content">
+                                            <div class="item-inner">
+                                                <!-- Select label -->
+                                                <!-- Selected value, not required -->
+                                                <div class="item-after"
+                                                     style=" font-weight 300; font-size 13px !important; font-stretch condensed;">
+                                                    {{select}}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+        <div class="content-container">
+            <div class="list-block list-block-search searchbar-found fav-list LimoReservationulborder ">
+                <ul></ul>
+            </div>
+
+        </div>
+    </div>
+</div>

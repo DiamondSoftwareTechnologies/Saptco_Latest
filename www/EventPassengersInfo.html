@@ -1,0 +1,121 @@
+<!-- Dynamic navbar for iOS theme -->
+{{#if @global.ios}}
+<div class="navbar bg-black" style="width:100% ; height:60px">
+    <div class="navbar-inner on-center" style="background-color:#FFF5E1 !important">
+        <div class="left sliding">
+            <a href="#" class="back">
+                <i class="icon icon-back"></i>
+            </a>
+        </div>
+        <div class="center sliding color-s-orange" id="logoTitle3"
+             style="font-weight:700; font-size: 18px !important; font-stretch: condensed;color:#0E6AAC;margin-left:65px">
+
+        </div>
+        <div class="right">
+
+        </div>
+    </div>
+</div>
+{{/if}}
+
+<div class="page" data-page="EventPassengersInfo">
+
+    <!-- Fixed navbar for Material theme -->
+    {{#if @global.android}}
+    <div class="navbar bg-black">
+        <div class="navbar-inner bg-black">
+            <div class="left">
+                <a href="#" class="back icon-only">
+                    <i class="icon icon-back"></i>
+                </a>
+            </div>
+            <div class="center  color-s-orange"
+                 style="font-weight:300; font-size:16px !important; font-stretch:condensed;">{{lblPassengerInfo}}
+            </div>
+            <div class="right">
+                <!--<img src="img/Saptco-logo.svg" alt="SAPTCO" style="width:90px; ">-->
+            </div>
+        </div>
+    </div>
+    {{/if}}
+    <div class="page-content" style="background-color:#FAF8EB; color: #B68E20">
+        <div class="row" style="direction: rtl!important;margin-top: 4%">
+            <div class="row"
+                 style="font-weight:700; font-size: 18px !important; font-stretch: condensed;color:#b68e20; margin-right: 50%">
+                {{lblPassengerInfo}}
+            </div>
+            <div class="row" id="Rlogo3">
+
+            </div>
+        </div>
+
+        <div class="content-container container-box-shaddow passengers-lists" style="margin-top:17%; background-color: #FFF5E1">
+            <div class="row no-gutter">
+                <div class="col-100 selected-tab title-color" style="font-weight:300; font-size:16px !important;background-color: #FFF5E1; font-stretch:condensed;">
+                    معلومات الركاب
+                </div>
+            </div>
+            <div class="color-s-orange adult-text-title adults-info" style="font-weight:300; font-size:16px !important; background-color: #FFF5E1;font-stretch:condensed;">
+                الكبار
+            </div>
+            <div class="adult-list list-block  adults-info">
+
+                <!-- keep it empty -->
+                <ul style="height: 44px;"><li style="border-bottom: 1px solid rgb(239, 237, 195); top: 0px;"><div class="row  no-gutter PassengerItemClickable" style="padding-left:5px; background-color: #FFF5E1;padding-right : 5px; padding-top: 5px ;" data-type="adult" data-index="0">                           <div class="col-5">                                                                                  <img src="img/CheckNotSelected.png" style="width: 15px; margin: 25%;padding-top: 5px;">                                                           </div>                                                                                            <div class="adult-text col-80  passenger_name add-passenger-details" style="font-weight: 300; font-size: 16px !important; font-stretch: condensed; line-height: 35px;" data-type="adult" data-index="0">الراكب 1      </div>                                                                                                <img src="img/add-icons.svg" class="add-passenger-details" data-type="child" data-index="0" style="width: 32px;">       </div></li></ul></div>
+            <div class="color-s-orange  adult-text-title child-info" style="font-weight: 300; background-color: rgb(255, 245, 225); font-stretch: condensed; font-size: 16px !important; display: none;">
+                الأطفال
+            </div>
+            <div class="children-list list-block child-info" style="display: none;">
+                <!-- keep it empty -->
+                <ul style="height: 0px;"></ul></div>
+            <div class="color-s-orange  adult-text-title infants-info" style="font-weight: 300; background-color: rgb(255, 245, 225); font-stretch: condensed; font-size: 16px !important; display: none;">
+                الرضع
+            </div>
+            <div class="infa-list list-block infants-info" style="display: none;">
+                <!-- keep it empty -->
+                <ul style="height: 0px;"></ul></div>
+        </div>
+        <div class="container-box-shaddow content-container" style="padding-bottom:1px !important; background-color: #FFF5E1">
+            <div class="row no-gutter">
+                <div class="col-100 selected-tab title-color" style="font-weight:300; font-size:16px !important; font-stretch:condensed;">
+                    معلومات الاتصال
+                </div>
+            </div>
+            <div class="list-block">
+                <ul>
+                    <li>
+                        <div class="item-content" style="background-color: #FFF5E1">
+                            <div class="item-media"><i class="icon icon-form-tel"></i></div>
+                            <div class="item-inner" style="direction: ltr;background-color: #FFF5E1;">
+                                <div class="item-title label">
+                                    <input style="width: 70px; background-color: #FFF5E1; border-style: none;border-bottom: solid #8E8E93 1px;" readonly="" id="txtCountryCode" value="966">
+                                </div>
+                                <div class="item-input validate" data-validation="WrongPhoneNumber">
+                                    <input type="tel" name="MobileNumber" placeholder="5XXXXXXXX" style="width:90%; background-color: #FFF5E1;direction:rtl" id="txtPhoneNUmber">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content div_click" style="background-color: #FFF5E1">
+                            <div class="item-media"><i class="icon icon-form-email"></i></div>
+                            <div class="item-inner" style="background-color: #FFF5E1">
+                                <div class="item-input validate" data-validation="WrongEmailAddress">
+                                    <input type="email" name="EmailAddress" placeholder="أدخل عنوان بريدك الإلكتروني" style="width:90%" id="txtEmailAddress">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row col-100" style="margin-top:10%;height:10%;color:white;font-size:10px;margin-right:3%">
+            <div class="col-10">
+                <input type="radio" style="font-weight: bold" id="btnOneWay" class="form-radio-scheduleandtichits selected-tab" name="radio" checked="checked">
+            </div>
+            <div class="col-90">
+                <label for="btnOneWay" style="color: white;position: relative;top:13px;font-weight: bolder!important;"><b>أوافق على <a href="condtionandterms.html">الشروط والأحكام</a></b></label>
+            </div>
+        </div>
+        </div>
+</div>

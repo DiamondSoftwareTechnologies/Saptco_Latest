@@ -1,0 +1,64 @@
+<!-- Dynamic navbar for iOS theme -->
+{{#if @global.ios}}
+<div class="navbar " style="width:100% ; height:60px">
+    <div class="navbar-inner on-center" style="background-color: #FFF5E1!important;">
+        <div class="left sliding">
+            <a href="mybooking.html" class="">
+                <i class="icon icon-back"></i>
+            </a>
+        </div>
+        <div class="center sliding color-s-orange"
+             style="font-weight:300; font-size:20px !important; font-stretch:condensed;">{{tickets}}
+        </div>
+        <div class="right">
+            <img src="img/Saptco-logo.svg" alt="SAPTCO" style="width:90px">
+        </div>
+    </div>
+</div>
+{{/if}}
+
+<div class="page" data-page="transferSummary">
+    <!-- Fixed navbar for Material theme -->
+    {{#if @global.android}}
+    <div class="navbar bg-black">
+        <div class="navbar-inner bg-black">
+            <div class="left">
+                <a href="mybooking.html" class="">
+                    <i class="icon icon-back"></i>
+                </a>
+            </div>
+            <div class="center sliding color-s-orange"
+                 style=" font-weight 300; font-size 20px !important; font-stretch condensed;">Tickets Summary
+            </div>
+            <div class="right">
+                <img src="img/Saptco-logo.svg" alt="SAPTCO" style=" width 90px; ">
+            </div>
+        </div>
+    </div>
+    {{/if}}
+    <div class="page-content" style=" color: #B68E20">
+        <div class="list-block TicketsVirtulelist" style="margin-top: 30%!important;">
+            <div class="container-box-shaddow content-container ">
+                <div class="block-title selected-tab-cust2">{{tickets}}</div>
+                <div class="transferSummary">
+                </div>
+            </div>
+        </div>
+        <div class="list-block" style="margin: 0% 0% 10% 0%!important">
+            <div class="schedule-search-button no-padding border-rounding TransferTicketbtn" id="ConfirmTransferTicket">
+                {{Confirmtransformation}}
+            </div>
+            <div class="schedule-search-button no-padding border-rounding TransferTicketbtn" id="AddTickets">
+                {{Addanothertickets}}
+            </div>
+            <div class="schedule-search-button no-padding border-rounding TransferTicketbtn" id="CancelTransformation">
+                {{Cancel}}
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+

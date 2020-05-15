@@ -1,0 +1,273 @@
+<!-- Dynamic navbar for iOS theme -->
+{{#if @global.ios}}
+
+<div class="navbar"  style="background-color:#FAF8EB !important;" >
+<div class="navbar-inner " style="background-color:#FAF8EB !important;">
+    <div class="left sliding">
+        <a href="#" class="back">
+            <i class="icon icon-back"></i>
+        </a>
+    </div>
+    <div class="center sliding color-s-orange" style="font-weight:300; font-size:18px !important; font-stretch:condensed;">{{CargoInformation}}</div>
+    <div class="right">
+        <img src="img/Saptco-logo.svg" alt="SAPTCO" style="width:90px">
+    </div>
+</div>
+</div>
+
+{{/if}}
+
+<div class="page" data-page="CargoReservationData">
+    <!-- Fixed navbar for Material theme -->
+    {{#if @global.android}}
+    <div class="navbar" style="background-color:#FAF8EB !important;">
+        <div class="navbar-inner" style="background-color:#FAF8EB !important;">
+            <div class="left">
+                <a href="#" class="back icon-only">
+                    <i class="icon icon-back"></i>
+                </a>
+            </div>
+            <div class="center  color-s-orange">
+                {{ReservationInformation}}
+
+            </div>
+        </div>
+    </div>
+    {{/if}}
+    <div class="page-content ExternalStyle" style="background-color:#FAF8EB !important; color: #B68E20">
+
+
+        <div class="content-container" style="background-color:#FAF8EB !important">
+            <div class="row no-gutter">
+                <div class="col-100 selected-tab " style="font-weight:300;font-size:18px !important; font-stretch:condensed;background-color:#FAF8EB ;border:none ">{{ReservationInformation}}</div>
+            </div>
+            <form id="PassengerDetalies" class="list-block " onsubmit="return false;" style="background-color:#FAF8EB !important">
+                <ul>
+
+                    <li>
+                        <div class="item-content select_click" style="background-color:#FAF8EB !important">
+
+                            <div class="item-inner ">
+                                <div class="item-title label  select_click" style=" font-weight 300; font-size 13px !important; font-stretch condensed;white-space normal;">{{Fromcity}}</div>
+                                <div class="item-input validate" data-validation="ErrEnterCarryLoadLoc" style=" font-weight 300; font-size 13px !important; font-stretch condensed;">
+
+                                    <a href="#" class="smart-select " data-open-in="picker" data-back-on-select="true" data-back-text="{{DoneText}}">
+                                        <select class="ongo" id="going" style="font-weight: 300; font-size: 13px !important; font-stretch: condensed;">
+                                            <option data-itemvalue="0" value="NA" selected="selected" style=" font-weight 300; font-size 18px !important; font-stretch condensed;">{{optSelect}}</option>
+
+                                        </select>
+                                        <div class="item-content">
+                                            <div class="item-inner" style="padding:0px !important">
+                                                <div class="item-after" id="txtGenderText">{{optSelect}}</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+
+                    <li>
+                        <div class="item-content select_click" style="background-color:#FAF8EB !important">
+
+                            <div class="item-inner ">
+                                <div class="item-title label  select_click" style=" font-weight 300; font-size 13px !important; font-stretch condensed;white-space normal;">{{Tocity}}</div>
+                                <div class="item-input validate" data-validation="ErrEnterDelveryLoc" style=" font-weight 300; font-size 13px !important; font-stretch condensed;">
+
+                                    <a href="#" class="smart-select " data-open-in="picker" data-back-on-select="true" data-back-text="{{DoneText}}">
+                                        <select id="Return" class="onreturn" style=" font-weight 300; font-size 13px !important; font-stretch condensed;">
+                                            <option data-itemvalue="0" value="NA" selected="selected" style=" font-weight 300; font-size 18px !important; font-stretch condensed;">{{optSelect}}</option>
+
+                                        </select>
+                                        <div class="item-content">
+                                            <div class="item-inner" style="padding:0px !important">
+
+                                                <div class="item-after" id="txtGenderText">{{optSelect}}</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+
+
+
+                    <li>
+                        <div class="item-content select_click" style="background-color:#FAF8EB !important">
+
+                            <div class="item-inner ">
+                                <div class="item-title label  select_click" style=" font-weight 300; font-size 13px !important; font-stretch condensed;white-space normal;">{{Direction}}</div>
+                                <div class="item-input validate" data-validation="ErrEnterDirection" style=" font-weight 300; font-size 13px !important; font-stretch condensed;">
+
+                                    <a href="#" class="smart-select " data-open-in="picker" data-back-on-select="true" data-back-text="{{DoneText}}">
+                                        <select id="direction" class="selectDirection" style=" font-weight 300; font-size 13px !important; font-stretch condensed;">
+                                            <option data-itemvalue="0" value="NA" selected="selected" style=" font-weight 300; font-size 18px !important; font-stretch condensed;">{{optSelect}}</option>
+
+                                        </select>
+                                        <div class="item-content" style="background-color:#FAF8EB !important">
+                                            <div class="item-inner" style="padding:0px !important">
+
+                                                <div class="item-after" id="txtGenderText">{{optSelect}}</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+
+
+
+                    <!--           Services Type-->
+
+                    <li>
+                        <div class="item-content select_click " style="background-color:#FAF8EB !important">
+
+                            <div class="item-inner ">
+
+                                <div class="item-title label  select_click" style=" font-weight 300; font-size 13px !important; font-stretch condensed;white-space normal;">{{Typeofservice}}</div>
+                                <div class="item-input validate" data-validation="ErrServiceType" style=" font-weight 300; font-size 13px !important; font-stretch condensed;">
+
+                                    <a href="#" class="smart-select" data-open-in="picker" data-back-on-select="true" data-back-text="{{DoneText}}">
+                                        <select id="servcies" class="selectService" style=" font-weight 300; font-size 13px !important; font-stretch condensed;">
+                                            <option data-itemvalue="0" value="NA" selected="selected" style=" font-weight 300; font-size 18px !important; font-stretch condensed;">{{optSelect}}</option>
+                                        </select>
+
+                                        <div class="item-content" style="background-color:#FAF8EB !important">
+                                            <div class="item-inner" style="padding:0px !important">
+
+                                                <div class="item-after" id="txtGenderText">{{optSelect}}</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+
+
+
+
+
+                    <li>
+                        <div class="item-content select_click" style="background-color:#FAF8EB !important">
+
+                            <div class="item-inner ">
+                                <div class="item-title label  select_click" style=" font-weight 300; font-size 13px !important; font-stretch condensed;white-space normal;">{{VehicleType}}</div>
+                                <div class="item-input validate" data-validation="ErrEnterTruckType" style=" font-weight 300; font-size 13px !important; font-stretch condensed;">
+
+                                    <a href="#" class="smart-select " data-open-in="picker" data-back-on-select="true" data-back-text="{{DoneText}}">
+                                        <select id="TruckType" class="Truck" name="from" style=" font-weight 300; font-size 13px !important; font-stretch condensed;">
+                                            <option data-itemvalue="0" value="NA" selected="selected" style=" font-weight 300; font-size 18px !important; font-stretch condensed;">{{optSelect}}</option>
+
+                                        </select>
+                                        <div class="item-content">
+                                            <div class="item-inner" style="padding:0px !important">
+
+                                                <div class="item-after" id="txtGenderText">{{optSelect}}</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+
+
+                    <li>
+                        <div class="item-content div_click"style="background-color:#FAF8EB !important">
+
+                            <div class="item-inner">
+                                <div class="item-title label " style=" font-weight 300; font-size 13px !important; font-stretch condensed;">{{Date}}</div>
+                                <div class="item-input validate" data-validation="ErrRequestDateTime">
+                                    <input type="text" name="cusname" placeholder="{{DatePlaceHolder}}" readonly id="calendar-date-depart" style=" font-weight 300; font-stretch condensed; margin-top:-7px ">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content div_click"style="background-color:#FAF8EB !important">
+
+                            <div class="item-inner">
+                                <div class="item-title label " style=" font-weight 300; font-size 13px !important; font-stretch condensed;">{{VehicleNo}}</div>
+                                <div class="item-input validate" data-validation="ErrEnterTruckNumber">
+                                    <input type="tel" name="cusname" placeholder="{{VehicleNoPlaceHolder}}" id="Number" style=" font-weight 300; font-stretch condensed; margin-top:-7px" maxlength="4">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="item-content div_click"style="background-color:#FAF8EB !important">
+
+                            <div class="item-inner">
+                                <div class="item-title label " style=" font-weight 300; font-size 13px !important; font-stretch condensed;">{{Typeofitems}}</div>
+                                <div class="item-input validate" data-validation="ErrEnterCargoType">
+                                    <input id="type" type="text" name="cusname" placeholder="{{TypeofitemsPlaceHolder}}" style=" font-weight 300; font-stretch condensed; margin-top:-7px ">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content div_click" style="background-color:#FAF8EB !important">
+
+                            <div class="item-inner">
+                                <div class="item-title label " style=" font-weight 300; font-size 13px !important; font-stretch condensed;">{{informationofloadinplace}}</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li style="display:none">
+                        <div class="item-content div_click" style="background-color:#FAF8EB !important">
+
+                            <div class="item-inner">
+                                <div class="item-input validate" data-validation="ErrEnterPickupLocation">
+                                    <input id="cary" type="text" name="cusname" placeholder="{{informationofloadinplace}}" style=" font-weight 300; font-stretch condensed; margin-top:-7px ">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li style="display:none">
+                        <div class="item-content div_click"style="background-color:#FAF8EB !important">
+
+                            <div class="item-inner">
+                                <div class="item-title label " style=" font-weight 300; font-size 13px !important; font-stretch condensed;">{{Informationofplacedownloading}}</div>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li style="display:none">
+                        <div class="item-content div_click"style="background-color:#FAF8EB !important">
+
+                            <div class="item-inner">
+                                <div class="item-input validate" data-validation="ErrEnterDeliveryLocation">
+                                    <input id="drop" type="text" name="cusname" placeholder="{{Informationofplacedownloading}}" style=" font-weight 300; font-stretch condensed; margin-top:-7px ">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li style="display:none">
+                        <div class="item-content div_click"style="background-color:#FAF8EB !important">
+                            <div class="item-inner">
+
+                                <div class="item-input validate" data-validation="ErrServiceLocation">
+                                    <input name="ServiceLocation" type="text" placeholder="{{ServiceLocation}}:" id="ServiceLocation" style=" font-weight 300; font-stretch condensed; margin-top:-7px ">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </form>
+            <div class="Button-shaddow btn-login-orange Cargo-Color-Background" id="btnSaveCargorequest" style="font-weight:300;font-size:20px !important; font-stretch:condensed; margin-bottom:10px !important">
+                {{Continue}}
+            </div>
+            <!--            </a>-->
+        </div>
+    </div>
+
+</div>

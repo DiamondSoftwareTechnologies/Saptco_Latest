@@ -1,0 +1,384 @@
+﻿<!-- Dynamic navbar for iOS theme -->
+{{#if @global.ios}}
+
+
+<div class="navbar bg-black" style="width:100% ; height:60px">
+    <div class="navbar-inner on-center" style="background-color:#FAF8EB !important">
+
+        <div class="left sliding">
+
+            <a href="#" class="back">
+
+                <i class="icon icon-back"></i>
+
+            </a>
+
+        </div>
+
+        <div class="center sliding color-s-orange" style="font-weight: 300; font-size: 18px !important; font-stretch: condensed;">{{lblTittle}}</div>
+
+        <div class="right">
+
+            <img src="img/Saptco-logo.svg" alt="SAPTCO" style="width: 90px; ">
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+{{/if}}
+
+
+<div class="page" data-page="new_LimoReservationData">
+
+    <!-- Fixed navbar for Material theme -->
+    {{#if @global.android}}
+
+    <div class="navbar">
+
+        <div class="navbar-inner">
+
+            <div class="left">
+
+                <a href="#" class="back icon-only">
+
+                    <i class="icon icon-back"></i>
+
+                </a>
+
+            </div>
+
+            <div class="center  color-s-orange">
+
+                {{lblTittle}}
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+    {{/if}}
+
+
+
+
+    <div class="page-content ExternalStyle LimoFormStyle">
+
+        <div class="content-block" style="padding-left: 3px;
+
+    padding-right: 3px;
+
+    padding-top: 3px;
+
+    padding-bottom: 3px;
+
+    margin-top: 10px;
+
+    margin-bottom: 10px;
+
+">
+
+            <div class="">
+
+                <div class="content-container no-bottom-margins" style="z-index:1000 !important">
+                    <div class="row no-gutter">
+                        <div class="col-50 selected-tab" id="btnOneWay" style="font-weight: 300; font-size: 18px !important; font-stretch: condensed;">ذهاب فقط</div>
+                        <div class="col-50 not-selected-tab sliding" id="btnRoundTrip" style="font-weight: 300; font-size: 18px !important; font-stretch: condensed;">ذهاب و عودة</div>
+                    </div>
+                </div>
+
+
+                <form id="LimoReservation" class="list-block " onsubmit="return false;">
+
+                    <ul>
+
+                        <li>
+
+                            <div class="item-content div_click">
+
+                                <div class="item-inner ">
+
+                                    <div class="item-title label select_click" style=" font-weight 300; font-size 13px !important; font-stretch condensed;white-space normal;">نوع الخدمة:</div>
+
+                                    <div class="item-input validate" data-validation="errServiceDuration" style=" font-weight 300; font-size 13px !important; font-stretch condensed;">
+
+                                        <a href="#" class="smart-select" data-open-in="picker" data-back-on-select="true" data-back-text="{{DoneText}}">
+
+                                            <select name="from" class="ServiceDuration" id="serv_time" style=" font-weight 300; font-size 13px !important; font-stretch condensed;">
+
+                                                <option data-itemvalue="0" value="NA" selected="selected" style=" font-weight 300; font-size 18px !important; font-stretch condensed;">{{optSelect}}</option>
+
+                                            </select>
+
+                                            <div class="item-content ">
+
+
+                                                <div class="item-inner" style="border:none;padding:0px !important">
+
+
+                                                    <div class="item-after">{{One_way}}</div>
+
+                                                </div>
+
+
+                                            </div>
+
+                                        </a>
+
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+
+
+
+
+                        </li>
+
+
+
+
+
+
+                        <li>
+
+                            <div class="item-content div_click">
+
+
+                                <div class="item-inner">
+
+                                    <div class="item-title label " style=" font-weight 300; font-size 13px !important; font-stretch condensed;white-space: normal;">{{Service_Date}}</div>
+
+                                    <div class="item-input validate" data-validation="ErrRequestDateTime">
+
+                                        <input type="text" name="cusname" placeholder="{{selectDate}}" readonly id="calendar-date-depart" style=" font-weight 300; font-stretch condensed; margin-top:-7px ">
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </li>
+
+
+
+
+                        <li>
+
+                            <div class="item-content div_click">
+
+                                <div class="item-inner">
+
+                                    <div class="item-title label " style=" font-weight 300; font-size 13px !important; font-stretch condensed;white-space normal;">{{Service_Time}}:</div>
+
+                                    <div class="item-input validate" data-validation="Errtriptime">
+
+                                        <input class="RequestDateTime" type="text" placeholder="{{lblDepartureDate}}" readonly id="picker-date" style=" font-weight 300; font-stretch condensed; margin-top:-7px ">
+
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </li>
+
+
+
+
+
+
+                        <li>
+
+                            <div class="item-content div_click">
+
+                                <div class="item-inner ">
+
+                                    <div class="item-title label select_click" style=" font-weight 300; font-size 13px !important; font-stretch condensed;white-space normal;">لغة السائق</div>
+
+                                    <div class="item-input validate" data-validation="" style=" font-weight 300; font-size 13px !important; font-stretch condensed;">
+
+                                        <a href="#" class="smart-select" data-open-in="picker" data-back-on-select="true" data-back-text="{{DoneText}}">
+
+                                            <select name="from" class="" id="driver" style=" font-weight 300; font-size 13px !important; font-stretch condensed;">
+
+                                                <option data-itemvalue="0" value="NA" selected="selected" style=" font-weight 300; font-size 18px !important; font-stretch condensed;">اختر</option>
+
+                                                <option data-itemvalue="1" style=" font-weight 300; font-size 18px !important; font-stretch condensed;">عربي</option>
+
+                                            </select>
+
+                                            <div class="item-content ">
+
+
+                                                <div class="item-inner" style="border:none;padding:0px !important">
+
+
+                                                    <div class="item-after">عربي</div>
+
+                                                </div>
+
+
+                                            </div>
+
+                                        </a>
+
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+
+
+
+                        </li>
+                        <li>
+
+                            <div class="item-content div_click">
+
+                                <div class="item-inner ">
+
+                                    <div class="item-title label select_click"  style="font-weight:300; font-size:13px !important; font-stretch:condensed;white-space:normal;">{{Car_Type}}:</div>
+
+                                    <div class="item-input validate" data-validation="errCartype"  style="font-weight:300; font-size:13px !important; font-stretch:condensed;">
+
+                                        <a href="#" class="smart-select" data-open-in="picker" data-back-on-select="true" data-back-text="{{DoneText}}">
+
+                                            <select name="from" class="cars" id="car_type"  style="font-weight:300; font-size:13px !important; font-stretch:condensed;">
+
+                                                <option data-itemvalue="0" value="NA" selected="selected"  style="font-weight:300; font-size:18px !important; font-stretch:condensed;">{{optSelect}}</option>
+
+                                            </select>
+
+                                            <div class="item-content ">
+
+
+                                                <div class="item-inner" style="border:none;padding:0px !important">
+
+
+                                                    <div class="item-after">{{Mercedes}}</div>
+
+                                                </div>
+
+
+                                            </div>
+
+                                        </a>
+
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+
+
+
+                        </li>
+
+
+
+
+                        <li style="display:none">
+
+                            <div class="item-content div_click">
+
+
+                                <div class="item-inner">
+
+                                    <div class="item-title label "  style="font-weight:300; font-size:13px !important; font-stretch:condensed;">{{DepartFrom}}:</div>
+
+                                    <!--
+
+                                                                        <div class="item-input validate" data-validation="ErrDepartFrom">
+
+                                                                            <input type="text" name="Name" id="DepartFrom" style=" font-weight: 300; font-size: 13px !important; font-stretch: condensed;">
+
+                                                                        </div>
+
+                                    -->
+
+                                </div>
+
+                            </div>
+
+                        </li>
+
+                        <li style="display:none">
+
+                            <div class="item-content div_click">
+
+                                <div class="item-inner">
+
+                                    <div class="item-title label "  style="font-weight:300; font-size:13px !important; font-stretch:condensed;">{{lblTo}}:</div>
+
+                                    <!--
+
+                                                                        <div class="item-input validate" data-validation="ErrDepartto">
+
+                                                                            <input type="text" name="Name" id="Departto" style=" font-weight: 300; font-size: 13px !important; font-stretch: condensed;">
+
+                                                                        </div>
+
+                                    -->
+
+                                </div>
+
+                            </div>
+
+                        </li>
+
+                        <li style="display:none">
+
+                            <div class="item-content div_click">
+
+
+                                <div class="item-inner">
+
+                                    <div class="item-title label " style=" font-weight 300; font-size 13px !important; font-stretch condensed;">{{Pickup_Location}}:</div>
+
+                                    <!--
+
+                                                                        <div class="item-input validate" data-validation="ErrPickup_Location">
+
+                                                                            <input type="text" name="Name" id="Pickup_Location"  readonly style=" font-weight: 300; font-size :13px !important; font-stretch: condensed;">
+
+                                                                        </div>
+
+                                    -->
+
+                                </div>
+
+                            </div>
+
+                        </li>
+
+
+                    </ul>
+
+                </form>
+
+            </div>
+
+            <a href="new_LimoReservationDataLocations.html">
+
+                <div class="Button-shaddow btn-login-orange" id="newbtnSaveData" style="font-weight: 300; font-size: 13px !important; font-stretch: condensed; background-color: #c1a02f !important;">{{Continue}}</div>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>

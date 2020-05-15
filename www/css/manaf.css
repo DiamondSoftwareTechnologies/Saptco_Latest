@@ -1,0 +1,1540 @@
+﻿.about-us-padding {
+    padding: 10px !important;
+}
+
+/************privacy**************/
+.privacy-container {
+    margin: 3%;
+    width: 94%;
+}
+
+/*********************************/
+/************Terms and conditions**************/
+.terms-container {
+    padding: 3%;
+
+}
+
+/**********************/
+/**********about***********/
+.aboutus-container {
+    margin: 3%;
+    width: 94%;
+}
+
+/**********************/
+
+/**********Offers***********/
+.offers-container {
+    margin: 3%;
+    width: 94%;
+}
+
+/**********************/
+
+/**********Sign up***********/
+.signup-Title {
+    font-size: 16px;
+    font-weight: bold;
+    color: black !important;
+}
+
+/**********************/
+/*	 Licensed Materials - Property of IBM
+	 5725-I43 (C) Copyright IBM Corp. 2006, 2013. All Rights Reserved.
+	 US Government Users Restricted Rights - Use, duplication or
+     disclosure restricted by GSA ADP Schedule Contract with IBM Corp. */
+.ContainerDiv {
+    float: left;
+    overflow: hidden !important;
+    position: fixed;
+    height: auto;
+    width: 100%;
+    text-shadow: none;
+    background-color: #faf9f4;
+    position: fixed;
+    padding: 0px !important;
+}
+
+.ContainerDiv div {
+    text-shadow: none;
+    float: left;
+    position: relative;
+}
+
+.ContainerDivScroll {
+    background-color: #faf9f4;
+}
+
+.ContainerDivScroll div {
+    text-shadow: none;
+    position: relative;
+}
+
+.TitleContainerDiv {
+    background-color: black !important;
+    color: #c19f2f;
+    text-shadow: none !important;
+}
+
+.TitleContainerDiv h1 {
+    color: #c19f2f !important;
+}
+
+.TitleContainerDiv .Logo {
+    width: 70%;
+    margin-top: 10%;
+    float: right;
+    margin-right: 5%;
+}
+
+.TitleContainerDiv img {
+    height: 50%;
+}
+
+.SubTitleBar {
+    background-color: #ccae2c;
+    width: 100%;
+    overflow: auto;
+    height: auto;
+    width: 100%;
+}
+
+.SubTitleIconDiv {
+    width: 10%;
+    padding-top: 1.5%;
+    padding-left: 3.5%;
+}
+
+.SubTitleIconDiv img {
+    width: 70%;
+    max-width: 50px;
+}
+
+.SubTopDiv {
+    width: 80%;
+    padding-top: 2px;
+}
+
+.SubBottomDiv {
+    width: 80%;
+    width: 80%;
+    font-weight: bold;
+}
+
+.Div3Col {
+    width: 33.3%;
+    display: block;
+    height: auto;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: #faf9f4;
+    direction: ltr;
+}
+
+.Div75 {
+    width: 75%;
+}
+
+.Div50 {
+    width: 50%;
+}
+
+.Div25 {
+    width: 25%;
+}
+
+.Div40 {
+    width: 40%;
+}
+
+.Div30 {
+    width: 30%;
+}
+
+.Div60 {
+    width: 60%;
+}
+
+.Div80 {
+    width: 80%;
+}
+
+.Div90 {
+    width: 90%;
+}
+
+.DivIcon {
+    width: 10%;
+}
+
+.Div15 {
+    width: 15%;
+}
+
+.Div100 {
+    width: 100%;
+}
+
+.ScrollDiv {
+    width: 100%;
+    overflow: scroll !important;
+}
+
+.SubTitleDiv {
+    margin: 0px;
+    padding-left: 4%;
+    font-weight: normal !important;
+}
+
+.SubTitleDiv h3 {
+    margin: 0px;
+    margin-top: 5%;
+    font-size: 18.72px !important;
+    font-weight: bold !important;
+}
+
+.DataContainerDiv {
+    width: 92%;
+    overflow: auto;
+    margin: 4%;
+    clear: both;
+    -webkit-box-shadow: 0px 0px 13px 3px rgba(199, 199, 199, 1);
+    -moz-box-shadow: 0px 0px 13px 3px rgba(199, 199, 199, 1);
+    box-shadow: 0px 0px 13px 3px rgba(199, 199, 199, 1);
+    overflow: auto;
+    margin: 4%;
+}
+
+.DataContainerDivSmall {
+    width: 60%;
+    overflow: auto;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 8%;
+    clear: both;
+    -webkit-box-shadow: 0px 0px 13px 3px rgba(199, 199, 199, 1);
+    -moz-box-shadow: 0px 0px 13px 3px rgba(199, 199, 199, 1);
+    box-shadow: 0px 0px 13px 3px rgba(199, 199, 199, 1);
+    overflow: auto;
+}
+
+
+
+.DataContainerDiv h4 {
+    font-weight: normal;
+    margin: 15px;
+}
+
+.DivRow {
+    width: 100%;
+}
+
+.Div50 {
+    width: 50%;
+}
+
+.DivRowBottomBorder {
+    width: 100%;
+    border-bottom-style: solid;
+    border-bottom-color: #f3f3f3;
+    border-width: 1px;
+}
+
+.BlackBigButton {
+    background-color: #3f4040;
+    width: 94%;
+    margin: 3%;
+    padding-top: 1px !important;
+    padding-bottom: 1px !important;
+    text-align: center;
+}
+
+.BlackBigButton h3 {
+    color: #a68f32;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.BlackGoldButton {
+    background-color: #a68f32;
+    width: 94%;
+    margin: 3%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-align: center;
+}
+
+.BlackGoldButton h3 {
+    color: #3f4040;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.GoldText {
+    color: #a68f32;
+    font-weight: normal;
+}
+
+.GrayText h4 {
+    color: #dbdbdf;
+}
+
+.GrayText h3 {
+    color: #dbdbdf;
+}
+
+.titleMargin h4 {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.DivSeparater {
+    width: 100%;
+    height: 1px;
+}
+
+h6 {
+    text-shadow: none;
+}
+
+.sideLabelAlign {
+    width: 15%;
+    margin: 0px !important;
+    text-align: right;
+}
+
+.TextAlignEnd {
+    text-align: right;
+}
+
+.ui-datebox-gridlabel {
+    background-color: #D7B029;
+}
+
+.ui-datebox-gridrow {
+    background-color: white;
+}
+
+.ui-datebox-griddate.ui-corner-all.ui-btn.ui-btn-a {
+    background-color: white;
+    border-radius: 25px 25px 25px 25px;
+    border: 1px solid transparent;
+    color: black;
+}
+
+.ui-datebox-griddate.ui-corner-all.ui-btn.ui-btn-b {
+    background-color: #AE892E;
+    border-radius: 25px 25px 25px 25px;
+    border: 1px solid transparent;
+    color: white;
+    width: 28px;
+    height: 28px;
+}
+
+/*input#txtUserName {*/
+/*    text-align: left;*/
+/*}*/
+
+/*input#txtPassword {*/
+/*    text-align: left;*/
+/*}*/
+
+div#popupBasic-popup {
+    width: 85%;
+    left: 10% !important;
+}
+
+div#popupBasic {
+    padding-top: 14px !important;
+}
+
+.divBlock {
+    background-color: black;
+    opacity: 0.3;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+nav#cbp-spmenu-s1 {
+    background-color: white;
+}
+
+#cbp-spmenu-s1 h5 {
+    margin: 4px;
+    display: inline;
+}
+
+/
+/
+/****** popup style *************/
+div#PassengersInfo_lblMessagePopup-popup {
+    width: 81%;
+    margin-right: 10%;
+    margin-left: 10%;
+    left: 0px !important;
+}
+
+div#PassengersInfo_lblMessagePopup {
+    border-radius: 0px !important;
+    padding-top: 15px;
+    padding-bottom: 15px !important;
+}
+
+div#SchedualesTickets_lblMessagePopup-popup {
+    width: 81%;
+    margin-right: 10%;
+    margin-left: 10%;
+    left: 0px !important;
+}
+
+div#SchedualesTickets_lblMessagePopup {
+    border-radius: 0px !important;
+    padding-top: 15px;
+    padding-bottom: 15px !important;
+}
+
+a.ui-btn.ui-corner-all.ui-shadow.ui-btn-left.ui-toolbar-back-btn.ui-icon-carat-l.ui-btn-icon-left {
+    background: none;
+    border-style: none !important;
+    box-shadow: none;
+    padding-top: 21px !important;
+}
+
+.menuLogo {
+    float: right !important;
+    padding-top: 0px !important;
+    margin-top: -30px !important;
+    margin-right: 5px;
+    margin-left: 5px;
+    width: 80px !important;
+    display: inline;
+    width: 70px !important;
+}
+
+.footerCss h6 {
+    font-size: 8pt;
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 3px;
+    color: #dcb205;
+    font-weight: normal;
+}
+
+.navDivFullWidth {
+    padding-top: 18px !important;
+    width: 100%;
+    float: left;
+}
+
+.NavDivImage {
+    width: 15%;
+    float: left;
+}
+
+.NavDivImage img {
+    margin-right: 10px;
+    width: 20px;
+}
+
+.NavDivLink {
+    width: 85%;
+    float: left;
+    border-bottom-style: solid;
+    border-bottom-color: gray;
+    border-bottom-width: 1px;
+}
+
+.NavDivLink h4 {
+    margin-top: 2px !important;
+    color: black !important;
+}
+
+.ui-panel-wrapper {
+    direction: rtl;
+    width: 100%;
+}
+
+.CssFooterImg {
+    width: 28px;
+}
+
+.ContainerDivScroll.ui-content {
+    width: 100% !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+div#mypanel {
+    overflow: hidden !important;
+    position: fixed !important;
+}
+
+span.ui-icon-loading {
+    background-image: url("../spinner.gif");
+    border-style: none !important;
+}
+
+/**** our fleet styles ****/
+.Ourfleet_Item {
+    width: 100% !important;
+    height: auto;
+    padding-bottom: 0px;
+    margin-bottom: -3px;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.Ourfleet_Item img {
+    width: 100 !important;
+}
+
+.PageContainerAutoHeight {
+    height: auto !important;
+}
+
+.ui-page.ui-page-theme-a.ui-page-active {
+    height: 100%;
+}
+
+.TitleContainerDiv.ui-header.ui-bar-inherit.ui-header-fixed.slidedown {
+    border-bottom-color: black;
+}
+
+.ui-icon-carat-l:after {
+    background-image: url("../back.png") !important;
+}
+
+.TitleContainerDiv {
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: black !important;
+}
+
+.ui-loader.ui-corner-all.ui-body-a.ui-loader-default {
+    border-style: none;
+}
+
+/**************************/
+
+/**** SchedualesTickets ****/
+#SchedualesTickets .NotSelectedTab {
+    background-color: #eef0f0;
+    width: 50%;
+    text-align: center;
+    line-height: 50%;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+#SchedualesTickets .SelectedTab {
+    background-color: #dcc357;
+    width: 50%;
+    text-align: center;
+    line-height: 50%;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+#SchedualesTickets a.ui-btn.ui-corner-all.ui-shadow.ui-btn-inline {
+    padding: 0px;
+    background-color: transparent;
+    border-style: none;
+    box-shadow: none;
+}
+
+#lbldepartureFrom, #lblArrivalTo, #lblDepOn, #lblRetTo,
+#lblPassengersLabel {
+    font-size: 18.72px;
+}
+
+#lblOneWay, #lblRoundtrip {
+    font-size: 18.72px !important;
+    font-weight: normal !important;
+}
+
+/**************************/
+
+/***********Home***********/
+#Home .Div48 {
+    width: 46%;
+    margin: 2%;
+}
+
+#Home .Div48 img {
+    width: 100%;
+}
+
+#Home .firstDiv {
+    width: 24%;
+    Height: 100%;
+    Display: inline-block;
+    text-align: center;
+}
+
+#Home .firstDiv img {
+    margin-top: 5px;
+    text-align: center;
+    width: 30%;
+}
+
+#Home .firstDiv h6 {
+    font-size: 8pt;
+    margin-top: 10px;
+    margin-bottom: 3px;
+    text-align: center;
+}
+
+#Home .firstDiv2 {
+    width: 22%;
+    Height: 100%;
+    Display: inline-block;
+    text-align: center;
+}
+
+#Home .firstDiv2 img {
+    margin-top: 5px;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+    text-align: center;
+    display: table-cell;
+}
+
+#Home .firstDiv2 h6 {
+    font-size: 8pt;
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 3px;
+}
+
+/**************************/
+
+/********* index  ********/
+.swiper-container.swiper-container-horizontal.swiper-container-fade {
+    height: 100% !important;
+    position: absolute;
+}
+
+/************Trip_Summary*********/
+#Trip_Summary .Depart {
+    width: 100%;
+    border-bottom: 1pt solid #DDDDDD;
+}
+
+#Trip_Summary .from {
+    padding: 4%;
+    padding-top: 0%;
+    height: 40px;
+}
+
+#Trip_Summary .from h5 {
+    margin: 2px;
+    color: #A89131;
+}
+
+#Trip_Summary .from h4 {
+    margin-top: 5px;
+    font-size: 10pt;
+}
+
+#Trip_Summary .trip {
+    padding: 4%;
+    padding-top: 0%;
+    height: 70px;
+}
+
+#Trip_Summary .trip img {
+    width: 100%;
+    padding-top: 5%;
+}
+
+#Trip_Summary .LefttimeDiv {
+    width: 33.3%;
+    float: left;
+    text-align: center;
+}
+
+#Trip_Summary .LefttimeDiv h5 {
+    margin: 0px;
+}
+
+#Trip_Summary .LefttimeDiv h4 {
+    margin: 0px;
+}
+
+#Trip_Summary .middeltimeDiv {
+    width: 33.3%;
+    float: left;
+    text-align: center;
+}
+
+#Trip_Summary .middeltimeDiv h5 {
+    margin: 0px;
+    color: #A89131;
+}
+
+#Trip_Summary .RighttimeDiv {
+    width: 33.3%;
+    text-align: center;
+}
+
+#Trip_Summary .RighttimeDiv h5 {
+    margin: 0px;
+}
+
+#Trip_Summary .RighttimeDiv h4 {
+    margin: 0px;
+}
+
+#Trip_Summary .PassInfoDiv {
+    width: 100%;
+    padding: 4%;
+    border-bottom: 1pt solid #DDDDDD;
+}
+
+#Trip_Summary .PassInfoDiv img {
+    margin-top: 0px !important;
+}
+
+#Trip_Summary .PassInfoDiv h5 {
+    margin: 0px;
+}
+
+#Trip_Summary .InfoContainerDiv {
+    width: 92%;
+    margin-left: 4%;
+    margin-right: 4%;
+    -webkit-box-shadow: 0px 0px 13px 3px rgba(199, 199, 199, 1);
+    -moz-box-shadow: 0px 0px 13px 3px rgba(199, 199, 199, 1);
+    box-shadow: 0px 0px 13px 3px rgba(199, 199, 199, 1);
+    -moz-box-shadow: 0px 0px 13px 3px rgba(199, 199, 199, 1);
+    height: auto;
+    margin-bottom: 5%;
+    overflow: hidden;
+}
+
+#Trip_Summary .Div3SP {
+    width: 60%;
+    padding-left: 15px;
+}
+
+#Trip_Summary .Div1SP {
+    width: 20%;
+    float: left;
+    text-align: right;
+    padding-right: 0%;
+    color: #A89131;
+}
+
+#Trip_Summary .Div1SPimg {
+    width: 10%;
+    top: 20%;
+    float: right !important;
+    padding-right: 2%;
+}
+
+#Trip_Summary .Div1SPimg img {
+    width: 11px;
+}
+
+#Trip_Summary .total {
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+    height: auto;
+    margin-bottom: 5%;
+    overflow: hidden;
+    background-color: #CCAD2C;
+}
+
+#Trip_Summary .total h5 {
+    margin: 0px;
+    font-size: 10pt;
+    font-weight: none;
+    padding-left: 2%;
+}
+
+#Trip_Summary .total h4 {
+    margin: 0px;
+    font-weight: bold;
+    font-size: 18pt;
+    display: inline-block;
+    padding-left: 2%;
+}
+
+#Trip_Summary .total img {
+    margin-top: 0%;
+    float: right;
+    display: inline-block;
+    width: 10px;
+    padding-right: 5%;
+}
+
+h5#Pass_PassengerName {
+    font-size: 13.28px;
+    font-weight: bold;
+}
+
+h5#Pass_Amount {
+    color: rgb(168, 145, 49);
+    direction: ltr;
+    font-size: 14.28px;
+    font-weight: bold;
+    padding-top: 5px;
+}
+
+h5#Pass_PassengerName {
+    direction: ltr;
+    font-size: 14.28px;
+    font-weight: bold;
+    padding-top: 5px;
+}
+
+/*********************************/
+
+/**********PassengersInfo*********/
+#PassengersInfo .PassTitle h3 {
+    margin: 5%;
+    font-weight: normal;
+}
+
+#PassengersInfo .DivIcon img {
+    margin-top: 15%;
+    margin-left: 15%;
+}
+
+#PassengersInfo .Div30 img {
+    width: 25%;
+    margin-top: 15%;
+    margin-right: 8%;
+    float: right;
+}
+
+#PassengersInfo .ui-input-text.ui-body-inherit.ui-corner-all.ui-shadow-inset {
+    width: 94%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+/*********************************/
+
+/************passenges***************/
+#passenges .ContainerDiv {
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+#passenges .ContainerDiv div {
+    position: relative;
+    float: left;
+}
+
+#passenges .Depart {
+    width: 100%;
+    border-bottom: 1pt solid #DDDDDD;
+}
+
+#passenges .from {
+    padding: 4%;
+    padding-top: 0%;
+    height: 40px;
+}
+
+#passenges .from h5 {
+    margin: 2px;
+    color: #A89131;
+}
+
+#passenges .from h4 {
+    margin-top: 5px;
+    font-size: 10pt;
+}
+
+#passenges .trip {
+    padding: 4%;
+    padding-top: 0%;
+    height: 70px;
+}
+
+#passenges .trip img {
+    width: 100%;
+    padding-top: 5%;
+}
+
+#passenges .LefttimeDiv {
+    width: 33.3%;
+    float: left;
+    text-align: center;
+}
+
+#passenges .LefttimeDiv h5 {
+    margin: 0px;
+}
+
+#passenges .LefttimeDiv h4 {
+    margin: 0px;
+}
+
+#passenges .LefttimeDiv h4 {
+    margin: 0px;
+}
+
+#passenges .middeltimeDiv {
+    width: 33.3%;
+    float: left;
+    text-align: center;
+}
+
+#passenges .middeltimeDiv h5 {
+    margin: 0px;
+    color: #A89131;
+}
+
+#passenges .middeltimeDiv h4 {
+    margin: 0px;
+}
+
+#passenges .RighttimeDiv {
+    width: 33.3%;
+    text-align: center;
+}
+
+#passenges .RighttimeDiv h5 {
+    margin: 0px;
+}
+
+#passenges .RighttimeDiv h4 {
+    margin: 0px;
+}
+
+#passenges .PassInfoDiv {
+    width: 100%;
+    padding-left: 0px;
+    border-bottom: 1pt solid #DDDDDD;
+}
+
+#passenges .PassInfoDiv h5 {
+    margin: 0px;
+}
+
+#passenges .InfoContainerDiv {
+    width: 92%;
+    margin-left: 4%;
+    margin-right: 4%;
+    -webkit-box-shadow: 0px 0px 13px 3px rgba(199, 199, 199, 1);
+    -moz-box-shadow: 0px 0px 13px 3px rgba(199, 199, 199, 1);
+    box-shadow: 0px 0px 13px 3px rgba(199, 199, 199, 1);
+    -moz-box-shadow: 0px 0px 13px 3px rgba(199, 199, 199, 1);
+    height: auto;
+    margin-bottom: 5%;
+    overflow: hidden;
+}
+
+#passenges .Div3SP {
+    width: 60%;
+    padding-left: 15px;
+}
+
+#passenges .Div1SP {
+    width: 34%;
+    float: right !important;
+    text-align: right;
+    padding-right: 6%;
+    color: #AFAEAF;
+}
+
+/*********************************/
+
+/*************PassengerDetails*******/
+#PassengerDetails div#popupDialog-popup {
+    width: 94%;
+    left: 4% !important;
+    right: 4% !important;
+}
+
+#PassengerDetails div#PopupMultiChoice-popup {
+    width: 80%;
+}
+
+#PassengerDetails .ui-checkbox {
+    width: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#PassengerDetails .DivMultiItems h4 {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: gray;
+}
+
+/************************************/
+
+/*******transition options***********/
+.in, .out {
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-duration: 600ms !important;
+}
+
+/************************************/
+
+/******************fleet_advance*******/
+#fleet_advance .swiper-container {
+    width: 100%;
+    height: 200px;
+}
+
+#fleet_advance .swiper-slide {
+    background-position: center;
+    background-size: 100% 100% !important;
+}
+
+#fleet_advance .ContainerDiv {
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+#fleet_advance .ContainerDiv div {
+    position: relative;
+    float: left;
+}
+
+#fleet_advance .fleet {
+    width: 100%;
+    height: 100%;
+}
+
+#fleet_advance .InfoContainerDiv2 {
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+    height: auto;
+    margin-bottom: 5%;
+    overflow: hidden;
+    padding-top: 5%;
+}
+
+#fleet_advance .Depart {
+    width: 100%;
+    border-bottom: 1pt solid #DDDDDD;
+    padding-bottom: 0%;
+}
+
+#fleet_advance .from {
+    padding: 4%;
+    padding-top: 0%;
+    height: auto;
+    padding-bottom: 0%;
+}
+
+#fleet_advance .from h5 {
+    margin: 2px;
+    color: #A89131;
+}
+
+#fleet_advance .from h4 {
+    margin-top: 5px;
+    font-size: 10pt;
+}
+
+#fleet_advance .swiper-container-horizontal > .swiper-pagination {
+    bottom: 20px;
+}
+
+/**************************************/
+
+/************* Offers2nd **************/
+#Offers2nd .Depart {
+    width: 100%;
+    border-bottom: 1pt solid #DDDDDD;
+}
+
+#Offers2nd .from {
+    padding: 4%;
+    padding-top: 0%;
+    height: 40px;
+}
+
+#Offers2nd .from h5 {
+    margin: 2px;
+    color: #A89131;
+}
+
+#Offers2nd .from h4 {
+    margin-top: 5px;
+    font-size: 10pt;
+}
+
+#Offers2nd .trip {
+    padding: 4%;
+    padding-top: 0%;
+    height: 70px;
+}
+
+#Offers2nd .trip img {
+    width: 100%;
+    padding-top: 5%;
+}
+
+#Offers2nd .LefttimeDiv {
+    width: 33.3%;
+    float: left;
+    text-align: center;
+}
+
+#Offers2nd .LefttimeDiv h5 {
+    margin: 0px;
+}
+
+#Offers2nd .LefttimeDiv h4 {
+    margin: 0px;
+}
+
+#Offers2nd .middeltimeDiv {
+    width: 33.3%;
+    float: left;
+    text-align: center;
+}
+
+#Offers2nd .middeltimeDiv h5 {
+    margin: 0px;
+    color: #A89131;
+}
+
+#Offers2nd .RighttimeDiv {
+    width: 33.3%;
+    text-align: center;
+}
+
+#Offers2nd .RighttimeDiv h5 {
+    margin: 0px;
+}
+
+#Offers2nd .RighttimeDiv h4 {
+    margin: 0px;
+}
+
+#Offers2nd .PassInfoDiv {
+    width: 100%;
+    padding: 4%;
+    border-bottom: 1pt solid #DDDDDD;
+}
+
+#Offers2nd .PassInfoDiv h5 {
+    margin: 0px;
+}
+
+#Offers2nd .InfoContainerDiv {
+    width: 92%;
+    margin-left: 4%;
+    margin-right: 4%;
+    -webkit-box-shadow: 0px 0px 13px 3px rgba(199, 199, 199, 1);
+    -moz-box-shadow: 0px 0px 13px 3px rgba(199, 199, 199, 1);
+    box-shadow: 0px 0px 13px 3px rgba(199, 199, 199, 1);
+    -moz-box-shadow: 0px 0px 13px 3px rgba(199, 199, 199, 1);
+    height: auto;
+    margin-bottom: 5%;
+    overflow: hidden;
+}
+
+#Offers2nd .Div3SP {
+    width: 60%;
+}
+
+#Offers2nd .Div1SP {
+    width: 22%;
+    float: left;
+    text-align: right;
+    padding-right: 0%;
+    color: #A89131;
+}
+
+#Offers2nd .Div1SPimg {
+    width: 10%;
+    top: 20%;
+    float: right !important;
+    padding-right: 2%;
+}
+
+#Offers2nd .Div1SPimg img {
+    width: 11px;
+}
+
+#Offers2nd .total {
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+    height: auto;
+    margin-bottom: 0%;
+    overflow: hidden;
+    background-color: #CCAD2C;
+}
+
+#Offers2nd .total h5 {
+    margin: 0px;
+    font-size: 10pt;
+    font-weight: none;
+    padding-left: 2%;
+}
+
+#Offers2nd .total h4 {
+    margin: 0px;
+    font-weight: bold;
+    font-size: 18pt;
+    display: inline-block;
+    padding-left: 2%;
+}
+
+#Offers2nd .total img {
+    margin-top: 0%;
+    float: right;
+    display: inline-block;
+    width: 10px;
+    padding-right: 5%;
+}
+
+/**************************************/
+
+/************contact_us****************/
+#contact_us .ContainerDiv {
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+#contact_us .ContainerDiv div {
+    position: relative;
+    float: left;
+}
+
+#contact_us .mapDiv {
+    width: 100%;
+}
+
+#contact_us .PassInfoDiv {
+    width: 100%;
+    padding: 4%;
+    border-bottom: 1pt solid #DDDDDD;
+}
+
+#contact_us .PassInfoDiv h5 {
+    margin: 0px;
+}
+
+#contact_us .InfoContainerDiv {
+    width: 98%;
+    margin-left: 1%;
+    margin-right: 1%;
+    -webkit-box-shadow: 0px 0px 13px 3px rgba(199, 199, 199, 1);
+    -moz-box-shadow: 0px 0px 13px 3px rgba(199, 199, 199, 1);
+    box-shadow: 0px 0px 13px 3px rgba(199, 199, 199, 1);
+    -moz-box-shadow: 0px 0px 13px 3px rgba(199, 199, 199, 1);
+    height: auto;
+    margin-bottom: 5%;
+    overflow: hidden;
+}
+
+#contact_us .InfoContainerDiv2 {
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+    height: auto;
+    margin-bottom: 5%;
+    overflow: hidden;
+}
+
+#contact_us .Div3SP {
+    width: 100%;
+    color: #A89131;
+    padding: 0px;
+}
+
+#contact_us .Div3SP h5 {
+    padding-left: 2%;
+}
+
+#contact_us .Div1SP {
+    width: 100%;
+    float: left;
+    color: black;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#contact_us .Div1SP h5 {
+    padding-left: 2%;
+}
+
+#contact_us #map {
+    width: 100%;
+    height: 250px;
+    background-color: #CCC;
+}
+
+/**************************************/
+
+/*****************MyProfile************/
+#MyProfile div#PopupMultiChoice-popup {
+    width: 80%;
+    left: 10% !important;
+}
+
+#MyProfile .DivRow {
+    width: 100%;
+}
+
+#MyProfile .DivBottomBorder {
+    border-bottom-style: solid;
+    border-bottom-color: #f3f3f3;
+    border-width: 1px;
+}
+
+#MyProfile .DivIcon img {
+    width: 70%;
+    margin-top: 30%;
+    margin-left: 30%;
+}
+
+#MyProfile .DataContainerDiv h4 {
+    margin: 12px;
+}
+
+#MyProfile .LogOut {
+    background-color: #ed1c24;
+    width: 92%;
+    margin: 4%;
+    text-align: center;
+    margin-top: 0px;
+}
+
+#MyProfile .LogOut h3 {
+    color: white;
+    font-weight: normal;
+}
+
+#MyProfile .InfoContainerDiv {
+    width: 100%;
+    margin-left: 4%;
+    margin-right: 4%;
+    -webkit-box-shadow: 0px 0px 13px 3px rgba(199, 199, 199, 1);
+    -moz-box-shadow: 0px 0px 13px 3px rgba(199, 199, 199, 1);
+    box-shadow: 0px 0px 13px 3px rgba(199, 199, 199, 1);
+    -moz-box-shadow: 0px 0px 13px 3px rgba(199, 199, 199, 1);
+    height: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    overflow: hidden;
+}
+
+#MyProfile .Div3SP {
+    width: 100%;
+}
+
+#MyProfile .ui-datebox-gridlabel {
+    background-color: #D7B029;
+}
+
+#MyProfile .ui-datebox-gridrow {
+    background-color: white;
+}
+
+#MyProfile .ui-datebox-griddate.ui-corner-all.ui-btn.ui-btn-a {
+    background-color: white;
+    border-radius: 25px 25px 25px 25px;
+    border: 1px solid transparent;
+    color: black;
+}
+
+#MyProfile .ui-datebox-griddate.ui-corner-all.ui-btn.ui-btn-b {
+    background-color: #AE892E;
+    border-radius: 25px 25px 25px 25px;
+    border: 1px solid transparent;
+    color: white;
+    width: 28px;
+    height: 28px;
+}
+
+#MyProfile .ui-popup-container.fade.in.ui-popup-active {
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+#MyProfile #txtItemValue {
+    -webkit-user-select: none;
+}
+
+/**************************************/
+/**************Login*******************/
+#Login .ui-input-text.ui-body-inherit.ui-corner-all.ui-shadow-inset {
+    width: 100%;
+    border-style: none;
+    text-align: right;
+    box-shadow: none;
+    background-color: transparent;
+}
+
+/**************************************/
+
+/**************SignUp******************/
+
+#SignUp div#PopupMultiChoice-popup {
+    width: 80%;
+    left: 10% !important;
+}
+
+#SignUp .ui-popup-container.fade.in.ui-popup-active {
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+#SignUp #txtItemValue {
+    text-align: center;
+}
+
+/***********************************
+MY booking========================================*/
+
+.tabnotSelected {
+    background-color: transparent;
+    color: black;
+}
+
+.tabSelected {
+    background-color: #a89131;
+    text-color: white;
+}
+
+.TabSelected {
+    background-color: #a89131 !important;
+    color: black !important;
+}
+
+.TabNotSelected {
+    background-color: transparent !important;
+    color: black !important;
+}
+
+.tabselected h5 {
+    color: white;
+}
+
+.notSelected {
+    background-color: #EDEDED;
+    color: gray;
+}
+
+.selected {
+    background-color: #ddc356;
+    color: black;
+}
+
+.PassTitle h3 {
+    margin: 5%;
+    font-weight: normal;
+}
+
+.DivIcon img {
+    margin-top: 15%;
+    margin-left: 15%;
+}
+
+.Div30 img {
+    width: 25%;
+    margin-top: 15%;
+    margin-right: 8%;
+    float: right;
+}
+
+.MainTabs {
+    width: 90%;
+    margin: 5%;
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border: 1px solid #d3b949;
+    margin-bottom: 5%;
+}
+
+.MainTabs .Div3Col {
+    text-align: center;
+}
+
+.MainTabs .Div3ColSellectedLeft {
+    border-radius: 5px 0px 0px 5px;
+    -moz-border-radius: 5px 0px 0px 5px;
+    -webkit-border-radius: 5px 0px 0px 5px;
+    border: 0px solid #d3b949;
+    background-color: #d3b949;
+    color: white;
+    padding: 0px;
+}
+
+.MainTabs .Div3ColSellectedRight {
+    border-radius: 0px 5px 5px 0px;
+    -moz-border-radius: 0px 5px 5px 0px;
+    -webkit-border-radius: 0px 5px 5px 0px;
+    border: 0px solid #d3b949;
+    background-color: #d3b949;
+    color: white;
+    padding: 0px;
+}
+
+.MainTabs div {
+    text-align: center;
+    width: 33.3%;
+    display: block;
+    height: auto;
+    color: #aa9231;
+}
+
+.MainTabs .Div3ColSellectedCenter {
+    border: 0px solid #d3b949;
+    background-color: #d3b949;
+    color: white;
+    padding: 0px;
+}
+
+.MainTabs h5 {
+    font-weight: normal !important;
+    margin: 6%;
+}
+
+.ScrollDiv {
+    width: 100%;
+    overflow: scroll !important;
+}
+
+.ScrollDiv2 {
+    width: 100%;
+    overflow: scroll !important;
+}
+
+.ScrollDiv3 {
+    width: 100%;
+    overflow: scroll !important;
+}
+
+/***************************************************/
+/****************azab passengers********************/
+.row.passenger-div-separator {
+    width: 94%;
+    padding: 3%;
+    border-bottom: solid 1px #dddddd;
+    font-weight: bold;
+}
+
+@media only screen and (min-width: 600px) {
+    #btnPostReservation {
+        margin-bottom: 10%;
+    }
+}

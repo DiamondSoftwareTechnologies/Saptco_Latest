@@ -1,0 +1,110 @@
+﻿<!-- Dynamic navbar for iOS theme -->
+{{#if @global.ios}}
+<div class="navbar bg-black" style="width:100% ; height:60px">
+    <div class="navbar-inner on-center" style="background-color:#FAF8EB !important">
+        <div class="left sliding " id="left-back-button">
+            <a href="#" class="back">
+                <i class="icon icon-back"></i>
+            </a>
+        </div>
+        <div class="center sliding color-s-orange" id="logoTitle6" style="font-weight:700; font-size: 18px !important; font-stretch: condensed;color:#0E6AAC;margin-left:85px">{{lbltitle}}</div>
+        <div class="right" id="Rlogo6">
+
+        </div>
+    </div>
+</div>
+{{/if}}
+
+<div class="page" data-page="SeatSelectR">
+    <!-- Fixed navbar for Material theme -->
+    {{#if @global.android}}
+    <div class="navbar bg-black">
+        <div class="navbar-inner bg-black">
+            <div class="left">
+                <a href="#" class="back icon-only">
+                    <i class="icon icon-back"></i>
+                </a>
+            </div>
+            <div class="center color-s-orange" style="font-weight 300; font-size 20px !important; font-stretch condensed;">{{lbltitle}}</div>
+            <div class="right">
+                <img src="img/Saptco-logo.svg" alt="SAPTCO" style="width: 90px;">
+            </div>
+        </div>
+    </div>
+    {{/if}}
+
+    <div class="page-content" style="direction: rtl !important; color: #B68E20">
+
+        <div style="background-image: url('img/bus_bg.png'); margin-right: 2%;
+        margin-left: 2%; background-size:cover; border-bottom:solid;
+         border-bottom-width:7px; border-color:#9b8f8f;background-position:center center ; border-radius: 55px;
+         overflow:hidden">
+
+            <div class="content-block" id="seats" style="padding-top: 170px; padding-bottom: 10px;">
+                <!--onPageInit('seatSelect')-->
+            </div>
+        </div>
+        <div class="row button  bg-s-orange" id="confirmSeatR" style="margin:5px;">
+            {{confirm}}
+        </div>
+        <div class="row center" style="margin:5%; background-color:white; padding: 2%;">
+            <div class="col-33 center">
+                <div class="row">
+                    <div class="col-40 button11 availableSeat"></div>
+                    <div class="col-60">
+                        {{availableSeat}}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-40 button11 selectedSeat"></div>
+                    <div class="col-60">
+                        {{selecteedSeat}}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-40 button11 reservedSeat"></div>
+                    <div class="col-60">
+                        {{reservedSeat}}
+                    </div>
+                </div>
+            </div>
+            <div class="col-33 center">
+                <div class="row">
+                    <div class="col-40 button11 wc"></div>
+                    <div class="col-60">
+                        {{WC}}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-40 button11 door"></div>
+                    <div class="col-60">
+                        {{Door}}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-40 button11 canteen"></div>
+                    <div class="col-60">
+                        {{canteen}}
+                    </div>
+                </div>
+            </div>
+            <div class="col-33 center">
+                <div class="row">
+                    <div class="col-40 button11 table"></div>
+                    <div class="col-60">
+                        {{table}}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-40 button11 driver"></div>
+                    <div class="col-60">
+                        {{driver}}
+                    </div>
+                </div>
+                <div class="row">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

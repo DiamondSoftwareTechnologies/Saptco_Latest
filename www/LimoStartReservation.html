@@ -1,0 +1,78 @@
+﻿<!-- Dynamic navbar for iOS theme -->
+{{#if @global.ios}}
+<div class="navbar bg-black" style="width:100% ; height:60px">
+    <div class="navbar-inner on-center" style="background-color:#FAF8EB !important">
+        <div class="left sliding ">
+            <a href="#" class="back">
+                <i class="icon icon-back"></i>
+            </a>
+        </div>
+        <div class="center sliding color-s-orange" style="font-weight :300; font-size: 16px !important; font-stretch :condensed;">{{lblTitle}}</div>
+        <div class="right">
+            <img src="img/Saptco-logo.svg" alt="SAPTCO" style="width: 90px; ">
+        </div>
+    </div>
+</div>
+{{/if}}
+
+<div class="page" data-page="LimoStartReservation">
+
+    <div id="position_off" style="width:50% ; height:40px ; position:absolute; z-index:5000 ;   border-radius: 10px;text-align:center ; font-size:16px ; line-height:40px; ">
+        <img src={{PicLocation_png}} alt="Alternate Text" style="width:100%; opacity:0.5" id="btnPickupLocation" />
+        <img src={{SetDist_png}} alt="Alternate Text" style="width:100%; opacity:0.5 ;display:none" id="btnDitenationLocation" />
+    </div>
+
+    <div class="page-content" style="overflow:hidden ;color: #B68E20">
+        <div id="current_field" class="row  no-gutter" style="background-color: rgba(62, 50, 14, 0.62);    color: #FFFFFF; ">
+            <div class="col-10" id="centerLocation">
+                <img src="img/pin132.svg" alt="Alternate Text" style="width:20px;margin:10px" />
+            </div>
+            <div class="col-90">
+                <div class="row">
+                    <div class="col-100" style="font-size:12px"> {{yourLocationis}} </div>
+                    <div class="col-100" style="font-size:15px; overflow-x: scroll;">
+                        <div id="lblcurrentLocation" style="word-wrap: normal !important;white-space: nowrap;">
+                            Riyadh street
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="img/add.png" alt="Alternate Text" id="btnAddDest" class="btn-add-dest" />
+        <div id="googleMap3" style="overflow:scroll ; height:80% ;width:100%;  border-top:2px solid #71695C; border-bottom:2px solid #71695C ; position:absolute">
+        </div>
+        <div class="row no-gutter pickup-style">
+            <div class="col-100">
+                <div class="row  open-popup" id="btnShowPickupLoc" data-popup=".popup-about">
+                    <div class="col-100 " style="font-size:12px;margin-left: 5px;">  {{PickupLocation}}   </div>
+                    <div class="col-100" style="font-size:15px;margin-left: 5px; white-space:nowrap;overflow:scroll" id="txtPickUpLocation">{{Select}}</div>
+                </div>
+            </div>
+            <div class="col-100">
+                <input id="pac-input" class="controls" type="text" placeholder="Search Box">
+            </div>
+        </div>
+        <div class="row no-gutter drop-style">
+            <div class="col-100">
+                <div class="row open-popup" id="btnShowDistLocation" data-popup=".popup-dist">
+                    <div class="col-100 " style="font-size:12px;margin-left: 5px;"> {{destinationlocation}} </div>
+                    <div class="col-100" style="font-size:15px;margin-left: 5px; white-space:nowrap;overflow:scroll" id="txtDistLocation">{{Select}}</div>
+                </div>
+            </div>
+            <div class="col-10">
+
+            </div>
+        </div>
+    </div>
+    <div id="Current_location_btn" style="position:absolute ; width:100% ; height:53px;line-height:53px ; background-color: rgba(62, 50, 14, 0.62); bottom:114px; z-index:500">
+        <div class="MapButton">
+            {{GetCurrentLocation}}
+        </div>
+    </div>
+    <div id="Continue" style="position:absolute ; width:100% ; height:53px;line-height:53px ; background-color: rgba(62, 50, 14, 0.62); bottom:63px; z-index:500">
+        <div class="MapButton">
+            {{Continue}}
+        </div>
+    </div>
+    <div style="position:absolute ; width:100% ; height:62px ;  background-color:black; bottom:0px; z-index:500"></div>
+</div>

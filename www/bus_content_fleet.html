@@ -1,0 +1,345 @@
+﻿<!-- Dynamic navbar for iOS theme -->
+{{#if @global.ios}}
+<div class="navbar bg-black" style="width:100% ; height:60px">
+    <div class="navbar-inner on-center" style="background-color:#FAF8EB !important">
+        <div class="left sliding">
+            <a href="#" class="back">
+                <i class="icon icon-back"></i>
+            </a>
+        </div>
+        <div class="center sliding color-s-orange" style="font-weight:300; font-size:20px !important; font-stretch:condensed;">{{lblheaderTitle}}</div>
+        <div class="right">
+            <img src="img/Saptco-logo.svg" alt="SAPTCO" style="width:90px">
+        </div>
+    </div>
+</div>
+{{/if}}
+
+<div class="page" data-page="bus_content_fleet">
+    <!-- Fixed navbar for Material theme -->
+    {{#if @global.android}}
+    <div class="navbar bg-black">
+        <div class="navbar-inner bg-black">
+            <div class="left">
+                <a href="#" class="back icon-only">
+                    <i class="icon icon-back"></i>
+                </a>
+            </div>
+            <div class="center  color-s-orange" style=" font-weight 300; font-size 20px !important; font-stretch condensed;">{{lblheaderTitle}}</div>
+            <div class="right">
+                <img src="img/Saptco-logo.svg" alt="SAPTCO" style=" width 90px; ">
+            </div>
+        </div>
+    </div>
+    {{/if}}
+
+    <div class="page-content" style="color: #B68E20">
+        <!-- Page content goes here -->
+        <div class="ContainerDivScroll" data-role="content"
+             id="bus_content_fleet">
+            <div class="fleet clickable_img" id="Traveco">
+
+                <img src="img/Luxurious Mercedes Traveco 28 Seat.jpg">
+                <div class="bus-text">
+                    <h2 id="Traveco_28"
+                        style=" font-weight 300; font-size 20px !important; font-stretch condensed;
+                        text-align center; color white; text-shadow none;">
+                        {{Traveco_28}}
+                    </h2>
+
+                </div>
+            </div>
+
+            <div class="fleet clickable_img" id="Trav">
+
+                <img src="img/Mercedes Traveco 49 Seat.jpg">
+                <div class="bus-text">
+                    <h2 id="Traveco_49"
+                        style="font-weight 300; font-size 20px !important; font-stretch condensed;
+                        text-align center; color white; text-shadow none">
+                        {{Traveco_49}}
+                    </h2>
+                </div>
+
+            </div>
+            <div class="fleet  clickable_img" id="MBT">
+
+                <img src="img/Mercedes-MBT-350.jpg">
+                <div class="bus-text">
+                    <h2 id="MBT-350"
+                        style="font-weight:300; font-size:20px !important; font-stretch:condensed;text-align center; color white; text-shadow none">
+                        {{MBT_350}}
+                    </h2>
+
+                </div>
+            </div>
+            <div class="fleet clickable_img" id="KingLong">
+
+                <img src="img/King Long.jpg">
+                <div class="bus-text">
+                    <h2 id="lblKing"
+                        style=" font-weight 300; font-size 20px !important; font-stretch condensed;text-align center; color white; text-shadow none">
+                        {{lblKing}}
+                    </h2>
+                </div>
+
+            </div>
+            <div class="fleet clickable_img" id="CityBus">
+
+                <img src="img/King Long City Bus.jpg">
+                <div class="bus-text">
+                    <h2 id="lblCitybus"
+                        style=" font-weight 300; font-size 20px !important; font-stretch condensed;text-align center; color white; text-shadow none">
+                        {{lblCitybus}}
+                    </h2>
+                </div>
+
+            </div>
+            <div class="fleet clickable_img" id="Mistsubishi">
+
+                <img src="img/Mistsubishi Rosa.jpg">
+                <div class="bus-text">
+                    <h2 id="lblMistsubishi"
+                        style=" font-weight 300; font-size 20px !important; font-stretch condensed;text-align center; color white; text-shadow none">
+                        {{lblMistsubishi}}
+                    </h2>
+                </div>
+            </div>
+            <div class="fleet clickable_img" id="Konicto">
+                <img src="img/Mercedes Konicto citybus.jpg">
+                <div class="bus-text">
+                    <h2 id="lblKonicto"
+                        style=" font-weight 300; font-size 20px !important; font-stretch condensed;text-align center; color white; text-shadow none">
+                        {{lblKonicto}}
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="display:none">
+        <div style="display: none" class="InfoContainerDiv2 Traveco">
+            <div class="Depart">
+                <div class="from">
+                    <h5 id="lblModel" style=" font-weight 300; font-size 20px !important; font-stretch condensed;">{{lblModel}}</h5>
+                    <h4 id="lblModelTraveco" style=" font-weight 300; font-size 20px !important; font-stretch condensed;">{{lblModelTraveco}}</h4>
+                </div>
+            </div>
+            <div class="Depart">
+                <div class="from">
+                    <h5 id="lblDetails" style=" font-weight 300; font-size 20px !important; font-stretch condensed;">{{lblDetails}}</h5>
+
+                    <h4 id="lblDetailsTraveco" style=" font-weight 300; font-size 20px !important; font-stretch condensed;">{{lblDetailsTraveco}}</h4>
+                </div>
+            </div>
+            <div class="Depart">
+                <div class="from">
+                    <h5 id="lblServices" style=" font-weight 300; font-size 20px !important; font-stretch condensed;">{{lblServices}}</h5>
+
+                    <h4 id="lblServicesTraveco" style=" font-weight 300; font-size 20px !important; font-stretch condensed;">
+                        {{lblServicesTraveco}}
+                    </h4>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <div style="display: none" class="InfoContainerDiv2 Trav">
+
+            <div class="Depart">
+                <div class="from">
+                    <h5 id="lblModel2" style=" font-weight 300; font-size 20px !important; font-stretch condensed;">{{lblModel}}</h5>
+
+                    <h4 id="lblModelTrav" style=" font-weight 300; font-size 20px !important; font-stretch condensed;">{{lblModelTrav}}</h4>
+                </div>
+            </div>
+            <div class="Depart">
+                <div class="from">
+                    <h5 id="lblDetails2" style=" font-weight 300; font-size 20px !important; font-stretch condensed;">{{lblDetails}}</h5>
+
+                    <h4 id="lblDetailsTrav" style=" font-weight 300; font-size 20px !important; font-stretch condensed;">{{lblDetailsTrav}}</h4>
+                </div>
+            </div>
+
+            <div class="Depart">
+                <div class="from">
+                    <h5 id="lblServices2" style=" font-weight 300; font-size 20px !important; font-stretch condensed;">{{lblServices}}</h5>
+
+                    <h4 id="lblServicesTrav" style=" font-weight 300; font-size 20px !important; font-stretch condensed;">
+                        Inter-city transport
+                        {{lblServicesTrav}}
+                    </h4>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+        <div style="display: none" class="InfoContainerDiv2 MBT">
+
+            <div class="Depart">
+                <div class="from">
+                    <h5 id="lblModel3" style=" font-weight 300; font-size 20px !important; font-stretch condensed;">{{lblModel}}</h5>
+
+                    <h4 id="lblModelMBT" style=" font-weight 300; font-size 20px !important; font-stretch condensed;">{{lblModelMBT}}</h4>
+                </div>
+            </div>
+            <div class="Depart">
+                <div class="from">
+                    <h5 id="lblDetails3" style=" font-weight 300; font-size 20px !important; font-stretch condensed;">{{lblDetails}}</h5>
+
+                    <h4 id="lblDetailsMBT" style=" font-weight 300; font-size 20px !important; font-stretch condensed;">{{lblDetailsMBT}}</h4>
+                </div>
+            </div>
+
+            <div class="Depart">
+                <div class="from">
+                    <h5 id="lblServices3" style=" font-weight 300; font-size 20px !important; font-stretch condensed;">{{lblServices}}</h5>
+
+                    <h4 id="lblServicesMBT" style=" font-weight 300; font-size 20px !important; font-stretch condensed;">
+                        {{lblServicesMBT}}
+                    </h4>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+        <div style="display: none" class="InfoContainerDiv2 KingLong">
+
+            <div class="Depart">
+                <div class="from">
+                    <h5 id="lblModel4" style=" font-weight 300; font-size 20px !important; font-stretch condensed;">{{lblModel}}</h5>
+
+                    <h4 id="lblModelKingLong" style=" font-weight 300; font-size 20px !important; font-stretch condensed;">{{lblModelKingLong}}</h4>
+                </div>
+            </div>
+            <div class="Depart">
+                <div class="from">
+                    <h5 id="lblDetails4" style=" font-weight 300; font-size 20px !important; font-stretch condensed;">{{lblDetails}}</h5>
+
+                    <h4 id="lblDetailsKingLong" style=" font-weight 300; font-size 20px !important; font-stretch condensed;">{{lblDetailsKingLong}}</h4>
+                </div>
+            </div>
+
+            <div class="Depart">
+                <div class="from">
+                    <h5 id="lblServices4" style=" font-weight 300; font-size 20px !important; font-stretch condensed;">{{lblServices}}</h5>
+
+                    <h4 id="lblServicesKingLong" style=" font-weight 300; font-size 20px !important; font-stretch condensed;">
+                        {{lblServicesKingLong}}
+                    </h4>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <div style="display: none" class="InfoContainerDiv2 CityBus">
+
+            <div class="Depart">
+                <div class="from">
+                    <h5 id="lblModel5" style=" font-weight 300; font-size 20px !important; font-stretch condensed;">{{lblModel}}</h5>
+
+                    <h4 id="lblModelCityBus" style=" font-weight 300; font-size 20px !important; font-stretch condensed;">{{lblModelCityBus}}</h4>
+                </div>
+            </div>
+            <div class="Depart">
+                <div class="from">
+                    <h5 id="lblDetails5" style=" font-weight 300; font-size 20px !important; font-stretch condensed;">{{lblDetails}}</h5>
+
+                    <h4 id="lblDetailsCityBus" style=" font-weight 300; font-size 20px !important; font-stretch condensed;">
+                        {{lblDetailsCityBus}}
+                    </h4>
+                </div>
+            </div>
+
+            <div class="Depart">
+                <div class="from">
+                    <h5 id="lblServices5" style=" font-weight 300; font-size 20px !important; font-stretch condensed;">{{lblServices}}</h5>
+
+                    <h4 id="lblServicesCityBus" style=" font-weight 300; font-size 20px !important; font-stretch condensed;">
+                        {{lblServicesCityBus}}
+                    </h4>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div style="display: none" class="InfoContainerDiv2 Mistsubishi">
+
+            <div class="Depart">
+                <div class="from">
+                    <h5 id="lblModel6" style=" font-weight 300; font-size 20px !important; font-stretch condensed;">{{lblModel}}</h5>
+
+                    <h4 id="lblModelTravecoMistsubishi" style=" font-weight 300; font-size 20px !important; font-stretch condensed;">{{lblModelTravecoMistsubishi}}</h4>
+                </div>
+            </div>
+            <div class="Depart">
+                <div class="from">
+                    <h5 id="lblDetails6" style=" font-weight 300; font-size 20px !important; font-stretch condensed;">{{lblDetails}}</h5>
+
+                    <h4 id="lblDetailsMistsubishi1" style=" font-weight 300; font-size 20px !important; font-stretch condensed;">{{lblDetailsMistsubishi1}}</h4>
+                    <h4 id="lblDetailsMistsubishi2" style=" font-weight 300; font-size 20px !important; font-stretch condensed;">
+                        {{lblDetailsMistsubishi2}}
+                    </h4>
+                </div>
+            </div>
+
+            <div class="Depart">
+                <div class="from">
+                    <h5 id="lblServices6" style=" font-weight 300; font-size 20px !important; font-stretch condensed;">{{lblServices}}</h5>
+
+                    <h4 id="lblServicesMistsubishi" style=" font-weight 300; font-size 20px !important; font-stretch condensed;">
+                        {{lblServicesMistsubishi}}
+                    </h4>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <div style="display: none" class="InfoContainerDiv2 Konicto">
+
+            <div class="Depart">
+                <div class="from">
+                    <h5 id="lblModel7" style=" font-weight 300; font-size 20px !important; font-stretch condensed;">{{lblModel}}</h5>
+
+                    <h4 id="lblModelKonicto" style=" font-weight 300; font-size 20px !important; font-stretch condensed;">{{lblModelKonicto}}</h4>
+                </div>
+            </div>
+            <div class="Depart">
+                <div class="from">
+                    <h5 id="lblDetails7" style=" font-weight 300; font-size 20px !important; font-stretch condensed;">{{lblDetails}}</h5>
+
+                    <h4 id="lblDetailsKonicto" style=" font-weight 300; font-size 20px !important; font-stretch condensed;">
+                        {{lblDetailsKonicto}}
+                    </h4>
+                </div>
+            </div>
+
+            <div class="Depart">
+                <div class="from">
+                    <h5 id="lblServices7" style="font-weight:300; font-size :20px !important; font-stretch :condensed;">{{lblServices}}</h5>
+
+                    <h4 id="lblServicesKonicto" style="font-weight:300;font-size:20px !important; font-stretch:condensed;">
+                        {{lblServicesKonicto}}
+                    </h4>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+</div>

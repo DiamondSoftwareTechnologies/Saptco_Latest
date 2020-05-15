@@ -1,0 +1,81 @@
+<!-- Dynamic navbar for iOS theme -->
+{{#if @global.ios}}
+<div class="navbar bg-black" style="width:100% ; height:60px">
+    <div class="navbar-inner on-center" style="background-color:#FFF5E2 !important">
+        <div class="left sliding">
+            <a href="#" class="back">
+                <i class="icon icon-back"></i>
+            </a>
+        </div>
+        <div class="center sliding color-s-orange" id="logoTitle9"
+             style="font-weight:700; font-size: 20px !important; font-stretch: condensed;color:#b68e20;margin-left:65px">
+            {{lblTitle}}
+        </div>
+        <div class="right" id="Rlogo9">
+
+        </div>
+    </div>
+</div>
+{{/if}}
+
+<div class="page" data-page="EventStations">
+    <!-- Fixed navbar for Material theme -->
+    {{#if @global.android}}
+    <div class="navbar">
+        <div class="navbar-inner ">
+            <div class="left">
+                <a href="#" class="back icon-only">
+                    <i class="icon icon-back"></i>
+                </a>
+            </div>
+            <div class="center  color-s-orange"
+                 style="font-weight:300; font-size:20px !important; font-stretch:condensed;">{{lblTitle}}
+            </div>
+            <div class="right">
+                <img src="img/Saptco-logo.svg" alt="SAPTCO" style="width:90px; ">
+            </div>
+
+        </div>
+    </div>
+    {{/if}}
+    <!--<form class="searchbar bg-s-orange">-->
+    <!--<div class="searchbar-input">-->
+    <!--<input type="search" placeholder="{{search}}">-->
+    <!--<a href="#" class="searchbar-clear"></a>-->
+    <!--</div>-->
+    <!--<a href="#" class="searchbar-cancel"-->
+    <!--style=" font-weight 300; font-size 20px !important; font-stretch condensed;">{{Cancel}}</a>-->
+    <!--</form>-->
+    <!--&lt;!&ndash; Search bar overlay&ndash;&gt;-->
+    <!--<div class="searchbar-overlay"></div>-->
+    <div class="page-content" style="background-color:#FAF8EB; color: #b68e20">
+        <div class="content-block searchbar-not-found">
+            Nothing found
+        </div>
+        <div class="list-block list-block-search searchbar-found  virtual-list">
+            <ul>
+                <!--<li class="item-content">
+                    <div class="item-inner station-item">
+                        <div class="item-title">  item.title  </div>
+                    </div>
+                </li>-->
+            </ul>
+            <!--</div>-->
+            <!--<div class="list-block"-->
+            <!--style="height: 100%!important; background-color: white!important; margin-top: 16%!important;">-->
+            <!--<div class="list-block list-block-search searchbar-found  virtual-list">-->
+            <!--<ul>-->
+            <!--&lt;!&ndash;<li class="item-content">-->
+            <!--<div class="item-inner station-item">-->
+            <!--<div class="item-title">  item.title  </div>-->
+            <!--</div>-->
+            <!--</li>&ndash;&gt;-->
+            <!--</ul>-->
+            <!--</div>-->
+            <!--</div>-->
+        </div>
+    </div>
+</div>
+
+
+

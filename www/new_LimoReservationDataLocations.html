@@ -1,0 +1,302 @@
+    <!-- Dynamic navbar for iOS theme -->
+{{#if @global.ios}}
+<div class="navbar bg-black" style="width:100% ; height:60px">
+    <div class="navbar-inner on-center" style="background-color:#FAF8EB !important">
+        <div class="left sliding">
+            <a href="#" class="back">
+                <i class="icon icon-back"></i>
+            </a>
+        </div>
+        <div class="center sliding color-s-orange" style="font-weight:300; font-size:18px !important; font-stretch:condensed;">بيانات الحجز</div>
+        <div class="right">
+            <img src="img/Saptco-logo.svg" alt="SAPTCO" style="width:90px; ">
+        </div>
+    </div>
+</div>
+
+{{/if}}
+<div class="page " data-page="new_LimoReservationDataLocations">
+    <div class="page-content ExternalStyle LimoFormStyle">
+        <div class="content-block" style="margin-top: 0px;
+                 padding-left:3px;
+                 padding-right:3px;
+                 padding-top :3px;
+                 padding-bottom :3px;
+                 margin-top :10px;margin-bottom: 10px;
+                 margin-bottom: 0px;padding-left: 0px; padding-right: 0px;
+
+                 ">
+            <div class="">
+                <div class="row no-gutter">
+                    <div class="col-100 selected-tab " style="font-weight:300; font-size:18px !important; font-stretch:condensed;">الموقع</div>
+                </div>
+                <form id="LimoReservation" class="list-block " onsubmit="return false;">
+                    <ul>
+                        <li>
+                            <div class="row">
+                                <div class="item-title-color label col-100" style="font-weight:300; font-size:13px !important; font-stretch:condensed;">يرجى تحديد موقع المغادرة:</div>
+                            </div>
+
+                        <li>
+
+
+
+
+
+                            <div class="item-content div_click">
+
+                                <div class="item-inner ">
+
+                                    <div class="item-title label select_click" style=" font-weight 300; font-size 13px !important; font-stretch condensed;white-space normal;">المدينة</div>
+
+                                    <div class="item-input validate" data-validation="errCityName" style=" font-weight 300; font-size 13px !important; font-stretch condensed;">
+
+                                        <a href="#" class="smart-select" data-open-in="picker" data-back-on-select="true" data-back-text="حفظ">
+
+                                            <select name="from" class="city" id="cities" style=" font-weight 300; font-size 13px !important; font-stretch condensed;">
+
+                                                <option data-itemvalue="0" value="NA" selected="selected" style=" font-weight 300; font-size 18px !important; font-stretch condensed;">اختر</option>
+
+                                            </select>
+
+                                            <div class="item-content ">
+
+
+                                                <div class="item-inner" style="border:none;padding:0px !important">
+
+
+                                                    <div class="item-after"></div>
+
+                                                </div>
+
+
+                                            </div>
+
+                                        </a>
+
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+
+
+
+                        </li>
+
+                        <li>
+
+
+
+
+
+                            <div class="item-content div_click">
+
+                                <div class="item-inner ">
+
+                                    <div class="item-title label select_click" style=" font-weight 300; font-size 13px !important; font-stretch condensed;white-space normal;">المنطقة</div>
+
+                                    <div class="item-input validate" data-validation="errCityName" style=" font-weight 300; font-size 13px !important; font-stretch condensed;">
+
+                                        <a href="#" class="smart-select" data-open-in="picker" data-back-on-select="true" data-back-text="حفظ">
+
+                                            <select name="from" class="city" id="cities" style=" font-weight 300; font-size 13px !important; font-stretch condensed;">
+
+                                                <option data-itemvalue="0" value="NA" selected="selected" style=" font-weight 300; font-size 18px !important; font-stretch condensed;">اختر</option>
+
+                                            </select>
+
+                                            <div class="item-content ">
+
+
+                                                <div class="item-inner" style="border:none;padding:0px !important">
+
+
+                                                    <div class="item-after"></div>
+
+                                                </div>
+
+
+                                            </div>
+
+                                        </a>
+
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+
+
+                        </li>
+
+                        <div class="row">
+                            <div class="col-50">
+                                <div id="DepartFrom_icon" class="location-click">
+                                    <img src="img/drop_pin.png" style="width:20px">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-100">
+                                <div class="item-input validate" data-validation="ErrDepartFrom">
+                                    <input class="LocationClass" type="text" readonly="readonly" name="Name" id="DepartFrom" style="font-weight:300; font-size:13px !important; font-stretch:condensed;">
+                                </div>
+                            </div>
+                        </div>
+
+                        <li>
+                            <hr />
+                        </li>
+                        <li style="display:none">
+                            <div id="googleMap" class="EmptyMapDivStyle" style="overflow:scroll ; height: 131px;  border-top:2px solid #71695C; border-bottom:2px solid #71695C">
+                            </div>
+                        </li>
+
+
+                        <!--<li>
+
+                            <label class="label-checkbox item-content" id="lblCheckBoxSameLoc">
+                                <input id="same_locations" type="checkbox" name="my-checkbox" value="same_locations" checked="none">
+                                <div class="item-media">
+                                    <i class="icon icon-form-checkbox"></i>
+                                </div>
+                                <div class="item-inner">
+                                    <div class="item-title">{{ToSamePickupLoc}}</div>
+                                </div>
+                            </label>
+
+                        </li>-->
+                        <li>
+                            <div class="row">
+                                <div class="item-title-color label col-100" style="font-weight:300; font-size:13px !important; font-stretch:condensed;">يرجى تحديد موقع الوصول:</div>
+                            </div>
+                        <li>
+
+
+
+
+
+                            <div class="item-content div_click">
+
+                                <div class="item-inner ">
+
+                                    <div class="item-title label select_click" style=" font-weight 300; font-size 13px !important; font-stretch condensed;white-space normal;">المدينة</div>
+
+                                    <div class="item-input validate" data-validation="errCityName" style=" font-weight 300; font-size 13px !important; font-stretch condensed;">
+
+                                        <a href="#" class="smart-select" data-open-in="picker" data-back-on-select="true" data-back-text="حفظ">
+
+                                            <select name="from" class="city" id="cities" style=" font-weight 300; font-size 13px !important; font-stretch condensed;">
+
+                                                <option data-itemvalue="0" value="NA" selected="selected" style=" font-weight 300; font-size 18px !important; font-stretch condensed;">اختر</option>
+
+                                            </select>
+
+                                            <div class="item-content ">
+
+
+                                                <div class="item-inner" style="border:none;padding:0px !important">
+
+
+                                                    <div class="item-after"></div>
+
+                                                </div>
+
+
+                                            </div>
+
+                                        </a>
+
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+
+
+
+                        </li>
+
+                        <li>
+
+
+
+
+
+                            <div class="item-content div_click">
+
+                                <div class="item-inner ">
+
+                                    <div class="item-title label select_click" style=" font-weight 300; font-size 13px !important; font-stretch condensed;white-space normal;">المنطقة</div>
+
+                                    <div class="item-input validate" data-validation="errCityName" style=" font-weight 300; font-size 13px !important; font-stretch condensed;">
+
+                                        <a href="#" class="smart-select" data-open-in="picker" data-back-on-select="true" data-back-text="حفظ">
+
+                                            <select name="from" class="city" id="cities" style=" font-weight 300; font-size 13px !important; font-stretch condensed;">
+
+                                                <option data-itemvalue="0" value="NA" selected="selected" style=" font-weight 300; font-size 18px !important; font-stretch condensed;">اختر</option>
+
+                                            </select>
+
+                                            <div class="item-content ">
+
+
+                                                <div class="item-inner" style="border:none;padding:0px !important">
+
+
+                                                    <div class="item-after"></div>
+
+                                                </div>
+
+
+                                            </div>
+
+                                        </a>
+
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+
+
+
+                        </li>
+
+                        <div class="row">
+                            <div class="col-50">
+                                <div id="Departto_icon" class="location-click">
+                                    <img src="img/drop_pin.png" style="width:20px">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-100">
+                                <div class="item-input validate" data-validation="ErrDepartto">
+                                    <input type="text" class="LocationClass" readonly="readonly" name="Name" id="Departto" style="font-weight:300; font-size:13px !important; font-stretch:condensed;">
+                                </div>
+                            </div>
+                        </div>
+
+                        </li>
+
+                        <li style="display:none">
+                            <div id="googleMap2" class="EmptyMapDivStyle" style="overflow:scroll ; height: 131px; border-top:2px solid #71695C; border-bottom:2px solid #71695C">
+                            </div>
+                        </li>
+                    </ul>
+                </form>
+
+            </div>
+            <a href="new_LimoRequestItemsList.html">
+                <div class="Button-shaddow btn-login-orange" id="btnSaveDataLocations" style="font-weight:300; font-size:13px !important; font-stretch:condensed;">التالي</div>
+            </a>
+        </div>
+    </div>
+</div>

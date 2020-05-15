@@ -1,0 +1,318 @@
+﻿.contact-us-padding {
+    padding: 10px !important;
+}
+
+.ContainerDiv {
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+    .ContainerDiv div {
+        position: relative;
+        float: left;
+    }
+
+.mapDiv {
+    width: 100%;
+}
+
+.contact-border-separator {
+    border-bottom: 1pt solid #DDDDDD !important;
+    min-height: 54px !important;
+}
+
+    .contact-border-separator h5 {
+        margin-top: 3px;
+        margin-bottom: 3px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+.InfoContainerDiv {
+    width: 98%;
+    margin-left: 1%;
+    margin-right: 1%;
+    -webkit-box-shadow: 0px 0px 13px 3px rgba(199, 199, 199, 1);
+    -moz-box-shadow: 0px 0px 13px 3px rgba(199, 199, 199, 1);
+    box-shadow: 0px 0px 13px 3px rgba(199, 199, 199, 1);
+    -moz-box-shadow: 0px 0px 13px 3px rgba(199, 199, 199, 1);
+    height: auto;
+    margin-bottom: 5%;
+    overflow: hidden;
+}
+
+.InfoContainerDiv2 {
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+    height: auto;
+    margin-bottom: 5%;
+    overflow: hidden;
+}
+
+.Div3SP {
+    width: 100%;
+    color: #A89131;
+}
+
+    .Div3SP h5 {
+        padding-left: 2%;
+    }
+
+.Div1SP {
+    width: 100%;
+    float: left;
+    color: black;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+    .Div1SP h5 {
+        padding-left: 2%;
+    }
+
+#map {
+    width: 100%;
+    height: 250px;
+    background-color: #CCC;
+}
+
+.ContainerDiv {
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+    .ContainerDiv div {
+        position: relative;
+        float: left;
+    }
+
+
+.PassInfoDiv {
+    width: 100%;
+    padding: 4%;
+    border-bottom: 1pt solid #DDDDDD;
+}
+
+    .PassInfoDiv h5 {
+        margin: 0px;
+    }
+
+.InfoContainerDiv {
+    width: 92%;
+    margin-left: 4%;
+    margin-right: 4%;
+    -webkit-box-shadow: 0px 0px 13px 3px rgba(199, 199, 199, 1);
+    -moz-box-shadow: 0px 0px 13px 3px rgba(199, 199, 199, 1);
+    box-shadow: 0px 0px 13px 3px rgba(199, 199, 199, 1);
+    -moz-box-shadow: 0px 0px 13px 3px rgba(199, 199, 199, 1);
+    height: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    overflow: hidden;
+}
+
+.Div3SP {
+    width: 60%;
+}
+
+.Div1SP {
+    width: 34%;
+    float: right !important;
+    text-align: right;
+    padding-right: 6%;
+    color: #AFAEAF;
+}
+
+    .Div1SP img {
+        width: 20px;
+    }
+
+.ContainerDiv {
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+    .ContainerDiv div {
+        position: relative;
+        float: left;
+    }
+
+.fleet {
+    margin: 0;
+    width: 100%;
+    padding-top: 1%;
+}
+
+    .fleet img {
+        margin: 0.09px;
+        width: 100%;
+        height: 25%;
+    
+    }
+
+.search {
+    width: 100%;
+    background-color: #D7B029;
+    height: 48px;
+    margin: 0;
+}
+
+.ui-input-search.ui-body-inherit.ui-corner-all.ui-shadow-inset.ui-input-has-clear {
+    width: 87% !important;
+    height: 40px;
+    margin: 2px;
+}
+
+.search input {
+    margin-top: 2%;
+    width: 94%;
+    margin-left: 2%;
+    margin-right: 2%;
+    border-radius: 5px;
+}
+
+.fleet {
+    margin: 0;
+    width: 100%;
+    padding-top: 2%;
+}
+
+    .fleet img {
+        margin: 0.09px;
+        width: 100%;
+        height: 25%;
+        margin-top: -15px;
+    }
+
+.InfoContainerDiv {
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+    height: auto;
+    margin-bottom: 5%;
+    overflow: hidden;
+}
+
+.Depart {
+    width: 100%;
+    border-bottom: 1pt solid #DDDDDD;
+    padding-bottom: 0%;
+}
+
+.from {
+    padding: 4%;
+    padding-top: 0%;
+    height: auto;
+    padding-bottom: 0%;
+}
+
+    .from h5 {
+        margin: 2px;
+        color: #A89131;
+    }
+
+    .from h4 {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-size: 10pt;
+    }
+
+.PassInfoDivN {
+    width: 100%;
+    padding: 4%;
+    border-bottom: 1pt solid #DDDDDD;
+}
+
+    .PassInfoDivN h5 {
+        margin: 0px;
+    }
+
+.InfoContainerDiv2 {
+    width: 95%;
+    margin-left: 2%;
+    margin-right: 2%;
+    -webkit-box-shadow: 0px 0px 13px 3px rgba(199, 199, 199, 1);
+    -moz-box-shadow: 0px 0px 13px 3px rgba(199, 199, 199, 1);
+    box-shadow: 0px 0px 13px 3px rgba(199, 199, 199, 1);
+    -moz-box-shadow: 0px 0px 13px 3px rgba(199, 199, 199, 1);
+    height: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    overflow: hidden;
+}
+
+.Div3SPN {
+    width: 60%;
+}
+
+.Div1SPN {
+    width: 22%;
+    float: left;
+    text-align: right;
+    padding-right: 0%;
+    color: #A89131;
+}
+
+.Div1SPimg {
+    width: 10%;
+    top: 20%;
+    float: right !important;
+    padding-right: 2%;
+}
+
+    .Div1SPimg img {
+        width: 11px;
+    }
+
+.adult-text {
+    font-size: large;
+}
+
+.adult-text-title {
+    font-size: 20px;
+    padding: 8px;
+    border-top: 1px solid #AFAEAF;
+}
+
+.list-block {
+    margin: 0px !important;
+}
+
+.bus-text {
+    margin-top: -90px;
+    width:100%;
+}
+
+.swiper-container {
+    height: 45%;
+}
+
+.swiper-slide {
+    background: #fff;
+}
+
+    .swiper-slide span {
+        text-align: center;
+        display: block;
+        margin: 20px;
+        font-size: 21px;
+    }
+
+    .photo-browser-slide.swiper-slide.swiper-slide-active {
+    background-color: black;
+}
+
+.passenger_name {
+
+   overflow: scroll;
+    white-space: nowrap;
+}
+
+#PassengersList ul
+{
+    height:auto !important;
+}

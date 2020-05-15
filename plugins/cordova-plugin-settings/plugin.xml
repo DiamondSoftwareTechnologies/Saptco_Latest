@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin id="cordova-plugin-settings" version="1.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0">
+    <name>Settings</name>
+    <description>Cordova Settings Plugin</description>
+    <license></license>
+    <keywords>cordova,settings</keywords>
+    <repo>https://github.com/CookieCookson/cordova-plugin-settings</repo>
+    <issue>https://github.com/CookieCookson/cordova-plugin-settings/issues</issue>
+
+    <js-module src="www/settings.js" name="settings">
+        <merges target="settings" />
+    </js-module>
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="Settings">
+                <param name="ios-package" value="CDVSettings"/>
+            </feature>
+        </config-file>
+        <header-file src="src/ios/CDVSettings.h" />
+        <source-file src="src/ios/CDVSettings.m" />
+    </platform>
+</plugin>

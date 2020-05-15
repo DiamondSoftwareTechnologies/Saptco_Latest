@@ -1,0 +1,47 @@
+﻿<div class="navbar" style="width:100% ; height:60px">
+    <div class="navbar-inner on-center">
+        <div class="left sliding">
+            <a href="#" class="back">
+                <i class="icon icon-back"></i>
+            </a>
+        </div>
+        <div class="center sliding color-s-orange"
+             style="font-weight :700; font-size: 16px !important; font-stretch :condensed;color:#0E6AAC;margin-left:85px"></div>
+        <div class="right">
+            <!--<img src="img/CnC.PNG" alt="SAPTCO" style="width: 52px;height:33px">        </div>-->
+        </div>
+    </div>
+
+    <div class="page no-swipeback" data-page="CCRequestItemsList">
+        <div class="page-content RentBusPageContent ExternalStyle" style=" color: #B68E20">
+            <div class="row" style="margin-top: 6%;direction: rtl!important;">
+                <div class="row"
+                     style="font-weight:700; font-size: 18px  !important; font-stretch: condensed;color:#b68e20; margin-right: 58%">
+                    {{lblTitle}}
+                </div>
+                <div class="row"><img src="img/rentBus-logo.png" alt="SAPTCO"
+                                      style="width: 60px;height:40px;margin-top: -5px;"></div>
+            </div>
+            <div class="content-container no-bottom-margins" style="z-index:1000 !important;margin-top: 16%;">
+                <div class="row no-gutter">
+                    <div class="col-100 selected-tab Rent-Bus-Border-Color title-color"
+                         style="font-weight: 300; font-size: 18px !important; font-stretch: condensed;">{{RequestsList}}
+                    </div>
+                </div>
+            </div>
+            <div class="content-block container-box-shaddow content-container no-top-margins no-padding request-list-mainContainer">
+                <div class="list-block">
+                    <ul id="ItemsListContainer" class="request-list-container"></ul>
+                </div>
+                <br/>
+            </div>
+            <div id="AddMore" class=" btn-login-orange Rent-Bus-Background"
+                 style="font-weight: 300; font-size: 13px !important; font-stretch: condensed;">
+                {{AddNewService}}
+            </div>
+            <div id="Continue" class=" btn-login-orange Rent-Bus-Background"
+                 style="font-weight:300; font-size:13px !important; font-stretch: condensed;">
+                {{Continue}}
+            </div>
+        </div>
+    </div>

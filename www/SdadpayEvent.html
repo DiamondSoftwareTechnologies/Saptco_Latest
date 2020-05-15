@@ -1,0 +1,141 @@
+﻿<!-- Dynamic navbar for iOS theme -->
+{{#if @global.ios}}
+<div class="navbar" style="width:100% ; height:60px">
+    <div class="navbar-inner on-center">
+        <div class="left sliding">
+            <a href="#" class="">
+                <i class="icon "></i>
+                &nbsp;
+            </a>
+        </div>
+        <div class="center sliding color-s-orange"
+             style="font-weight:300; font-size:18px !important; font-stretch:condensed;"></div>
+        <div class="right">
+            <!--<img src="img/Saptco-logo.svg" alt="SAPTCO" style="width:90px">-->
+        </div>
+    </div>
+</div>
+{{/if}}
+
+<div class="page no-swipeback" data-page="SdadpayEvent">
+    <!-- Fixed navbar for Material theme -->
+    {{#if @global.android}}
+    <div class="navbar bg-black">
+        <div class="navbar-inner bg-black">
+            <div class="left">
+                <a href="#" class="back icon-only">
+                    <i class="icon icon-back"></i>
+                </a>
+            </div>
+            <div class="center  color-s-orange"
+                 style=" font-weight 300; font-size 16px !important; font-stretch condensed;"></div>
+            <div class="right">
+                <!--<img src="img/Saptco-logo.svg" alt="SAPTCO" style=" width 90px; ">-->
+            </div>
+        </div>
+    </div>
+    {{/if}}
+
+    <div class="page-content" style=" color: #B68E20">
+        <div class="row" style="margin-top:5%;direction:rtl !important;">
+            <div class="row"
+                 style="font-weight:700; font-size: 18px !important; font-stretch: condensed; margin-right:40%">
+                {{lblTitle}}
+            </div>
+            <div class="row"><img src="img/Saptco-logo.svg" alt="SAPTCO" style="width: 100px;height:33px"></div>
+        </div>
+        <div class="" data-role="content">
+
+            <div class="Div100" style="text-align: center;">
+                <h4 style=" font-weight 300; font-size 14px !important; font-stretch condensed;margin-left 2%; margin-right 2%;color: white!important;margin-top: 20%!important; "
+                    id="lblThankYou">
+                    {{lblThankYou}}
+                </h4>
+            </div>
+
+            <div class="Div100">
+                <h5 style=" font-weight 300; font-size 14px !important; font-stretch condensed; margin-left 2%; margin-right 2%; color: white!important;"
+                    id="lblPart1">
+                    {{lblPart1}}
+                </h5>
+
+            </div>
+
+            <div>
+                <div class=" container-box-shaddow content-container sadad-container">
+                    <div class="Div100" style="text-align: center;">
+                        <img alt="" src="img/SADADLogo.svg" style=" width 150px;margin-top 15px;">
+                    </div>
+                    <div class="DivRowBottomBorder">
+                        <div class="row">
+                            <div class="Div50">
+                                <h4 id="lblBill"
+                                    style=" font-weight 300; font-size 14px !important; font-stretch condensed;">
+                                    {{lblBill}}</h4>
+                            </div>
+
+                            <div class="Div50 ">
+                                <h4 class="FloatEnd" id="Results_BillNumber">---</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="DivRowBottomBorder">
+                        <div class="row">
+                            <div class="Div50">
+                                <h4 id="lblLastPayemntDue"
+                                    style=" font-weight 300; font-size 14px !important; font-stretch condensed;">
+                                    {{lblLastPayemntDue}}</h4>
+                            </div>
+
+                            <div class="Div50  textAlign-end">
+                                <h4 class="FloatEnd" id="Results_BillExpiration">---</h4>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="DivRowBottomBorder">
+                        <div class="row">
+                            <div class="Div50">
+                                <h4 id="lblTotalAmount"
+                                    style=" font-weight 300; font-size 14px !important; font-stretch condensed;">
+                                    {{lblTotalAmount}}</h4>
+                            </div>
+
+                            <div class="Div50 ">
+                                <h4 class="FloatEnd" id="Results_Amount">---</h4>
+                                <h4 class="FloatEnd">SR</h4>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="DivRowBottomBorder">
+                        <div class="row">
+                            <div class="Div80">
+                                <h4 id="lblSaudiTrans"
+                                    style=" font-weight 300; font-size 14px !important; font-stretch condensed;">
+                                    {{lblSaudiTrans}}</h4>
+                            </div>
+
+                            <div class="Div20 ">
+                                <h4 class="FloatEnd" id="Results_BillerNumber">---</h4>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="Div100">
+
+                    <h5 style=" font-weight 300; font-size 14px !important; font-stretch condensed; margin-left 2%; margin-right 2%;color: white!important;"
+                        id="lblPart2">
+                        {{lblPart2}}
+                    </h5>
+                </div>
+                <div class="Button-shaddow custom-black-button color-s-orange" id="btnSearch"
+                     style=" font-weight 300; font-size 18px !important; font-stretch condensed;">
+                    {{btnSearch}}
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,62 @@
+﻿<!-- Dynamic navbar for iOS theme -->
+{{#if @global.ios}}
+<div class="navbar bg-black" style="width:100% ; height:60px">
+    <div class="navbar-inner on-center" style="background-color:#FAF8EB !important">
+        <div class="left sliding">
+            <a href="#" class="">
+                <i class="icon "></i>
+                &nbsp;
+            </a>
+        </div>
+        <div class="center sliding color-s-orange" style="font-weight:300; font-size:18px !important; font-stretch:condensed;">طريقة الدفع</div>
+        <div class="right">
+            <img src="img/Saptco-logo.svg" alt="SAPTCO" style="width:90px">
+        </div>
+    </div>
+</div>
+{{/if}}
+
+<div class="page no-swipeback" data-page="new_paymentoptions">
+    <!-- Fixed navbar for Material theme -->
+    {{#if @global.android}}
+    <div class="navbar bg-black">
+        <div class="navbar-inner bg-black">
+            <div class="left">
+                <a href="#" class="back icon-only">
+                    <i class="icon icon-back"></i>
+                </a>
+            </div>
+            <div class="center  color-s-orange" style=" font-weight 300; font-size 18px !important; font-stretch condensed;">طريقة الدفع</div>
+            <div class="right">
+                <img src="img/Saptco-logo.svg" alt="SAPTCO" style=" width 90px; ">
+            </div>
+        </div>
+    </div>
+    {{/if}}
+
+    <div class="page-content">
+        <div class=" " data-role="content" id="PaymentOptions"
+             style="height: 100%; position: absolute; width: 100%">
+
+            <div class="content-container no-bottom-margins" style="z-index:1000 !important">
+                <div class="row no-gutter">
+                    <div class="col-100 selected-tab" style="font-weight: 300; font-size: 18px !important; font-stretch: condensed;">اختر طريقة الدفع</div>
+                </div>
+
+            </div>
+            <div class="Div100" style="text-align: center;">
+                <h3 style=" font-weight 300; font-size 18px !important; font-stretch condensed;color:white" id="selpayment">
+                    {{selpayment}}
+                </h3>
+            </div>
+            <div class="DataContainerDivSmall" id="btnGoToSadad">
+                <img src="img/sdad.png" style="width: 100%;">
+            </div>
+            <a href="" id="btnGotoVisaLink">
+                <div class="DataContainerDivSmall" id="btnGotoVisa">
+                    <img src="img/cridtecard.png" style="width: 100%;">
+                </div>
+            </a>
+        </div>
+    </div>
+</div>     

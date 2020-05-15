@@ -1,0 +1,176 @@
+﻿<!-- Dynamic navbar for iOS theme -->
+{{#if @global.ios}}
+<div class="navbar bg-black" style="width:100% ; height:60px">
+    <div class="navbar-inner on-center" style="background-color:#FAF8EB !important">
+        <div class="left sliding">
+            <a href="#" class="back">
+                <i class="icon icon-back"></i>
+            </a>
+        </div>
+        <div class="center sliding color-s-orange">{{lblTitle}}</div>
+        <div class="right">
+            <img src="img/Saptco-logo.svg" alt="SAPTCO" style="width:90px">
+
+        </div>
+    </div>
+</div>
+{{/if}}
+
+<div class="page" data-page="FavoritefillInfo">
+    <!-- Fixed navbar for Material theme -->
+    {{#if @global.android}}
+    <div class="navbar bg-black">
+        <div class="navbar-inner bg-black">
+            <div class="left">
+                <a href="#" class="back icon-only">
+                    <i class="icon icon-back"></i>
+                </a>
+            </div>
+            <div class="center  color-s-orange" style=" font-weight 300; font-size 20px !important; font-stretch condensed;">{{lblTitle}}</div>
+            <div class="right">
+                <img src="img/Saptco-logo.svg" alt="SAPTCO" style=" width 90px; ">
+            </div>
+        </div>
+    </div>
+    {{/if}}
+
+    <div class="page-content" style=" color: #B68E20">
+
+        <div class="DataContainerDiv container-box-shaddow content-container">
+            <div class="row no-gutter">
+                <div class="col-100 selected-tab" style=" font-weight 300; font-size 20px !important; font-stretch condensed;"> {{lblPassengersInfo}}</div>
+            </div>
+            <form id="PassengerDetalies" class="list-block">
+                <ul>
+                    <li>
+                        <div class="item-content div_click">
+                            <div class="item-media"><i class="icon icon-form-name"></i></div>
+                            <div class="item-inner">
+                                <div class="item-title label " style=" font-weight 300; font-size 15px !important; font-stretch condensed;">{{lblName}}</div>
+                                <div class="item-input validate" data-validation="Errnamemustbefilled">
+                                    <input type="text" name="Name" placeholder="passenger Name" id="passengerName">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content div_click">
+                            <div class="item-media">
+                                <i class="icon icon-form-url"></i>
+                            </div>
+                            <div class="item-inner">
+                                <div class="item-title label" style=" font-weight 300; font-size 15px !important; font-stretch condensed;">{{lblIdTime}}</div>
+                                <div class="item-input validate" data-validation="ErrIDType">
+                                    <a href="#" class="smart-select" data-open-in="picker" data-back-on-select="true" data-back-text="{{DoneText}}">
+                                        <select name="IDType" id="selectIdType">
+                                            <option data-itemvalue="0" value="NA" selected="selected" style=" font-weight 300; font-size 15px !important; font-stretch condensed;">{{optSelect}}</option>
+                                            <option data-itemvalue="1" value="IqamaID" style=" font-weight 300; font-size 15px !important; font-stretch condensed;">{{lblResidenceVisa}}</option>
+                                            <option data-itemvalue="2" value="NationalID" style=" font-weight 300; font-size 15px !important; font-stretch condensed;">{{lblIdCard}}</option>
+                                            <option data-itemvalue="3" value="GCC" style=" font-weight 300; font-size 15px !important; font-stretch condensed;">{{lblGccSitizen}}</option>
+                                            <option data-itemvalue="4" value="Passport" style=" font-weight 300; font-size 15px !important; font-stretch condensed;">{{lblPassport}}</option>
+                                        </select>
+                                        <div class="item-content">
+                                            <div class="item-inner" style="padding:0px">
+                                                <!-- Select label -->
+                                                <!-- Selected value, not required -->
+                                                <div class="item-after" style=" font-weight 300; font-size 13px !important; font-stretch condensed;" id="txtIDTypeText">{{select}}</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content div_click">
+                            <div class="item-media">
+                                <i class="icon icon-form-comment"></i>
+                            </div>
+                            <div class="item-inner ">
+                                <div class="item-title label" style=" font-weight 300; font-size 15px !important; font-stretch condensed;">{{lblNationalIdNumber}}</div>
+                                <div class="item-input validate" data-validation=" ErrNationalID">
+                                    <input type="text" name="IDNumber">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="align-top">
+                        <div class="item-content div_click">
+                            <div class="item-media">
+                                <i class="icon icon-form-comment"></i>
+                            </div>
+                            <div class="item-inner validate" data-validation="ErrVersionnum">
+                                <div class="item-title label" style=" font-weight 300; font-size 15px !important; font-stretch condensed;">{{lblVersionNumber}}</div>
+                                <div class="item-input">
+                                    <input type="number" name="IDVersion" id="inputIDVersion">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="align-top">
+                        <div class="item-content div_click">
+                            <div class="item-media">
+                                <i class="icon icon-form-url"></i>
+                            </div>
+                            <div class="item-inner passenger-nationality-click ">
+                                <div class="item-title label" style=" font-weight 300; font-size 15px !important; font-stretch condensed;">{{lblNationlaty}}</div>
+                                <div class="item-input validate" data-validation="ErrNationalityIDtypemustbefilled">
+                                    <input type="text" name="NationalityID" readonly="readonly" id="lblNationalityName" data-natvalue="">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content div_click">
+                            <div class="item-media">
+                                <i class="icon icon-form-gender"></i>
+                            </div>
+                            <div class="item-inner ">
+                                <div class="item-title label" style=" font-weight 300; font-size 15px !important; font-stretch condensed;">{{lblGender}}</div>
+                                <div class="item-input validate" data-validation="ErrGender">
+                                    <a href="#" class="smart-select" data-open-in="picker" data-back-on-select="true" data-back-text="{{DoneText}}">
+                                        <select name="Gender" id="selectGender">
+                                            <option data-itemvalue="0" value="NA" selected="selected" style=" font-weight 300; font-size 15px !important; font-stretch condensed;">{{optSelect}}</option>
+                                            <option data-itemvalue="1" value="Male" style=" font-weight 300; font-size 15px !important; font-stretch condensed;">{{lblMale}}</option>
+                                            <option data-itemvalue="2" value="Female" style=" font-weight 300; font-size 15px !important; font-stretch condensed;">{{lblFemale}}</option>
+                                        </select>
+                                        <div class="item-content">
+                                            <div class="item-inner" style="padding:0px">
+                                                <!-- Select label -->
+                                                <!-- Selected value, not required -->
+                                                <div class="item-after" style=" font-weight 300; font-size 13px !important; font-stretch condensed;" id="txtGenderText">{{select}}</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content div_click">
+                            <div class="item-media">
+                                <i class="icon icon-form-calendar"></i>
+                            </div>
+                            <div class="item-inner validate" data-validation="ErrBirthdate">
+                                <div class="item-title label" style=" font-weight 300; font-size 15px !important; font-stretch condensed;">{{lblDateOfBirth}}</div>
+                                <div class="item-input">
+                                    <!--<input type="text" placeholder="{{lblDateOfBirth}}" readonly id="calendar-BirthDate" name="DateOfBirth">-->
+                                    <input type="text" placeholder="{{lblDateOfBirth}}" readonly id="calendar-BirthDatePassenger" name="DateOfBirth" class="datePickerItem">
+
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- Date -->
+                    <!-- Textarea -->
+                </ul>
+            </form>
+
+            <div class="container-box-shaddow btn-login-orange" id="btnSaveFavPassenger" style=" font-weight 300; font-size 20px !important; font-stretch condensed;">{{btnDone}}</div>
+
+
+        </div>
+
+    </div>
+
+</div>     

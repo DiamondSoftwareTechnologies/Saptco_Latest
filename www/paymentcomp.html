@@ -1,0 +1,57 @@
+﻿<!-- Dynamic navbar for iOS theme -->
+{{#if @global.ios}}
+<div class="navbar bg-black" style="width:100% ; height:60px">
+    <div class="navbar-inner on-center" style="background-color:#FAF8EB !important">
+        <div class="left sliding">
+            <a href="#" class="back link-force-back">
+                <i class="icon icon-back"></i>
+            </a>
+        </div>
+        <div class="center sliding color-s-orange" style="font-weight:300; font-size:20px !important; font-stretch:condensed;">{{lblTitle}}</div>
+        <div class="right">
+            <img src="img/Saptco-logo.svg" alt="SAPTCO" style="width:90px">
+        </div>
+    </div>
+</div>
+{{/if}}
+
+<div class="page" data-page="paymentcomp">
+    <!-- Fixed navbar for Material theme -->
+    {{#if @global.android}}
+    <div class="navbar bg-black">
+        <div class="navbar-inner bg-black">
+            <div class="left">
+                <a href="#" class="back icon-only">
+                    <i class="icon icon-back"></i>
+                </a>
+            </div>
+            <div class="center  color-s-orange" style=" font-weight 300; font-size 20px !important; font-stretch condensed;">{{lblTitle}}</div>
+            <div class="right">
+                <img src="img/Saptco-logo.svg" alt="SAPTCO" style=" width 90px; ">
+            </div>
+        </div>
+    </div>
+    {{/if}}
+
+
+    <div class="page-content" style=" background-color rgba(216, 197, 110, 0.26); color: #B68E20 ">
+
+
+        <div class="content-container container-box-shaddow" style="margin-top: 15%;padding-bottom:5px">
+            <div class="col-100 selected-tab">
+                <h5 id="lblMessage" style=" font-weight 300; font-size 20px !important; font-stretch condensed;">{{lblTitle}}</h5>
+            </div>
+            <div class="Div100" style="text-align: center;">
+                <img alt="SAPTCO" src="img/Saptco-logo.svg"
+                     style="width: 40%; margin-top: 5%;">
+            </div>
+            <div class="aboutus-container" style=" font-weight 300; font-size 20px !important; font-stretch condensed;">
+
+                {{Thank_msg}}
+
+
+            </div>
+        </div>
+    </div>
+
+</div>

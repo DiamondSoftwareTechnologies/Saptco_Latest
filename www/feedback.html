@@ -1,0 +1,103 @@
+﻿<!-- Dynamic navbar for iOS theme -->
+{{#if @global.ios}}
+<div class="navbar bg-black" style="width:100% ; height:60px">
+    <div class="navbar-inner on-center" style="background-color:#FAF8EB !important">
+        <div class="left sliding">
+            <a href="#" class="back">
+                <i class="icon icon-back"></i>
+            </a>
+        </div>
+        <div class="center sliding color-s-orange">{{Feedback}}</div>
+        <div class="right">
+            <img src="img/Saptco-logo.svg" alt="SAPTCO" style="width:90px">
+        </div>
+    </div>
+</div>
+{{/if}}
+
+<div class="page" data-page="feedback">
+    <!-- Fixed navbar for Material theme -->
+    {{#if @global.android}}
+    <div class="navbar bg-black">
+        <div class="navbar-inner bg-black">
+            <div class="left">
+                <a href="#" class="back icon-only">
+                    <i class="icon icon-back"></i>
+                </a>
+            </div>
+            <div class="center  color-s-orange" style=" font-weight 300; font-size 20px !important; font-stretch condensed;">{{Feedback}}</div>
+            <div class="right">
+                <img src="img/Saptco-logo.svg" alt="SAPTCO" style=" width 90px; ">
+            </div>
+        </div>
+    </div>
+    {{/if}}
+
+    <div class="page-content" style=" color: #B68E20">
+
+        <div class="container-box-shaddow content-container">
+            <label class="center-text adult-text color-s-orange" style=" font-weight 300; font-size 20px !important; font-stretch condensed;">{{Comment}}</label>
+            <div class="list-block">
+                <ul>
+                    <li>
+                        <textarea id="txtComments"></textarea>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container-box-shaddow content-container">
+            <div class=" list-block">
+                <ul>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-inner">
+                                <div class="item-input">
+                                    <input type="text" name="UserName" placeholder="{{Name}}" style="width:90%" id="txtName">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-inner">
+                                <div class="item-input">
+                                    <input type="tel" name="MobileNumber" placeholder="{{PhoneNumber}}" style="width:90%" id="txtPhoneNUmber">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-inner">
+                                <span class="starRating">
+                                    <input id="rating5" type="radio" name="rating" value="5" class="rate5">
+                                    <label for="rating5" class="rate5">5</label>
+                                    <input id="rating4" type="radio" name="rating" value="4" class="rate4">
+                                    <label for="rating4" class="rate4">4</label>
+                                    <input id="rating3" type="radio" name="rating" value="3" class="rate3">
+                                    <label for="rating3" class="rate3">3</label>
+                                    <input id="rating2" type="radio" name="rating" value="2" class="rate2">
+                                    <label for="rating2" class="rate2">2</label>
+                                    <input id="rating1" type="radio" name="rating" value="1" class="rate1">
+                                    <label for="rating1" class="rate1">1</label>
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="custom-black-button color-s-orange" id="submitReview" style=" font-weight 300; font-size 20px !important; font-stretch condensed;">
+            {{Save}}
+        </div>
+
+
+    </div>
+
+
+
+
+
+</div>     

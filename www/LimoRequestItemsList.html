@@ -1,0 +1,41 @@
+﻿<div class="navbar bg-black" style="width:100% ; height:60px">
+    <div class="navbar-inner on-center">
+        <div class="left sliding ">
+            <a href="#" class="back">
+                <i class="icon icon-back"></i>
+            </a>
+        </div>
+        <div class="center sliding color-s-orange" style="font-weight :300; font-size: 16px !important; font-stretch :condensed;color:#A58F32;margin-left:100px"></div>
+        <div class="right">
+            <!--<img src="img/Limo-1.png" alt="SAPTCO" style="width: 42px;height:30px">-->
+        </div>
+    </div>
+</div>
+
+<div class="page no-swipeback" data-page="LimoRequestItemsList">
+    <div class="page-content ExternalStyle LimoFormStyle" style="">
+        <div class="row"style="margin-top:6%;direction:rtl !important;">
+            <div class="row" style="font-weight:700; font-size: 18px !important; font-stretch: condensed;color:rgb(165, 143, 50);margin-right:55%">{{lblTitle}}</div>
+            <div class="row"><img src="img/Limo.png" alt="SAPTCO" style="width: 52px;height:33px"></div>
+        </div>
+        <div class="content-container no-bottom-margins" style="z-index:1000 !important;margin-top:17% !important;background-color:#FFF5E1 !important;">
+            <div class="row no-gutter" style="background-color:#FFF5E1 !important">
+                <div class="col-100 selected-tab title-color" style="background-color:#FFF5E1 !important;font-weight: 300; font-size: 18px !important; font-stretch: condensed;">{{RequestsList}}</div>
+            </div>
+
+        </div>
+        <div class="content-block container-box-shaddow content-container no-top-margins no-padding request-list-mainContainer" style="background-color:#FFF5E1 !important;" >
+            <div class="list-block" style="background-color:#FFF5E1 !important;">
+                <ul id="ItemsListContainer" class="request-list-container" style="background-color:#FFF5E1 !important"></ul>
+            </div>
+
+            <br />
+        </div>
+        <div id="AddMore" class="schedule-search-button border-rounding"  style="margin:auto !important;border-radius:10px!important;margin-top:10% !important; ;text-align:center !important; width:85%;left:27px ;height:60px">
+            {{AddNewService}}
+        </div>
+        <div id="Continue" class="schedule-search-button border-rounding"  style="margin:auto !important;border-radius:10px!important;margin-top:10% !important; ;text-align:center !important; width:85%;left:27px ;height:60px">
+            {{Continue}}
+        </div>
+    </div>
+</div>

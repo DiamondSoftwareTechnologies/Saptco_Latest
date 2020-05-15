@@ -1,0 +1,91 @@
+﻿<!-- Dynamic navbar for iOS theme -->
+{{#if @global.ios}}
+<div class="navbar bg-black" style="width:100% ; height:60px">
+    <div class="navbar-inner on-center" style="background-color:#FAF8EB !important">
+        <div class="left sliding">
+            <a href="#" class="back">
+                <i class="icon icon-back"></i>
+            </a>
+        </div>
+        <div class="center sliding color-s-orange" style="font-weight:300; font-size:20px !important;font-stretch:condensed;">{{lblHeaderTitle}}</div>
+        <div class="right">
+            <img src="img/Saptco-logo.svg" alt="SAPTCO" style="width:90px">
+        </div>
+    </div>
+</div>
+{{/if}}
+
+<div class="page" data-page="trips">
+    <!-- Fixed navbar for Material theme -->
+    {{#if @global.android}}
+    <div class="navbar bg-black">
+        <div class="navbar-inner bg-black">
+            <div class="left">
+                <a href="#" class="back icon-only">
+                    <i class="icon icon-back"></i>
+                </a>
+            </div>
+            <div class="center  color-s-orange"  style="font-weight:300; font-size:18px !important; font-stretch:condensed;">{{lblHeaderTitle}}</div>
+            <div class="right">
+                <img src="img/Saptco-logo.svg" alt="SAPTCO" style="width:90px; ">
+            </div>
+        </div>
+    </div>
+    {{/if}}
+
+    <div class="page-content" style=" color: #B68E20">
+        <!-- Page content goes here -->
+        <div class="row no-gutter bg-s-orange">
+            <div class="col-15"><img src="img/check.png" alt="" style="width:30px; margin:8px ; " /></div>
+            <div class="col-85">
+                <div class="row">
+                    <div class="col-100 trips-subtitle-1" style=" font-weight 300; font-size 20px !important; font-stretch condensed;">{{lblHeaderTitle}}</div>
+                    <div class="col-100 trips-subtitle-2" style=" font-weight 300; font-size 20px !important; font-stretch condensed;">{{tripDirection}} <span id="lblTripsCities"></span></div>
+                </div>
+            </div>
+        </div>
+        <div class="row no-gutter bg-s-orange">
+            <div class="col-100">
+                <div class="row no-gutter">
+                    <div class="col-50 selected-tab " id="OutTab" style=" font-weight 300; font-size 20px !important; font-stretch condensed;">{{tabOutword}}</div>
+                    <div class="col-50 not-selected-tab" id="ReturnTab" style=" font-weight 300; font-size 20px !important; font-stretch condensed;">{{tabReturn}}</div>
+                </div>
+            </div>
+        </div>
+        <div class="row no-gutter ">
+            <div class="col-100">
+                <div class="DatesTabs">
+
+                    <div class="clicktab tabnotselected" data-index="0">
+                        <h5 id="0_DateTab">---</h5>
+                    </div>
+                    <div class="clicktab tabselected" data-index="1">
+                        <h5 id="1_DateTab">---</h5>
+                    </div>
+                    <div class="clicktab tabnotselected" data-index="2">
+                        <h5 id="2_DateTab">---</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row trips-title-stations">
+            <div class="col-100">
+                <div class="row">
+                    <div class="col-100 trips-title-station"  style="font-weight:300; font-size:20px !important; font-stretch:condensed;">
+                        {{lblFrom}}:<span id="lblFromStation"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-100 trips-title-station"  style="font-weight:300; font-size:20px !important; font-stretch:condensed;">
+                        {{lblto}}:<span id="lblToStation"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Virtual List -->
+        <div class="list-block virtual-list trips-list-block">
+        </div>
+        <div class="row"><div class="col-100">&nbsp; </div></div>
+    </div>
+</div>

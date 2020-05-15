@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "32013031062",
+    "firebase_url": "https://saptcomobile.firebaseio.com",
+    "project_id": "saptcomobile",
+    "storage_bucket": "saptcomobile.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:32013031062:android:1c6940e5b236cdc5",
+        "android_client_info": {
+          "package_name": "com.saptco.bus2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "32013031062-q8e2e7ogv40giis3i82h1smb255hfdj6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBeVN9AtmNTSoDIFBBjwgh8c12PDdABjKc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

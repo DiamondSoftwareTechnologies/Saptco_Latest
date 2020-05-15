@@ -1,0 +1,78 @@
+﻿<!-- Dynamic navbar for iOS theme -->
+{{#if @global.ios}}
+<div class="navbar bg-black" style="width:100% ; height:60px">
+    <div class="navbar-inner on-center" style="background-color:#FAF8EB !important">
+        <div class="left sliding bg-black">
+            <a href="#" class="back">
+                <i class="icon icon-back"></i>
+            </a>
+        </div>
+        <div class="center sliding color-s-orange" style="font-weight:300; font-size:20px !important; font-stretch:condensed;">{{lblTitle}}</div>
+        <div class="right">
+            <img src="img/Saptco-logo.svg" alt="SAPTCO" style="width:90px">
+        </div>
+    </div>
+</div>
+{{/if}}
+
+<div class="page" data-page="TicketTransfer">
+    <!-- Fixed navbar for Material theme -->
+    {{#if @global.android}}
+    <div class="navbar bg-black">
+        <div class="navbar-inner bg-black">
+            <div class="left">
+                <a href="#" class="back icon-only">
+                    <i class="icon icon-back"></i>
+                </a>
+            </div>
+            <div class="center  color-s-orange" style=" font-weight 300; font-size 20px !important; font-stretch condensed;">{{lblTitle}}</div>
+            <div class="right">
+                <img src="img/Saptco-logo.svg" alt="SAPTCO" style=" width 90px; ">
+            </div>
+        </div>
+    </div>
+    {{/if}}
+
+    <div class="page-content" style=" color: #B68E20">
+        <div class="SubTitleDiv">
+            <h3> Ticket Details</h3>
+        </div>
+        <div class="container-box-shaddow content-container btn-ticket" id="GoingData" data-ticketNo="' + item.TicketNumber +" data-isTransferable="' + item.IsTransferable +">
+            <div class="Depart">
+                <div class="from">
+                    <h5 id="lblUserName" style=" font-weight 300; font-size 20px !important; font-stretch condensed;">{{PassengerName}}</h5>
+                    <h4 id="Passenger_NameValue"></h4>
+                </div>
+            </div>
+            <div class="Depart">
+                <div class="from">
+                    <h5 id="lblFrom" style=" font-weight 300; font-size 20px !important; font-stretch condensed;">{{lblDepartFrom}}</h5>
+                    <h4 id="DepartureStation_NameValue"></h4>
+                </div>
+            </div>
+            <div class="Depart">
+                <div class="from">
+                    <h5 id="lblTo" style=" font-weight 300; font-size 20px !important; font-stretch condensed;">{{lblArrivalTo}} </h5>
+                    <h4 id="ArrivalStation_NameValue"> </h4>
+                </div>
+            </div>
+            <div class="Depart">
+                <div class="from">
+                    <h5 id="lblTo" style=" font-weight 300; font-size 20px !important; font-stretch condensed;">{{lblDepartureOn}} </h5>
+                    <h4 id="DeparutOn"></h4>
+                </div>
+            </div>
+            <div class="Depart">
+                <div class="from">
+                    <h5 id="lblTo" style=" font-weight 300; font-size 20px !important; font-stretch condensed;">{{lblNewDepartureOn}} </h5>
+                    <div class="item-input">
+                        <input type="text" placeholder="Date" readonly id="calendar-date-Ticket" class="schedual-calendar">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="custom-black-button color-s-orange" id="btnSearchNewTicket" style=" font-weight 300; font-size 20px !important; font-stretch condensed;display:block">
+            {{btnSearch}}
+        </div>
+    </div>
+</div>     

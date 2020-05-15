@@ -1,0 +1,58 @@
+﻿.button11 {
+    border: none;
+    color: white;
+    padding: 20px;
+    height:20%;
+    width:20%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    color: black;
+    background-size:100%;
+    background-position: center center;
+}
+.reservedSeat {
+    background-image: url('../img/dsu.gif');
+}
+.availableSeat {
+    background-image: url('../img/asu.gif');
+}
+
+.selectedSeat {
+    background-image: url('../img/ysu.gif');
+}
+.reservedSeatD {
+    background-image: url('../img/dsd.gif');
+}
+.availableSeatD {
+    background-image: url('../img/asd.gif');
+}
+
+.selectedSeatD {
+    background-image: url('../img/ysd.gif');
+}
+
+.wcDoor {
+    background-image: url('../img/WC-Door.gif');
+}
+
+.wc {
+    background-image: url('../img/wc.gif');
+}
+.canteen {
+    background-image: url('../img/bus-Canteen.gif');
+}
+.table {
+    background-image: url('../img/bus-Table.gif');
+}
+.door {
+    background-image: url('../img/Door.gif');
+}
+.driver {
+    background-image: url('../img/driver.PNG');
+}
