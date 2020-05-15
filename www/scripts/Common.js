@@ -426,6 +426,7 @@ myApp.onPageInit('schedulesandtickets', function (page) {
             childrenCount: 0,
             infantsCount: 0
         };
+    //test
     var calendarCloseButton = GetResourceText("Agree");
     var currentDate = new Date();
     var today = new Date().setDate(currentDate.getDate() - 1);
