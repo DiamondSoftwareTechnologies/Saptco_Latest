@@ -21,8 +21,8 @@
       <file leaf-file-name="Common.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/scripts/Common.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="424" column="23" lean-forward="true" selection-start-line="424" selection-start-column="23" selection-end-line="424" selection-end-column="23" />
+            <state relative-caret-position="85">
+              <caret line="428" column="10" selection-start-line="428" selection-start-column="10" selection-end-line="428" selection-end-column="10" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
@@ -328,8 +328,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/www/scripts/Common.js" />
         <option value="$PROJECT_DIR$/www/schedulesandtickets.html" />
+        <option value="$PROJECT_DIR$/www/scripts/Common.js" />
       </list>
     </option>
   </component>
@@ -414,11 +414,6 @@
             <path>
               <item name="SAPITCO_Latest" type="b2602c69:ProjectViewProjectNode" />
               <item name="SAPITCO_Latest" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SAPITCO_Latest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SAPITCO_Latest" type="462c0819:PsiDirectoryNode" />
-              <item name="www" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -743,15 +738,16 @@
       <workItem from="1588674990091" duration="2764000" />
       <workItem from="1588755851718" duration="61000" />
       <workItem from="1588755957934" duration="2460000" />
-      <workItem from="1589449933543" duration="7126000" />
+      <workItem from="1589449933543" duration="8386000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7126000" />
+    <option name="totallyTimeSpent" value="8386000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2057101" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -801,7 +797,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/www/scripts/Common.js</url>
-          <line>5781</line>
+          <line>5782</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
@@ -829,8 +825,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/scripts/Common.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="424" column="23" lean-forward="true" selection-start-line="424" selection-start-column="23" selection-end-line="424" selection-end-column="23" />
+        <state relative-caret-position="85">
+          <caret line="428" column="10" selection-start-line="428" selection-start-column="10" selection-end-line="428" selection-end-column="10" />
           <folding>
             <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
